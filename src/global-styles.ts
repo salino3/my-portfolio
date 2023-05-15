@@ -7,6 +7,7 @@ injectGlobal`
 
 body {
 
+  background-color: ${theme.background.light};
   width: 100%;
   overflow-y: auto;
   font-family: ${theme.fonts};
