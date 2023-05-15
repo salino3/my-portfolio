@@ -2,7 +2,7 @@ const BASE_SPACING = 4;
 
 export const theme = {
   background: {
-    light: "#FFFFFF;",
+    light: "#FFFFFF",
     middle: { background: "#0A2230", 
               opacity: 0.25 
     },
@@ -18,5 +18,9 @@ export const theme = {
     text_header: "#000000",
     text_content: "#FDFDFD",
   },
+  fonts: {
+     fontFamily: "Heebo",
+     fontWeight: "normal"
+     },
   spacing: (multiplier: number = 1) => `${multiplier * BASE_SPACING}px`,
 };

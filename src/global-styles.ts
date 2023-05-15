@@ -1,14 +1,15 @@
 import { injectGlobal } from "@emotion/css";
+import "@fontsource/heebo";
+import { theme } from "./theme";
+
 
 injectGlobal`
 
 body {
 
-  background: white;
   width: 100%;
   overflow-y: auto;
-  font-family: 'Heebo';
-  font-style: normal;
+  font-family: ${theme.fonts};
 
   &::-webkit-scrollbar {
     display: none;
