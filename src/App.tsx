@@ -1,13 +1,13 @@
 import * as classes from './app.styles';
-import { HomeLayout } from './layouts';
+import { AppLayout } from "./layout";
 
 function App() {
 
   return (
     <div className={classes.root}>
-     <HomeLayout />
+      <AppLayout />
     </div>
-  )
+  );
 }
 
 export default App
