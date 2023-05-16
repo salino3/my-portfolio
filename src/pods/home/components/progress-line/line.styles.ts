@@ -34,9 +34,10 @@ export const progressBar = css`
 
 export const Line = styled.div`
   height: 100%;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  padding-left: ${theme.spacing(1)};
+  padding: ${theme.spacing(1)} 0px 0px ${theme.spacing(1)};
   color: ${theme.palette.text_content};
+  box-sizing: border-box;
 `;

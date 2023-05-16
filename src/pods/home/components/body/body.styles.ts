@@ -5,6 +5,7 @@ import { theme } from '../../../../theme';
 export const root = css`
   ${theme.background.middle};
   padding: ${theme.spacing(8)} 0px;
+  padding-bottom: 5rem;
 `;
 
 export const container = css`
@@ -16,11 +17,23 @@ export const progressLines = css`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-bottom: 5rem;
 
+  h2 {
+    text-align: center;
+  }
+`;
+
+export const h2 = css`
+  color: ${theme.palette.text_content};
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 53px;
+  padding: ${theme.spacing(4)} ${theme.spacing(8)};
 `;
 
 export const emotion = css`
-   ${theme.skills.emotion}
+  ${theme.skills.emotion}
 `;
 
 export const js = css`
@@ -62,6 +75,10 @@ export const bootstrap = css`
 
 export const html = css`
   ${theme.skills.html}
+`;
+
+export const react = css`
+  ${theme.skills.react}
 `;
 
 

@@ -1,6 +1,7 @@
 import React from 'react';
-import * as classes from './body.styles';
 import { ProgressLine } from '../progress-line';
+import * as classes from './body.styles';
+import { BoxSkill } from '../box-skills';
 
 
 export const BodyComponent: React.FC = () => {
@@ -8,7 +9,8 @@ export const BodyComponent: React.FC = () => {
     <div className={classes.root}>
       <div className={classes.container}>
         <main className={classes.progressLines}>
-          <ProgressLine
+          <h2 className={classes.h2}>My Skills</h2>
+          {/* <ProgressLine
             className={classes.emotion}
             img="/assets/icons/logo--emotion.svg"
             skill="Emotion"
@@ -50,7 +52,7 @@ export const BodyComponent: React.FC = () => {
           />
           <ProgressLine
             className={classes.github}
-            img="../../../../../public/assets/icons/github-original.svg"
+            img="../../../../../public/assets/icons/Github-white.svg"
             skill="GitHub"
           />
           <ProgressLine
@@ -62,7 +64,14 @@ export const BodyComponent: React.FC = () => {
             className={classes.html}
             img="../../../../../public/assets/icons/html5-original-wordmark.svg"
             skill="HTML"
-          />
+          />{" "}
+          <ProgressLine
+            className={classes.react}
+            img="../../../../../public/assets/icons/react-original.svg"
+            skill="React"
+          /> */}
+
+          <BoxSkill />
         </main>
       </div>
     </div>

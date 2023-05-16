@@ -10,6 +10,7 @@ export const theme = {
     },
   },
   icons: "#25314D",
+
   palette: {
     primary: "#21243D",
     danger: "#D71E38",
@@ -33,6 +34,10 @@ export const theme = {
       width: "100%",
       background: "#007ACC",
     },
+    gql: {
+      width: "80%",
+      background: "#E535AB",
+    },
     sass: {
       width: "100%",
       background: "#CB6699",
@@ -49,6 +54,10 @@ export const theme = {
       width: "70%",
       background: "#3FA037",
     },
+    vue: {
+      width: "60%",
+      background: "#4FC08D",
+    },
     css: {
       width: "100%",
       background: "#33A9DC",
@@ -57,13 +66,33 @@ export const theme = {
       width: "80%",
       background: "#000000",
     },
+    vsc: {
+      width: "100%",
+      background: "#1E1E1E",
+    },
     bootstrap: {
       width: "90%",
-      background: "#6639B6"
+      background: "#6639B6",
+    },
+    git: {
+      width: "70%",
+      background: "#F34F29",
     },
     html: {
       width: "100%",
       background: "#F16529",
+    },
+    react: {
+      width: "100%",
+      background: "#61DAFB",
+    },
+    angular: {
+      width: "60%",
+      background: "#DD0031",
+    },
+    mui: {
+      width: "60%",
+      background: "#1976D2",
     },
   },
   spacing: (multiplier: number = 1) => `${multiplier * BASE_SPACING}px`,
