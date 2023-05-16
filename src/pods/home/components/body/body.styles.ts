@@ -47,3 +47,21 @@ export const mongoose = css`
   ${theme.skills.mongoose}
 `;
 
+export const css_icon = css`
+  ${theme.skills.css}
+`;
+
+
+export const github = css`
+  ${theme.skills.github}
+`;
+
+export const bootstrap = css`
+  ${theme.skills.bootstrap}
+`;
+
+export const html = css`
+  ${theme.skills.html}
+`;
+
+

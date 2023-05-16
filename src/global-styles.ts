@@ -10,7 +10,9 @@ body {
   background-color: ${theme.background.light};
   width: 100%;
   overflow-y: auto;
-  font-family: ${theme.fonts};
+
+  font-family: ${theme.fonts.fontFamily};
+  font-weight: ${theme.fonts.fontWeight};
 
   &::-webkit-scrollbar {
     display: none;

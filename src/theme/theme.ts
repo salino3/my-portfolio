@@ -49,6 +49,22 @@ export const theme = {
       width: "70%",
       background: "#3FA037",
     },
+    css: {
+      width: "100%",
+      background: "#33A9DC",
+    },
+    github: {
+      width: "80%",
+      background: "#000000",
+    },
+    bootstrap: {
+      width: "90%",
+      background: "#6639B6"
+    },
+    html: {
+      width: "100%",
+      background: "#F16529",
+    },
   },
   spacing: (multiplier: number = 1) => `${multiplier * BASE_SPACING}px`,
 };

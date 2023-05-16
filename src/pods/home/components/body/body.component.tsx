@@ -43,6 +43,26 @@ export const BodyComponent: React.FC = () => {
             img="../../../../../public/assets/icons/mongoose.svg"
             skill="Mongoose"
           />
+          <ProgressLine
+            className={classes.css_icon}
+            img="../../../../../public/assets/icons/css3-original-wordmark.svg"
+            skill="CSS"
+          />
+          <ProgressLine
+            className={classes.github}
+            img="../../../../../public/assets/icons/github-original.svg"
+            skill="GitHub"
+          />
+          <ProgressLine
+            className={classes.bootstrap}
+            img="../../../../../public/assets/icons/bootstrap-original.svg"
+            skill="Bootstrap"
+          />
+          <ProgressLine
+            className={classes.html}
+            img="../../../../../public/assets/icons/html5-original-wordmark.svg"
+            skill="HTML"
+          />
         </main>
       </div>
     </div>
