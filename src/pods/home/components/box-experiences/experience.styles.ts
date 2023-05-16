@@ -71,9 +71,8 @@ export const titleArticle = css`
     line-height: 12px;
   }
 
-  @media (min-width: 1024px) {
-    white-space: nowrap;
-  }
+  white-space: nowrap;
+
 `;
 
 export const ul = css`

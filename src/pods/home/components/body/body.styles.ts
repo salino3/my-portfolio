@@ -3,26 +3,33 @@ import { theme } from '../../../../theme';
 
 
 export const root = css`
-display: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   ${theme.background.middle};
   padding: ${theme.spacing(8)} 0px;
+  margin-bottom: 10rem;
+  height: auto;
 
   @media (min-width: 1024px) {
-    padding: 0px ${theme.spacing(36)};
+    height: 1100px;
+
+    /* padding: 0px ${theme.spacing(36)}; */
   }
 `;
 
 export const container = css`
   ${theme.background.dark};
   padding: 0px ${theme.spacing(8)};
-
+  width: 100%;
+  
   @media (min-width: 1024px) {
-    margin: ${theme.spacing(7)} 0px;
-    /* position: absolute;
-    top: -50px; 
-    bottom: -50px;
-    left: 0;
-    right: 0; */
+    position:  absolute;
+    width: unset;
+    margin: 0px 160px;
+    top: 34rem;
+ 
   }
 `;
 
