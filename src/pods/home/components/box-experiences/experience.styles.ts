@@ -17,7 +17,7 @@ export const title = css`
 
 export const hr = css`
   border: 1px solid #edf7fa;
-  margin: ${theme.spacing(4)} 0px;
+  margin: ${theme.spacing(4)} 0px ${theme.spacing(8)};
   width: ${theme.spacing(28)};
 `;
 
@@ -34,7 +34,8 @@ export const article = css`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: ${theme.spacing(6)};
+
+  gap: ${theme.spacing(10)};
 
   @media (min-width: 1024px) {
     flex-direction: row;
@@ -45,11 +46,17 @@ export const contentArcticle = css`
   display: flex;
   flex-direction: row;
   gap: ${theme.spacing(4)};
+  align-self: flex-start;
   justify-content: space-between;
+
+  img {
+    max-width: 64px;
+    width: 100%;
+
+  }
 `;
 
 export const titleArticle = css`
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,6 +70,10 @@ export const titleArticle = css`
     font-size: 8px;
     line-height: 12px;
   }
+
+  @media (min-width: 1024px) {
+    white-space: nowrap;
+  }
 `;
 
 export const ul = css`
@@ -72,6 +83,8 @@ export const ul = css`
   list-style-type: disc;
   text-align: start;
 
+
+  padding: 0px 32px;
   @media (min-width: 1024px) {
     max-width: 40%;
   }
