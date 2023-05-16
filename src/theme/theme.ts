@@ -3,9 +3,7 @@ const BASE_SPACING = 4;
 export const theme = {
   background: {
     light: "#FFFFFF",
-    middle: { background: "#0A2230", 
-              opacity: 0.25 
-    },
+    middle: { background: "#0A2230", opacity: 0.25 },
     dark: {
       background: "#0A2230",
       border: "1px solid #000000",
@@ -15,12 +13,12 @@ export const theme = {
   palette: {
     primary: "#21243D",
     danger: "#D71E38",
-    text_header: "#000000",
+    text_header: "#21243D;",
     text_content: "#FDFDFD",
   },
   fonts: {
-     fontFamily: "Heebo",
-     fontWeight: "normal"
-     },
+    fontFamily: "Heebo",
+    fontWeight: "normal",
+  },
   spacing: (multiplier: number = 1) => `${multiplier * BASE_SPACING}px`,
 };

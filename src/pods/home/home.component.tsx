@@ -1,13 +1,13 @@
 import React from 'react';
+import { Header } from "./components";
 import * as classes from './home.styles';
-import { Navbar } from './components';
 
 export const Home: React.FC = () => {
 
   return (
     <div className={classes.root}>
-      <Navbar />
+      <Header />
       Home: React.FC
     </div>
-  )
+  );
 }
