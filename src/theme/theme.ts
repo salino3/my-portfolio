@@ -20,5 +20,9 @@ export const theme = {
     fontFamily: "Heebo",
     fontWeight: "normal",
   },
+  skills: {
+     emotion: 100
+
+  },
   spacing: (multiplier: number = 1) => `${multiplier * BASE_SPACING}px`,
 };
