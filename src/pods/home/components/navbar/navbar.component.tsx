@@ -13,7 +13,7 @@ export const Navbar: React.FC = () => {
             rel="noopener"
             href="https://www.linkedin.com/in/flavio-forte-/"
           >
-            <img src="/assets/icons/LinkeIn-icon.svg" alt="LinkedIn" />
+            <img src="/assets/icons/LinkedIn-icon.svg" alt="LinkedIn" />
           </a>
         </li>
         <li>

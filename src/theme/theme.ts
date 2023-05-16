@@ -3,13 +3,14 @@ const BASE_SPACING = 4;
 export const theme = {
   background: {
     light: "#FFFFFF",
-    middle: { background: "#0A2230", opacity: 0.25 },
+    middle: { background: "rgba(10, 34, 48, 0.25)" },
     dark: {
       background: "#0A2230",
       border: "1px solid #000000",
     },
-    icons: "#25314D",
   },
+  icons: "#25314D",
+
   palette: {
     primary: "#21243D",
     danger: "#D71E38",
@@ -20,5 +21,81 @@ export const theme = {
     fontFamily: "Heebo",
     fontWeight: "normal",
   },
+  skills: {
+    emotion: {
+      width: "100%",
+      background: "#6639b6",
+    },
+    js: {
+      width: "100%",
+      background: "#F0DB4F",
+    },
+    ts: {
+      width: "100%",
+      background: "#007ACC",
+    },
+    gql: {
+      width: "80%",
+      background: "#E535AB",
+    },
+    sass: {
+      width: "100%",
+      background: "#CB6699",
+    },
+    node: {
+      width: "80%",
+      background: "#6DB35A",
+    },
+    mysql: {
+      width: "70%",
+      background: "#00758F",
+    },
+    mongoose: {
+      width: "70%",
+      background: "#3FA037",
+    },
+    vue: {
+      width: "60%",
+      background: "#4FC08D",
+    },
+    css: {
+      width: "100%",
+      background: "#33A9DC",
+    },
+    github: {
+      width: "80%",
+      background: "#000000",
+    },
+    vsc: {
+      width: "100%",
+      background: "#1E1E1E",
+    },
+    bootstrap: {
+      width: "90%",
+      background: "#6639B6",
+    },
+    git: {
+      width: "70%",
+      background: "#F34F29",
+    },
+    html: {
+      width: "100%",
+      background: "#F16529",
+    },
+    react: {
+      width: "100%",
+      background: "#61DAFB",
+    },
+    angular: {
+      width: "60%",
+      background: "#DD0031",
+    },
+    mui: {
+      width: "60%",
+      background: "#1976D2",
+    },
+  },
   spacing: (multiplier: number = 1) => `${multiplier * BASE_SPACING}px`,
 };
+
+
