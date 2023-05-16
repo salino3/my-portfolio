@@ -31,7 +31,7 @@ export const container = css`
 
     hr {
       display: unset;
-      height: 350px;
+      height: 450px;
       border: 1px solid #edf7fa;
       margin: 1rem;
     }
