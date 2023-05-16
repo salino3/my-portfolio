@@ -9,6 +9,7 @@ export const BodyComponent: React.FC = () => {
         <ProgressLine
           className={classes.emotion}
           img="/assets/icons/logo--emotion.svg"
+          
         />
         {/*  */}
         <ProgressLine

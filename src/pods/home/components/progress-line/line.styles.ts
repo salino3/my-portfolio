@@ -1,7 +1,8 @@
 import { css } from "@emotion/css";
+import styled from "@emotion/styled";
 
 
-export const item = css`
+export const Section = styled.section`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -14,6 +15,6 @@ export const progressBar = css`
   width: 160px;
 `;
 
-export const progressBarInner = css`
+export const Line  = styled.div`
   height: 100%;
 `;
