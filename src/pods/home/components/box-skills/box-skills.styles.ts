@@ -15,7 +15,6 @@ export const container = css`
     width: 100%;
     justify-content: center;
     gap: 16px;
-
   }
 
   hr {
@@ -26,7 +25,6 @@ export const container = css`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
     gap: ${theme.spacing(8)};
 
     hr {

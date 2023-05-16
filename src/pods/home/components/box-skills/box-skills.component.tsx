@@ -1,8 +1,8 @@
-import React from 'react';
-import { ProgressLine } from '../progress-line';
-import * as classes from './box-skills.styles';
+import React from "react";
+import { ProgressLine } from "../progress-line";
+import * as classes from "./box-skills.styles";
 
-export const BoxSkill: React.FC = () => {
+export const BoxSkills: React.FC = () => {
   return (
     <div className={classes.container}>
       <div>
@@ -102,4 +102,4 @@ export const BoxSkill: React.FC = () => {
       </div>
     </div>
   );
-}
+};
