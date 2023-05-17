@@ -3,32 +3,52 @@ import { theme } from '../../../../theme';
 
 
 export const root = css`
-  display: flex;
+  display: relative;
+  height: 100%;
   justify-content: center;
   align-items: center;
 
-  ${theme.background.middle};
-  padding: ${theme.spacing(8)} 0px;
-  height: auto;
-
   @media (min-width: 1024px) {
-    height: 1100px;
-
-    /* padding: 0px ${theme.spacing(36)}; */
+    padding: 3rem 0rem;
   }
 `;
 
 export const container = css`
-  ${theme.background.dark};
-  padding: 0px ${theme.spacing(8)};
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  
+
+  ${theme.background.middle}
+  padding: ${theme.spacing(12)} 0px;
+
   @media (min-width: 1024px) {
-    position:  absolute;
+    padding: 0px;
+    height: 81rem;
+  }
+
+  @media (min-width: 1072px) {
+    height: 77.5rem;
+  }
+
+  @media (min-width: 1156px) {
+    height: 75rem;
+  }
+`;
+
+
+export const content = css`
+  ${theme.background.dark};
+  padding: 16px ${theme.spacing(8)};
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: 1024px) {
+    position: absolute;
+    top: 35rem;
     width: unset;
-    margin: 0px 160px;
-    top: 34rem;
- 
+    padding: 3rem ${theme.spacing(8)};
+    margin: 0rem 10rem;
   }
 `;
 
