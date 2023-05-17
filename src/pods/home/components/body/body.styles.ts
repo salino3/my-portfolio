@@ -9,7 +9,6 @@ export const root = css`
 
   ${theme.background.middle};
   padding: ${theme.spacing(8)} 0px;
-  margin-bottom: 10rem;
   height: auto;
 
   @media (min-width: 1024px) {
