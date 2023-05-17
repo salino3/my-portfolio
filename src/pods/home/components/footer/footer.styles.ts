@@ -35,6 +35,7 @@ export const a = css`
   height: 30px;
 
   img {
+    cursor: pointer;
     min-width: 30px;
     min-height: 30px;
     width: 100%;
