@@ -81,9 +81,13 @@ export const ul = css`
   gap: 5px;
   list-style-type: disc;
   text-align: start;
-
-
   padding: 0px 32px;
+
+  a{
+   text-decoration: none;
+   color: ${theme.palette.text_content}
+ }
+
   @media (min-width: 1024px) {
     max-width: 40%;
   }

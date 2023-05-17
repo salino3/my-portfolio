@@ -27,10 +27,14 @@ export const BoxExperiences: React.FC = () => {
               My role here is to build the site layout and styles using @emotion
               (CSS in JS) and following a Figma based design.
             </li>
-            <li>https://github.com/Lemoncode/manfred-export-app</li>
+            <li>
+              <a href="https://github.com/Lemoncode/manfred-export-app">
+                https://github.com/Lemoncode/manfred-export-app
+              </a>
+            </li>
           </ul>
         </article>
-        {/*  */}
+
         <article className={classes.article}>
           <div className={classes.contentArcticle}>
             <img src="/assets/icons/icon_omix.svg" alt="omix" />
@@ -44,8 +48,16 @@ export const BoxExperiences: React.FC = () => {
               Simple Ecommerce simulation, SPA React application: list of items,
               details, and shopping cart implementation.
             </li>
-            <li>https://github.com/salino3/react-e-commerce-vite</li>
-            <li>https://e-commerce-lemoncode.vercel.app/</li>
+            <li>
+              <a href="https://github.com/salino3/react-e-commerce-vite">
+                https://github.com/salino3/react-e-commerce-vite
+              </a>
+            </li>
+            <li>
+              <a href="https://e-commerce-lemoncode.vercel.app/">
+                https://e-commerce-lemoncode.vercel.app/
+              </a>
+            </li>
           </ul>
         </article>
       </div>
