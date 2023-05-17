@@ -26,6 +26,9 @@ export const nav = css`
 
 `;
 
+export const popUp = css`
+  display: none;
+`;
 
 export const a = css`
   width: 30px;
