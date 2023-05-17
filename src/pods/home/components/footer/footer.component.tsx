@@ -6,9 +6,9 @@ import * as classes from "./footer.styles";
 
 export const Footer: React.FC = () => {
 
-     const [showPopup, setShowPopup] = React.useState(false);
+  const [showPopup, setShowPopup] = React.useState(false);
 
-   const onClick = () => {
+  const onClick = () => {
        setShowPopup(false);
    };
 
@@ -18,12 +18,11 @@ export const Footer: React.FC = () => {
 
   return (
     <div className={classes.root}>
-      <nav className={classes.nav}>
         <PopUp
           className={cx({ [classes.popUp]: !showPopup })}
           onClick={onClick}
         />
-
+      <nav className={classes.nav}>
         <ul>
           <li>
             <a href={`mailto:${theme.rutaMyEmail}`} className={classes.a}>
