@@ -93,6 +93,7 @@ export const theme = {
       background: "#1976D2",
     },
   },
+  rutaMyEmail: "programacionflavio@gmail.com",
   spacing: (multiplier: number = 1) => `${multiplier * BASE_SPACING}px`,
 };
 

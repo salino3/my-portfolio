@@ -9,7 +9,7 @@ export const root = css`
   align-items: center;
 
   @media (min-width: 1024px) {
-    padding: 3rem 0rem;
+    padding: 4rem 0rem;
   }
 `;
 
