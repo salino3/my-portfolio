@@ -9,8 +9,6 @@ export const theme = {
       border: "1px solid #000000",
     },
   },
-  icons: "#25314D",
-
   palette: {
     primary: "#21243D",
     danger: "#D71E38",
@@ -68,7 +66,7 @@ export const theme = {
     },
     vsc: {
       width: "100%",
-      background: "#1E1E1E",
+      background: "#007ACC",
     },
     bootstrap: {
       width: "90%",

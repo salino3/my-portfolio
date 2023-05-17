@@ -41,6 +41,10 @@ export const content = css`
   justify-content: center;
   align-items: center;
 
+    a {
+      text-decoration: none;
+    }
+  
   @media (min-width: 1024px) {
     justify-content: unset;
     align-items: unset;
@@ -99,6 +103,10 @@ export const description = css`
 `;
 
 export const btn = css`
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: ${theme.spacing(2)} ${theme.spacing(4.25)};
   background-color: ${theme.palette.danger};
   margin: 0px ${theme.spacing(8)} ${theme.spacing(8)};
