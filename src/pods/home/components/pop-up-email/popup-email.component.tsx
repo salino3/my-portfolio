@@ -30,13 +30,18 @@ export const PopUpEmail: React.FC<Props> = (props) => {
           <button className={classes.btnClose} onClick={onClick}>
             <img src="/assets/icons/icon-X.svg" alt="close" />
           </button>
-          <div>
-            <img src="/assets/icons/phone-icon-2.svg" alt="mobile" />
+          <div className={classes.emailIcon}>
+            <img src="/assets/icons/email-icon.svg" alt="mobile" />
           </div>
-          <p className={""}>programacionflavio@gmail.com</p>
+          <p>programacionflavio@gmail.com</p>
           <button onClick={handleClick} className={classes.btnCopy}>
             {copied ? "Copied!" : "Copy"}
           </button>
+          <a href={`mailto:${myEmail}`} className={classes.a} >
+            <button  className={classes.btnSend}>
+              Send
+            </button>
+          </a>
         </div>
       </section>
     </main>

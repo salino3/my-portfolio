@@ -55,7 +55,7 @@ export const content = css`
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
-    letter-spacing: 0.38px;
+    letter-spacing: 0.3px;
     color: #25314d;
   }
 
@@ -71,6 +71,17 @@ export const btnClose = css`
   width: 20px;
  
   img {
+    width: 100%;
+  }
+`;
+
+
+export const mobileIcon = css`
+  width: 60px;
+  height: 60px;
+
+  img {
+    width: 100%;
     width: 100%;
   }
 `;

@@ -47,15 +47,15 @@ export const content = css`
   box-shadow: 0px 2px 8px rgba(31, 3, 34, 0.15);
   border-radius: 24px;
   width: 100%;
-  top: 42%;
-  height: 262px;
+  top: 40%;
+  height: 300px;
   background-color: ${theme.background.light};
 
   p {
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
-    letter-spacing: 0.38px;
+    letter-spacing: 0.3px;
     color: #25314d;
   }
 
@@ -75,6 +75,22 @@ export const btnClose = css`
   }
 `;
 
+export const emailIcon = css`
+
+ width: 60px;
+ height: 60px;
+
+  img {
+  width: 100%;
+  width: 100%;
+  }
+`;
+
+export const a = css`
+ 
+ width: 100%;
+`
+
 export const btnCopy = css`
   width: 100%;
   height: 50px;
@@ -85,5 +101,17 @@ export const btnCopy = css`
   font-size: 18px;
   line-height: 26px;
   background-color: ${theme.palette.danger};
+  color: ${theme.palette.text_content};
+`;
+
+export const btnSend = css`
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: ${theme.background.dark.background};
   color: ${theme.palette.text_content};
 `;

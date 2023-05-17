@@ -30,10 +30,10 @@ export const PopUpMobile: React.FC<Props> = (props) => {
           <button className={classes.btnClose} onClick={onClick}>
             <img src="/assets/icons/icon-X.svg" alt="close" />
           </button>
-          <div>
+          <div className={classes.mobileIcon}>
             <img src="/assets/icons/phone-icon-2.svg" alt="mobile" />
           </div>
-          <p className={""}>666 87 36 70</p>
+          <p>666 87 36 70</p>
           <button onClick={handleClick} className={classes.btnCopy}>
             {copied ? "Copied!" : "Copy"}
           </button>

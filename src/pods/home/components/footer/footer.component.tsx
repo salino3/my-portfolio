@@ -1,6 +1,5 @@
 import React from "react";
 import { cx } from "@emotion/css";
-import { theme } from "../../../../theme";
 import { PopUpMobile } from "../pop-up-mobile";
 import { PopUpEmail } from "../pop-up-email";
 import * as classes from "./footer.styles";
