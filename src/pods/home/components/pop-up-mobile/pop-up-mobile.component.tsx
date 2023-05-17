@@ -5,23 +5,23 @@ import * as classes from "./pop-up.styles";
 interface Props {
   className?: string;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
-};
+}
 
-export const PopUp: React.FC<Props> = (props) => {
+export const PopUpMobile: React.FC<Props> = (props) => {
   const { className, onClick } = props;
 
   const [copied, setCopied] = React.useState(false);
 
   function handleClick() {
- navigator.clipboard.writeText(myNumber);
- setCopied(true);
+    navigator.clipboard.writeText(myNumber);
+    setCopied(true);
 
- setTimeout(() => {
-    setCopied(false);
-  }, 1000);
-};
+    setTimeout(() => {
+      setCopied(false);
+    }, 1000);
+  };
 
-const myNumber: string = "666873670";
+  const myNumber: string = "666873670";
 
   return (
     <main className={cx(classes.main, className)}>

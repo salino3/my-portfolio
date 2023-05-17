@@ -5,14 +5,22 @@ export const main = css`
   animation: fadeIn;
   animation-duration: 2s;
   position: fixed;
-
+  z-index: 3;
   top: 0;
-  
+
   left: 0;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
+
+  @media (min-width: 700px) {
+    height: 120%;
+  }
+
+  @media (min-width: 1024px) {
+    height: 62%;
+  }
 `;
 
 export const container = css`

@@ -1,37 +1,54 @@
 import React from "react";
 import { cx } from "@emotion/css";
 import { theme } from "../../../../theme";
-import { PopUp } from "../pop-up";
+import { PopUpMobile } from "../pop-up-mobile";
+import { PopUpEmail } from "../pop-up-email";
 import * as classes from "./footer.styles";
 
 export const Footer: React.FC = () => {
-
-  const [showPopup, setShowPopup] = React.useState(false);
+  const [showPopupMobile, setShowPopupMobile] = React.useState(false);
+  const [showPopupEmail, setShowPopupEmail] = React.useState(false);
 
   const onClick = () => {
-       setShowPopup(false);
-   };
+    setShowPopupMobile(false);
+    setShowPopupEmail(false);
+  };
 
-   const handleHidePopup = () => {
-     setShowPopup(true);
-   };
+  const handlePopupMobile = () => {
+    setShowPopupMobile(true);
+  };
+
+  const handlePopupEmail= () => {
+    setShowPopupEmail(true);
+  };
 
   return (
     <div className={classes.root}>
-        <PopUp
-          className={cx({ [classes.popUp]: !showPopup })}
-          onClick={onClick}
-        />
+      <PopUpMobile
+        className={cx({ [classes.popUp]: !showPopupMobile })}
+        onClick={onClick}
+      />
+      <PopUpEmail
+        className={cx({ [classes.popUp]: !showPopupEmail })}
+        onClick={onClick}
+      />
       <nav className={classes.nav}>
         <ul>
           <li>
-            <a href={`mailto:${theme.rutaMyEmail}`} className={classes.a}>
+            {/* <a href={`mailto:${theme.rutaMyEmail}`} className={classes.a}>
               <img src="/assets/icons/email-icon.svg" alt="email" />
+            </a> */}
+            <a className={classes.a}>
+              <img
+                onClick={handlePopupEmail}
+                src="/assets/icons/email-icon.svg"
+                alt="email"
+              />
             </a>
           </li>
           <li className={classes.a}>
             <img
-              onClick={handleHidePopup}
+              onClick={handlePopupMobile}
               src="/assets/icons/phone-icon.svg"
               alt="phone"
             />
