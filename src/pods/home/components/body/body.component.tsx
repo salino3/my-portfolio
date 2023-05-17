@@ -7,12 +7,14 @@ export const BodyComponent: React.FC = () => {
   return (
     <div className={classes.root}>
       <div className={classes.container}>
-        <main className={classes.progressLines}>
-          <h2 className={classes.h2}>My Skills</h2>
-          <BoxSkills />
-          <hr className={classes.centralHr} />
-          <BoxExperiences />
-        </main>
+        <div className={classes.content}>
+          <main className={classes.progressLines}>
+            <h2 className={classes.h2}>My Skills</h2>
+            <BoxSkills />
+            <hr className={classes.centralHr} />
+            <BoxExperiences />
+          </main>
+        </div>
       </div>
     </div>
   );

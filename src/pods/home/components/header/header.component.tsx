@@ -1,12 +1,11 @@
-import React from 'react';
+import React from "react";
 import { useMediaQuery } from "react-responsive";
-import { Navbar } from '../navbar';
-import * as classes from './header.styles';
+import { Navbar } from "../navbar";
+import resumePDF from "../../../../../public/assets/CV_Flavio.pdf";
+import * as classes from "./header.styles";
 
 export const Header: React.FC = () => {
-
   const isMobile: boolean = useMediaQuery({ maxWidth: "725px" });
-
 
   return (
     <header className={classes.root}>
@@ -36,11 +35,11 @@ export const Header: React.FC = () => {
             learning and growing in the software development field and I search
             new challenges and opportunities.
           </div>
-          <div>
-          <button className={classes.btn}>Download Resume</button>
-          </div>
+          <a href={resumePDF} download="CV_Flavio.pdf">
+            <div className={classes.btn}>Download Resume</div>
+          </a>
         </div>
       </div>
     </header>
   );
-}
+};
