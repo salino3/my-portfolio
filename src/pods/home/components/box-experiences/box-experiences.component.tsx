@@ -8,7 +8,6 @@ export const BoxExperiences: React.FC = () => {
     <main className={classes.root}>
       <h3 className={classes.title}>Experiences</h3>
       <hr className={classes.hr} />
-
       <div className={classes.boxArcticles}>
         <article className={classes.article}>
           <div className={classes.contentArcticle}>
@@ -34,7 +33,6 @@ export const BoxExperiences: React.FC = () => {
             </li>
           </ul>
         </article>
-
         <article className={classes.article}>
           <div className={classes.contentArcticle}>
             <img src="/assets/icons/icon_omix.svg" alt="omix" />
