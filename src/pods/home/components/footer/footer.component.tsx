@@ -34,9 +34,6 @@ export const Footer: React.FC = () => {
       <nav className={classes.nav}>
         <ul>
           <li>
-            {/* <a href={`mailto:${theme.rutaMyEmail}`} className={classes.a}>
-              <img src="/assets/icons/email-icon.svg" alt="email" />
-            </a> */}
             <a className={classes.a}>
               <img
                 onClick={handlePopupEmail}

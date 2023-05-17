@@ -47,6 +47,8 @@ export const content = css`
   box-shadow: 0px 2px 8px rgba(31, 3, 34, 0.15);
   border-radius: 24px;
   width: 100%;
+  max-width: 360px;
+
   top: 40%;
   height: 300px;
   background-color: ${theme.background.light};
@@ -69,7 +71,7 @@ export const btnClose = css`
   top: 20px;
   right: 20px;
   width: 20px;
- 
+  cursor: pointer;
   img {
     width: 100%;
   }
@@ -87,9 +89,9 @@ export const emailIcon = css`
 `;
 
 export const a = css`
- 
- width: 100%;
-`
+  cursor: pointer;
+  width: 100%;
+`;
 
 export const btnCopy = css`
   width: 100%;
@@ -102,6 +104,7 @@ export const btnCopy = css`
   line-height: 26px;
   background-color: ${theme.palette.danger};
   color: ${theme.palette.text_content};
+  cursor: pointer;
 `;
 
 export const btnSend = css`
@@ -114,4 +117,5 @@ export const btnSend = css`
   line-height: 26px;
   background-color: ${theme.background.dark.background};
   color: ${theme.palette.text_content};
+  cursor: pointer;
 `;
