@@ -1,14 +1,29 @@
 import React from "react";
+import { cx } from "@emotion/css";
 import { theme } from "../../../../theme";
+import { PopUp } from "../pop-up";
 import * as classes from "./footer.styles";
 
 export const Footer: React.FC = () => {
 
-  
+     const [showPopup, setShowPopup] = React.useState(false);
+
+   const onClick = () => {
+       setShowPopup(false);
+   };
+
+   const handleHidePopup = () => {
+     setShowPopup(true);
+   };
 
   return (
     <div className={classes.root}>
       <nav className={classes.nav}>
+        <PopUp
+          className={cx({ [classes.popUp]: !showPopup })}
+          onClick={onClick}
+        />
+
         <ul>
           <li>
             <a href={`mailto:${theme.rutaMyEmail}`} className={classes.a}>
@@ -16,7 +31,11 @@ export const Footer: React.FC = () => {
             </a>
           </li>
           <li className={classes.a}>
-            <img src="/assets/icons/phone-icon.svg" alt="phone" />
+            <img
+              onClick={handleHidePopup}
+              src="/assets/icons/phone-icon.svg"
+              alt="phone"
+            />
           </li>
           <li>
             <a
