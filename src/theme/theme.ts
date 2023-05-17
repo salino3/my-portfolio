@@ -3,7 +3,7 @@ const BASE_SPACING = 4;
 export const theme = {
   background: {
     light: "#FFFFFF",
-    middle: { background: "rgba(10, 34, 48, 0.25)" },
+    middle: "10, 34, 48, 0.25" ,
     dark: {
       background: "#0A2230",
       border: "1px solid #000000",
