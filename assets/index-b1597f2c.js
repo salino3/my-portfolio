@@ -478,7 +478,7 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   background-color: ${T.palette.danger};
   color: ${T.palette.text_content};
   cursor: pointer;
-`,dv=e=>{const{className:t,handleModal:n}=e,[r,i]=$n.useState(!1);function l(){navigator.clipboard.writeText(o),i(!0),setTimeout(()=>{i(!1)},1e3)}const o="666873670";return k.jsx("div",{className:Gi(ov,t),children:k.jsx("div",{className:sv,children:k.jsxs("div",{className:uv,children:[k.jsx("img",{className:av,onClick:n,src:"/assets/icons/icon-X.svg",alt:"close"}),k.jsx("img",{className:cv,src:"/assets/icons/phone-icon-2.svg",alt:"mobile"}),k.jsx("p",{children:"666 87 36 70"}),k.jsx("button",{onClick:l,className:fv,children:r?"Copied!":"Copy"})]})})})},pv=L`
+`,dv=e=>{const{className:t,handleModal:n}=e,[r,i]=$n.useState(!1);function l(){navigator.clipboard.writeText(o),i(!0),setTimeout(()=>{i(!1)},1e3)}const o="666873670";return k.jsx("div",{className:Gi(ov,t),children:k.jsx("div",{className:sv,children:k.jsxs("div",{className:uv,children:[k.jsx("img",{className:av,onClick:n,src:"assets/icons/icon-X.svg",alt:"close"}),k.jsx("img",{className:cv,src:"assets/icons/phone-icon-2.svg",alt:"mobile"}),k.jsx("p",{children:"666 87 36 70"}),k.jsx("button",{onClick:l,className:fv,children:r?"Copied!":"Copy"})]})})})},pv=L`
   animation: fadeIn;
   animation-duration: 2s;
   position: fixed;
@@ -570,7 +570,7 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   background-color: ${T.background.dark.background};
   color: ${T.palette.text_content};
   cursor: pointer;
-`,xv=e=>{const{className:t,handleModal:n}=e,[r,i]=$n.useState(!1);function l(){navigator.clipboard.writeText(o),i(!0),setTimeout(()=>{i(!1)},1e3)}const o="programacionflavio@gmail.com";return k.jsx("div",{className:Gi(pv,t),children:k.jsxs("div",{className:mv,children:[k.jsx("img",{className:hv,onClick:n,src:"/assets/icons/icon-X.svg",alt:"close"}),k.jsx("img",{className:vv,src:"/assets/icons/email-icon.svg",alt:"mobile"}),k.jsx("p",{children:"programacionflavio@gmail.com"}),k.jsx("button",{onClick:l,className:yv,children:r?"Copied!":"Copy"}),k.jsx("a",{href:`mailto:${o}`,className:gv,children:k.jsx("button",{className:wv,children:"Send"})})]})})},kv=L`
+`,xv=e=>{const{className:t,handleModal:n}=e,[r,i]=$n.useState(!1);function l(){navigator.clipboard.writeText(o),i(!0),setTimeout(()=>{i(!1)},1e3)}const o="programacionflavio@gmail.com";return k.jsx("div",{className:Gi(pv,t),children:k.jsxs("div",{className:mv,children:[k.jsx("img",{className:hv,onClick:n,src:"assets/icons/icon-X.svg",alt:"close"}),k.jsx("img",{className:vv,src:"assets/icons/email-icon.svg",alt:"mobile"}),k.jsx("p",{children:"programacionflavio@gmail.com"}),k.jsx("button",{onClick:l,className:yv,children:r?"Copied!":"Copy"}),k.jsx("a",{href:`mailto:${o}`,className:gv,children:k.jsx("button",{className:wv,children:"Send"})})]})})},kv=L`
   display: flex;
   flex-direction: column;
   justify-content: center;
