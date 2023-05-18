@@ -268,7 +268,7 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   ${T.skills.angular}
 `,Yh=L`
   ${T.skills.mui}
-`,Kh=()=>k.jsxs("div",{className:Th,children:[k.jsxs("div",{children:[k.jsx(we,{className:Bh,img:"/assets/icons/react-original.svg",skill:"React"}),k.jsx(we,{className:Rh,img:"/assets/icons/typescript.svg",skill:"Typescript"}),k.jsx(we,{className:Nh,img:"/assets/icons/javascript.svg",skill:"Javascript"}),k.jsx(we,{className:Ah,img:"/assets/icons/css3-original-wordmark.svg",skill:"CSS"}),k.jsx(we,{className:Qh,img:"/assets/icons/html5-original-wordmark.svg",skill:"HTML"}),k.jsx(we,{className:zh,img:"/assets/icons/sass-original.svg",skill:"Sass"}),k.jsx(we,{className:Uh,img:"/assets/icons/vscode-original.svg",skill:"Visual Studio Code"}),k.jsx(we,{className:Oh,img:"/assets/icons/logo--emotion.svg",skill:"Emotion"}),k.jsx(we,{className:Mh,img:"/assets/icons/graphql-plain.svg",skill:"GraphQL"})]}),k.jsx("hr",{}),k.jsxs("div",{children:[k.jsx(we,{className:Lh,img:"/assets/icons/nodejs-plain.svg",skill:"NodeJS"}),k.jsx(we,{className:$h,img:"/assets/icons/mysql-original.svg",skill:"MySQL"}),k.jsx(we,{className:Fh,img:"/assets/icons/Github-white.svg",skill:"GitHub"}),k.jsx(we,{className:Wh,img:"/assets/icons/bootstrap-original.svg",skill:"Bootstrap"}),k.jsx(we,{className:Hh,img:"/assets/icons/git-original.svg",skill:"Git"}),k.jsx(we,{className:Ih,img:"/assets/icons/mongoose.svg",skill:"Mongoose"}),k.jsx(we,{className:Dh,img:"/assets/icons/vuejs-original.svg",skill:"Vue"}),k.jsx(we,{className:Vh,img:"/assets/icons/angularjs-original.svg",skill:"Angular"}),k.jsx(we,{className:Yh,img:"/assets/icons/materialui-original.svg",skill:"Material UI"})]})]}),Gh=L`
+`,Kh=()=>k.jsxs("div",{className:Th,children:[k.jsxs("div",{children:[k.jsx(we,{className:Bh,img:"assets/icons/react-original.svg",skill:"React"}),k.jsx(we,{className:Rh,img:"assets/icons/typescript.svg",skill:"Typescript"}),k.jsx(we,{className:Nh,img:"assets/icons/javascript.svg",skill:"Javascript"}),k.jsx(we,{className:Ah,img:"assets/icons/css3-original-wordmark.svg",skill:"CSS"}),k.jsx(we,{className:Qh,img:"assets/icons/html5-original-wordmark.svg",skill:"HTML"}),k.jsx(we,{className:zh,img:"assets/icons/sass-original.svg",skill:"Sass"}),k.jsx(we,{className:Uh,img:"assets/icons/vscode-original.svg",skill:"Visual Studio Code"}),k.jsx(we,{className:Oh,img:"assets/icons/logo--emotion.svg",skill:"Emotion"}),k.jsx(we,{className:Mh,img:"assets/icons/graphql-plain.svg",skill:"GraphQL"})]}),k.jsx("hr",{}),k.jsxs("div",{children:[k.jsx(we,{className:Lh,img:"assets/icons/nodejs-plain.svg",skill:"NodeJS"}),k.jsx(we,{className:$h,img:"assets/icons/mysql-original.svg",skill:"MySQL"}),k.jsx(we,{className:Fh,img:"assets/icons/Github-white.svg",skill:"GitHub"}),k.jsx(we,{className:Wh,img:"assets/icons/bootstrap-original.svg",skill:"Bootstrap"}),k.jsx(we,{className:Hh,img:"assets/icons/git-original.svg",skill:"Git"}),k.jsx(we,{className:Ih,img:"assets/icons/mongoose.svg",skill:"Mongoose"}),k.jsx(we,{className:Dh,img:"assets/icons/vuejs-original.svg",skill:"Vue"}),k.jsx(we,{className:Vh,img:"assets/icons/angularjs-original.svg",skill:"Angular"}),k.jsx(we,{className:Yh,img:"assets/icons/materialui-original.svg",skill:"Material UI"})]})]}),Gh=L`
 
  margin-bottom: ${T.spacing(25)};
 `,Xh=L`
@@ -343,7 +343,7 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   @media (min-width: 1024px) {
     max-width: 40%;
   }
-`,qh=()=>k.jsxs("main",{className:Gh,children:[k.jsx("h3",{className:Xh,children:"Experiences"}),k.jsx("hr",{className:Zh}),k.jsxs("div",{className:Jh,children:[k.jsxs("article",{className:sa,children:[k.jsxs("div",{className:ua,children:[k.jsx("img",{src:"/assets/icons/icon_manfred.svg",alt:"manfred"}),k.jsxs("div",{className:aa,children:[k.jsx("h4",{children:"Manfred Export"}),k.jsx("small",{children:" (Open source proyect - 2023)"})]})]}),k.jsxs("ul",{className:ca,children:[k.jsx("li",{children:"Web tool to export a JSON MAC profile (standard getManfred format) to Ms Word."}),k.jsx("li",{children:"My role here is to build the site layout and styles using @emotion (CSS in JS) and following a Figma based design."}),k.jsx("li",{children:k.jsx("a",{href:"https://github.com/Lemoncode/manfred-export-app",children:"https://github.com/Lemoncode/manfred-export-app"})})]})]}),k.jsxs("article",{className:sa,children:[k.jsxs("div",{className:ua,children:[k.jsx("img",{src:"/assets/icons/icon_omix.svg",alt:"omix"}),k.jsxs("div",{className:aa,children:[k.jsx("h4",{children:"e-commerce app"}),k.jsx("small",{children:" (Open source proyect - 2023)"})]})]}),k.jsxs("ul",{className:ca,children:[k.jsx("li",{children:"Simple Ecommerce simulation, SPA React application: list of items, details, and shopping cart implementation."}),k.jsx("li",{children:k.jsx("a",{href:"https://github.com/salino3/react-e-commerce-vite",children:"https://github.com/salino3/react-e-commerce-vite"})}),k.jsx("li",{children:k.jsx("a",{href:"https://e-commerce-lemoncode.vercel.app/",children:"https://e-commerce-lemoncode.vercel.app/"})})]})]})]})]}),bh=L`
+`,qh=()=>k.jsxs("main",{className:Gh,children:[k.jsx("h3",{className:Xh,children:"Experiences"}),k.jsx("hr",{className:Zh}),k.jsxs("div",{className:Jh,children:[k.jsxs("article",{className:sa,children:[k.jsxs("div",{className:ua,children:[k.jsx("img",{src:"assets/icons/icon_manfred.svg",alt:"manfred"}),k.jsxs("div",{className:aa,children:[k.jsx("h4",{children:"Manfred Export"}),k.jsx("small",{children:" (Open source proyect - 2023)"})]})]}),k.jsxs("ul",{className:ca,children:[k.jsx("li",{children:"Web tool to export a JSON MAC profile (standard getManfred format) to Ms Word."}),k.jsx("li",{children:"My role here is to build the site layout and styles using @emotion (CSS in JS) and following a Figma based design."}),k.jsx("li",{children:k.jsx("a",{href:"https://github.com/Lemoncode/manfred-export-app",children:"https://github.com/Lemoncode/manfred-export-app"})})]})]}),k.jsxs("article",{className:sa,children:[k.jsxs("div",{className:ua,children:[k.jsx("img",{src:"assets/icons/icon_omix.svg",alt:"omix"}),k.jsxs("div",{className:aa,children:[k.jsx("h4",{children:"e-commerce app"}),k.jsx("small",{children:" (Open source proyect - 2023)"})]})]}),k.jsxs("ul",{className:ca,children:[k.jsx("li",{children:"Simple Ecommerce simulation, SPA React application: list of items, details, and shopping cart implementation."}),k.jsx("li",{children:k.jsx("a",{href:"https://github.com/salino3/react-e-commerce-vite",children:"https://github.com/salino3/react-e-commerce-vite"})}),k.jsx("li",{children:k.jsx("a",{href:"https://e-commerce-lemoncode.vercel.app/",children:"https://e-commerce-lemoncode.vercel.app/"})})]})]})]})]}),bh=L`
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -438,7 +438,6 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   width: 100%;
   max-width: 346px;
   top: 35%;
-  height: 248px;
   background-color: ${T.background.light};
   padding-bottom: 15px;
 
@@ -459,9 +458,8 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
     top: 15%;
   }
 `,av=L`
-  position: relative;
-  top: 12px;
-  left: 170px;
+  padding-top: 20px;
+  align-self: flex-end;
   width: 20px;
   cursor: pointer;
 `,cv=L`
@@ -491,7 +489,6 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   justify-content: center;
   align-items: flex-end;
   background-color: rgba(0, 0, 0, 0.4);
-  /* padding-bottom: 50px; */
 `;L`
   width: 100%;
   display: flex;
@@ -517,7 +514,6 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   border-radius: 24px;
   width: 100%;
   max-width: 346px;
-  height: 285px;
   padding-bottom: 15px;
   background-color: ${T.background.light};
 
@@ -539,9 +535,8 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   }
 `,hv=L`
   
-  position: relative;
-  top: 20px;
-  left: 170px; 
+  padding-top: 20px;
+  align-self: flex-end;
   width: 20px;
   cursor: pointer;
 `,vv=L`
@@ -603,7 +598,7 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
 `,da=L`
     width: 30px;
     height: 30px;
-`,Ev=()=>{const[e,t]=$n.useState(!1),[n,r]=$n.useState(!1),i=()=>{r(s=>!s)},l=()=>{r(!0)},o=()=>{t(s=>!s)},u=()=>{t(!0)};return k.jsxs("div",{className:kv,children:[k.jsx(dv,{className:Gi({[fa]:!e}),handleModal:o}),k.jsx(xv,{className:Gi({[fa]:!n}),handleModal:i}),k.jsxs("nav",{className:Sv,children:[k.jsx("img",{onClick:l,src:"/assets/icons/email-icon.svg",alt:"email"}),k.jsx("img",{onClick:u,src:"/assets/icons/phone-icon.svg",alt:"phone"}),k.jsx("a",{"aria-label":"my-Github",target:"_blank",rel:"noopener",href:"https://github.com/salino3",children:k.jsx("img",{className:da,src:"/assets/icons/Github-icon.svg",alt:"github"})}),k.jsx("a",{"aria-label":"my-LinkedIn",target:"_blank",rel:"noopener",href:"https://www.linkedin.com/in/flavio-forte-/",children:k.jsx("img",{className:da,src:"/assets/icons/LinkedIn-icon.svg",alt:"linkedin"})})]}),k.jsx("p",{children:"Copyright ©2023 All rights reserved "})]})},_v=L`
+`,Ev=()=>{const[e,t]=$n.useState(!1),[n,r]=$n.useState(!1),i=()=>{r(s=>!s)},l=()=>{r(!0)},o=()=>{t(s=>!s)},u=()=>{t(!0)};return k.jsxs("div",{className:kv,children:[k.jsx(dv,{className:Gi({[fa]:!e}),handleModal:o}),k.jsx(xv,{className:Gi({[fa]:!n}),handleModal:i}),k.jsxs("nav",{className:Sv,children:[k.jsx("img",{onClick:l,src:"assets/icons/email-icon.svg",alt:"email"}),k.jsx("img",{onClick:u,src:"assets/icons/phone-icon.svg",alt:"phone"}),k.jsx("a",{"aria-label":"my-Github",target:"_blank",rel:"noopener",href:"https://github.com/salino3",children:k.jsx("img",{className:da,src:"assets/icons/Github-icon.svg",alt:"github"})}),k.jsx("a",{"aria-label":"my-LinkedIn",target:"_blank",rel:"noopener",href:"https://www.linkedin.com/in/flavio-forte-/",children:k.jsx("img",{className:da,src:"assets/icons/LinkedIn-icon.svg",alt:"linkedin"})})]}),k.jsx("p",{children:"Copyright ©2023 All rights reserved "})]})},_v=L`
 
 `,Cv=()=>k.jsxs("div",{className:_v,children:[k.jsx(dh,{}),k.jsx(lv,{}),k.jsx(Ev,{})]}),Pv=()=>k.jsx("div",{children:k.jsx(Cv,{})});function jv(){return k.jsx("div",{className:qm,children:k.jsx(Pv,{})})}Jm`
 
