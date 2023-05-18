@@ -18,7 +18,7 @@ export const root = css`
 export const container = css`
   width: 100%;
   display: flex;
-  
+
   justify-content: center;
   align-items: center;
   padding: ${theme.spacing(2.5)};
@@ -34,14 +34,14 @@ export const content = css`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  top: 5%;
+  top: 30%;
 
   gap: 22px;
   padding: 0px ${theme.spacing(4)};
   box-shadow: 0px 2px 8px rgba(31, 3, 34, 0.15);
   border-radius: 24px;
   width: 100%;
-  max-width: 360px;
+  max-width: 346px;
   height: 285px;
   padding-bottom: 15px;
   background-color: ${theme.background.light};
@@ -55,7 +55,12 @@ export const content = css`
   }
 
   @media (min-width: 725px) {
-    top: 12%;
+    top: 48%;
+    max-width: 360px;
+  }
+
+  @media (min-width: 1024px) {
+    top: 8%;
   }
 `;
 
@@ -72,9 +77,7 @@ export const emailIcon = css`
   width: 60px;
   height: 60px;
 
-  img {
-    width: 100%;
-  }
+ 
 `;
 
 export const a = css`
