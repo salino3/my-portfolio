@@ -33,6 +33,14 @@ export const container = css`
   @media (min-width: 1156px) {
     height: ${theme.spacing(296)};
   }
+
+  @media (min-width: 1311px) {
+    height: ${theme.spacing(288)};
+  }
+
+  @media (min-width: 1390px) {
+    height: ${theme.spacing(277)};
+  }
 `;
 
 
