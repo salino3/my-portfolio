@@ -1,31 +1,24 @@
 import { css } from "@emotion/css";
 import { theme } from "../../../../theme";
 
-export const main = css`
+export const root = css`
   animation: fadeIn;
   animation-duration: 2s;
   position: fixed;
-  z-index: 3;
   top: 0;
-
-  left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
-
-  @media (min-width: 700px) {
-    height: 120%;
-  }
-
-  @media (min-width: 1024px) {
-    height: 62%;
-  }
+  align-items: flex-end;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* padding-bottom: 50px; */
 `;
 
 export const container = css`
   width: 100%;
   display: flex;
+  
   justify-content: center;
   align-items: center;
   padding: ${theme.spacing(2.5)};
@@ -36,21 +29,21 @@ export const container = css`
 `;
 
 export const content = css`
-  position: sticky;
   display: flex;
+  position: fixed;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
-  padding: 0px ${theme.spacing(4)};
+  top: 5%;
 
+  gap: 22px;
+  padding: 0px ${theme.spacing(4)};
   box-shadow: 0px 2px 8px rgba(31, 3, 34, 0.15);
   border-radius: 24px;
   width: 100%;
   max-width: 360px;
-
-  top: 40%;
-  height: 300px;
+  height: 285px;
+  padding-bottom: 15px;
   background-color: ${theme.background.light};
 
   p {
@@ -62,29 +55,25 @@ export const content = css`
   }
 
   @media (min-width: 725px) {
-    top: 32%;
+    top: 12%;
   }
 `;
 
 export const btnClose = css`
-  position: absolute;
+  
+  position: relative;
   top: 20px;
-  right: 20px;
+  left: 170px; 
   width: 20px;
   cursor: pointer;
-  img {
-    width: 100%;
-  }
 `;
 
 export const emailIcon = css`
-
- width: 60px;
- height: 60px;
+  width: 60px;
+  height: 60px;
 
   img {
-  width: 100%;
-  width: 100%;
+    width: 100%;
   }
 `;
 
@@ -95,7 +84,7 @@ export const a = css`
 
 export const btnCopy = css`
   width: 100%;
-  height: 50px;
+  min-height: 50px;
   background: #d71e38;
   border-radius: 8px;
 
