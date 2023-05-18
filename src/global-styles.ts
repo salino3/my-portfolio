@@ -2,30 +2,22 @@ import { injectGlobal } from "@emotion/css";
 import "@fontsource/heebo";
 import { theme } from "./theme";
 
-
 injectGlobal`
 
 body {
 
-	  overflow-y: auto;
   &::-webkit-scrollbar {
     display: none;
   }
-
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-
 
   background-color: ${theme.background.light};
   width: 100%;
+  height: 100%;
   overflow-y: auto;
-
   font-family: ${theme.fonts.fontFamily};
   font-weight: ${theme.fonts.fontWeight};
+	position: relative;
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
 
   -ms-overflow-style: none;
   scrollbar-width: none;

@@ -5,22 +5,13 @@ export const main = css`
   animation: fadeIn;
   animation-duration: 2s;
   position: fixed;
-  z-index: 3;
   top: 0;
-
   left: 0;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-
-  @media (min-width: 700px) {
-    height: 120%;
-  }
-
-  @media (min-width: 1024px) {
-    height: 60%;
-  }
+  background-color: rgba(0, 0, 0, 0.4);
 `;
 
 export const container = css`
@@ -36,8 +27,8 @@ export const container = css`
 `;
 
 export const content = css`
-  position: sticky;
   display: flex;
+  position: fixed;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -48,7 +39,7 @@ export const content = css`
   border-radius: 24px;
   width: 100%;
   max-width: 360px;
-  top: 42%;
+  top: 16%;
   height: 262px;
   background-color: ${theme.background.light};
 
@@ -60,9 +51,9 @@ export const content = css`
     color: #25314d;
   }
 
-  @media (min-width: 725px) {
-    top: 32%;
-  }
+  /* @media (min-width: 725px) {
+    top: 18%;
+  } */
 `;
 
 export const btnClose = css`
@@ -83,7 +74,6 @@ export const mobileIcon = css`
   height: 60px;
 
   img {
-    width: 100%;
     width: 100%;
   }
 `;

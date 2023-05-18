@@ -1,4 +1,4 @@
-import {css} from '@emotion/css';
+import { css } from "@emotion/css";
 
 export const root = css`
   display: flex;
@@ -15,30 +15,23 @@ export const root = css`
 `;
 
 export const nav = css`
-  ul {
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 30%;
-
+  
+  img {
+    cursor: pointer;
   }
-
 `;
 
 export const popUp = css`
   display: none;
 `;
 
-export const a = css`
-  width: 30px;
-  height: 30px;
-
-  img {
-    cursor: pointer;
-    min-width: 30px;
-    min-height: 30px;
-    width: 100%;
-    height: 100%;
-  }
+export const icon = css`
+    width: 30px;
+    height: 30px;
 `;
