@@ -32,16 +32,17 @@ export const content = css`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 26px;
   padding: 0px ${theme.spacing(4)};
 
   box-shadow: 0px 2px 8px rgba(31, 3, 34, 0.15);
   border-radius: 24px;
   width: 100%;
-  max-width: 360px;
-  top: 16%;
-  height: 262px;
+  max-width: 346px;
+  top: 35%;
+  height: 248px;
   background-color: ${theme.background.light};
+  padding-bottom: 15px;
 
   p {
     font-weight: 700;
@@ -51,21 +52,22 @@ export const content = css`
     color: #25314d;
   }
 
-  /* @media (min-width: 725px) {
-    top: 18%;
-  } */
+  @media (min-width: 725px) {
+    top: 48%;
+    max-width: 360px;
+  }
+
+  @media (min-width: 1024px) {
+    top: 15%;
+  }
 `;
 
 export const btnClose = css`
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  position: relative;
+  top: 12px;
+  left: 170px;
   width: 20px;
   cursor: pointer;
-
-  img {
-    width: 100%;
-  }
 `;
 
 
@@ -73,9 +75,6 @@ export const mobileIcon = css`
   width: 60px;
   height: 60px;
 
-  img {
-    width: 100%;
-  }
 `;
 
 export const btnCopy = css`
