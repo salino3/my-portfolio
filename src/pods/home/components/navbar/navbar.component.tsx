@@ -13,7 +13,10 @@ export const Navbar: React.FC = () => {
             rel="noopener"
             href="https://www.linkedin.com/in/flavio-forte-/"
           >
-            <img src="/assets/icons/LinkedIn-icon.svg" alt="LinkedIn" />
+            <img
+              src="assets/icons/LinkedIn-icon.svg"
+              alt="LinkedIn"
+            />
           </a>
         </li>
         <li>
@@ -23,7 +26,7 @@ export const Navbar: React.FC = () => {
             rel="noopener"
             href="https://github.com/salino3"
           >
-            <img src="/assets/icons/Github-icon.svg" alt="Github" />
+            <img src="assets/icons/Github-icon.svg" alt="Github" />
           </a>
         </li>
       </ul>

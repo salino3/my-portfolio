@@ -40,7 +40,6 @@ export const content = css`
   width: 100%;
   max-width: 346px;
   top: 35%;
-  height: 248px;
   background-color: ${theme.background.light};
   padding-bottom: 15px;
 
@@ -63,9 +62,8 @@ export const content = css`
 `;
 
 export const btnClose = css`
-  position: relative;
-  top: 12px;
-  left: 170px;
+  padding-top: 20px;
+  align-self: flex-end;
   width: 20px;
   cursor: pointer;
 `;

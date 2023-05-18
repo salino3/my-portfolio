@@ -37,13 +37,13 @@ export const Footer: React.FC = () => {
       <nav className={classes.nav}>
         <img
           onClick={handlePopupEmail}
-          src="/assets/icons/email-icon.svg"
+          src="assets/icons/email-icon.svg"
           alt="email"
         />
 
         <img
           onClick={handlePopupMobile}
-          src="/assets/icons/phone-icon.svg"
+          src="assets/icons/phone-icon.svg"
           alt="phone"
         />
 
@@ -55,7 +55,7 @@ export const Footer: React.FC = () => {
         >
           <img
             className={classes.icon}
-            src="/assets/icons/Github-icon.svg"
+            src="assets/icons/Github-icon.svg"
             alt="github"
           />
         </a>
@@ -68,7 +68,7 @@ export const Footer: React.FC = () => {
         >
           <img
             className={classes.icon}
-            src="/assets/icons/LinkedIn-icon.svg"
+            src="assets/icons/LinkedIn-icon.svg"
             alt="linkedin"
           />
         </a>

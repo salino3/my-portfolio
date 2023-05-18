@@ -12,7 +12,6 @@ export const root = css`
   justify-content: center;
   align-items: flex-end;
   background-color: rgba(0, 0, 0, 0.4);
-  /* padding-bottom: 50px; */
 `;
 
 export const container = css`
@@ -42,7 +41,6 @@ export const content = css`
   border-radius: 24px;
   width: 100%;
   max-width: 346px;
-  height: 285px;
   padding-bottom: 15px;
   background-color: ${theme.background.light};
 
@@ -66,9 +64,8 @@ export const content = css`
 
 export const btnClose = css`
   
-  position: relative;
-  top: 20px;
-  left: 170px; 
+  padding-top: 20px;
+  align-self: flex-end;
   width: 20px;
   cursor: pointer;
 `;
