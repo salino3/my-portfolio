@@ -29,12 +29,12 @@ export const PopUpEmail: React.FC<Props> = (props) => {
         <img
           className={classes.btnClose}
           onClick={handleModal}
-          src="/assets/icons/icon-X.svg"
+          src="assets/icons/icon-X.svg"
           alt="close"
         />
         <img
           className={classes.emailIcon}
-          src="/assets/icons/email-icon.svg"
+          src="assets/icons/email-icon.svg"
           alt="mobile"
         />
         <p>programacionflavio@gmail.com</p>

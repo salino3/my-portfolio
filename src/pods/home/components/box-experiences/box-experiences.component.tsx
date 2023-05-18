@@ -11,7 +11,7 @@ export const BoxExperiences: React.FC = () => {
       <div className={classes.boxArcticles}>
         <article className={classes.article}>
           <div className={classes.contentArcticle}>
-            <img src="/assets/icons/icon_manfred.svg" alt="manfred" />
+            <img src="assets/icons/icon_manfred.svg" alt="manfred" />
             <div className={classes.titleArticle}>
               <h4>Manfred Export</h4>
               <small> (Open source proyect - 2023)</small>
@@ -35,7 +35,7 @@ export const BoxExperiences: React.FC = () => {
         </article>
         <article className={classes.article}>
           <div className={classes.contentArcticle}>
-            <img src="/assets/icons/icon_omix.svg" alt="omix" />
+            <img src="assets/icons/icon_omix.svg" alt="omix" />
             <div className={classes.titleArticle}>
               <h4>e-commerce app</h4>
               <small> (Open source proyect - 2023)</small>
