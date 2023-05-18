@@ -1,6 +1,7 @@
 import React from "react";
 import { BoxSkills } from "../box-skills";
 import { BoxExperiences } from "../box-experiences";
+import { BoxStudies } from "../box-studies";
 import * as classes from "./body.styles";
 
 export const BodyComponent: React.FC = () => {
@@ -15,6 +16,7 @@ export const BodyComponent: React.FC = () => {
             <BoxSkills />
             <hr className={classes.centralHr} />
             <BoxExperiences />
+            <BoxStudies />
           </main>
         </div>
       </div>
