@@ -5,22 +5,13 @@ export const main = css`
   animation: fadeIn;
   animation-duration: 2s;
   position: fixed;
-  z-index: 3;
   top: 0;
-
   left: 0;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-
-  @media (min-width: 700px) {
-    height: 120%;
-  }
-
-  @media (min-width: 1024px) {
-    height: 60%;
-  }
+  background-color: rgba(0, 0, 0, 0.4);
 `;
 
 export const container = css`
@@ -36,20 +27,22 @@ export const container = css`
 `;
 
 export const content = css`
-  position: sticky;
   display: flex;
+  position: fixed;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 26px;
   padding: 0px ${theme.spacing(4)};
 
   box-shadow: 0px 2px 8px rgba(31, 3, 34, 0.15);
   border-radius: 24px;
   width: 100%;
-  top: 42%;
-  height: 262px;
+  max-width: 346px;
+  top: 35%;
+  height: 248px;
   background-color: ${theme.background.light};
+  padding-bottom: 15px;
 
   p {
     font-weight: 700;
@@ -60,19 +53,21 @@ export const content = css`
   }
 
   @media (min-width: 725px) {
-    top: 32%;
+    top: 48%;
+    max-width: 360px;
+  }
+
+  @media (min-width: 1024px) {
+    top: 15%;
   }
 `;
 
 export const btnClose = css`
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  position: relative;
+  top: 12px;
+  left: 170px;
   width: 20px;
- 
-  img {
-    width: 100%;
-  }
+  cursor: pointer;
 `;
 
 
@@ -80,10 +75,6 @@ export const mobileIcon = css`
   width: 60px;
   height: 60px;
 
-  img {
-    width: 100%;
-    width: 100%;
-  }
 `;
 
 export const btnCopy = css`
@@ -97,4 +88,5 @@ export const btnCopy = css`
   line-height: 26px;
   background-color: ${theme.palette.danger};
   color: ${theme.palette.text_content};
+  cursor: pointer;
 `;

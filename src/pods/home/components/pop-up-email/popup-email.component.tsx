@@ -4,11 +4,11 @@ import * as classes from "./pop-up.styles";
 
 interface Props {
   className?: string;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  handleModal?: () => void;
 };
 
 export const PopUpEmail: React.FC<Props> = (props) => {
-  const { className, onClick } = props;
+  const { className, handleModal } = props;
 
   const [copied, setCopied] = React.useState(false);
 
@@ -24,26 +24,27 @@ export const PopUpEmail: React.FC<Props> = (props) => {
   const myEmail: string = "programacionflavio@gmail.com";
 
   return (
-    <main className={cx(classes.main, className)}>
-      <section className={classes.container}>
-        <div className={classes.content}>
-          <button className={classes.btnClose} onClick={onClick}>
-            <img src="/assets/icons/icon-X.svg" alt="close" />
-          </button>
-          <div className={classes.emailIcon}>
-            <img src="/assets/icons/email-icon.svg" alt="mobile" />
-          </div>
-          <p>programacionflavio@gmail.com</p>
-          <button onClick={handleClick} className={classes.btnCopy}>
-            {copied ? "Copied!" : "Copy"}
-          </button>
-          <a href={`mailto:${myEmail}`} className={classes.a} >
-            <button  className={classes.btnSend}>
-              Send
-            </button>
-          </a>
-        </div>
-      </section>
-    </main>
+    <div className={cx(classes.root, className)}>
+      <div className={classes.content}>
+        <img
+          className={classes.btnClose}
+          onClick={handleModal}
+          src="/assets/icons/icon-X.svg"
+          alt="close"
+        />
+        <img
+          className={classes.emailIcon}
+          src="/assets/icons/email-icon.svg"
+          alt="mobile"
+        />
+        <p>programacionflavio@gmail.com</p>
+        <button onClick={handleClick} className={classes.btnCopy}>
+          {copied ? "Copied!" : "Copy"}
+        </button>
+        <a href={`mailto:${myEmail}`} className={classes.a}>
+          <button className={classes.btnSend}>Send</button>
+        </a>
+      </div>
+    </div>
   );
 };

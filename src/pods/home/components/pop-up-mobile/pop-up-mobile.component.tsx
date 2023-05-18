@@ -4,11 +4,11 @@ import * as classes from "./pop-up.styles";
 
 interface Props {
   className?: string;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
-}
+  handleModal?: () => void;
+};
 
 export const PopUpMobile: React.FC<Props> = (props) => {
-  const { className, onClick } = props;
+  const { className, handleModal } = props;
 
   const [copied, setCopied] = React.useState(false);
 
@@ -24,21 +24,26 @@ export const PopUpMobile: React.FC<Props> = (props) => {
   const myNumber: string = "666873670";
 
   return (
-    <main className={cx(classes.main, className)}>
-      <section className={classes.container}>
+    <div className={cx(classes.main, className)}>
+      <div className={classes.container}>
         <div className={classes.content}>
-          <button className={classes.btnClose} onClick={onClick}>
-            <img src="/assets/icons/icon-X.svg" alt="close" />
-          </button>
-          <div className={classes.mobileIcon}>
-            <img src="/assets/icons/phone-icon-2.svg" alt="mobile" />
-          </div>
+          <img
+            className={classes.btnClose}
+            onClick={handleModal}
+            src="/assets/icons/icon-X.svg"
+            alt="close"
+          />
+          <img
+            className={classes.mobileIcon}
+            src="/assets/icons/phone-icon-2.svg"
+            alt="mobile"
+          />
           <p>666 87 36 70</p>
           <button onClick={handleClick} className={classes.btnCopy}>
             {copied ? "Copied!" : "Copy"}
           </button>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
   );
 };
