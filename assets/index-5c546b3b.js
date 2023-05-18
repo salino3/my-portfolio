@@ -43,27 +43,27 @@ Error generating stack: `+l.message+`
 object-assign
 (c) Sindre Sorhus
 @license MIT
-*/var s=Object.getOwnPropertySymbols,c=Object.prototype.hasOwnProperty,p=Object.prototype.propertyIsEnumerable;function m(w){if(w==null)throw new TypeError("Object.assign cannot be called with null or undefined");return Object(w)}function h(){try{if(!Object.assign)return!1;var w=new String("abc");if(w[5]="de",Object.getOwnPropertyNames(w)[0]==="5")return!1;for(var g={},v=0;v<10;v++)g["_"+String.fromCharCode(v)]=v;var _=Object.getOwnPropertyNames(g).map(function(a){return g[a]});if(_.join("")!=="0123456789")return!1;var f={};return"abcdefghijklmnopqrst".split("").forEach(function(a){f[a]=a}),Object.keys(Object.assign({},f)).join("")==="abcdefghijklmnopqrst"}catch{return!1}}u.exports=h()?Object.assign:function(w,g){for(var v,_=m(w),f,a=1;a<arguments.length;a++){v=Object(arguments[a]);for(var d in v)c.call(v,d)&&(_[d]=v[d]);if(s){f=s(v);for(var y=0;y<f.length;y++)p.call(v,f[y])&&(_[f[y]]=v[f[y]])}}return _}},"./node_modules/prop-types/checkPropTypes.js":(u,s,c)=>{var p=function(){};{var m=c("./node_modules/prop-types/lib/ReactPropTypesSecret.js"),h={},w=c("./node_modules/prop-types/lib/has.js");p=function(v){var _="Warning: "+v;typeof console<"u"&&console.error(_);try{throw new Error(_)}catch{}}}function g(v,_,f,a,d){for(var y in v)if(w(v,y)){var S;try{if(typeof v[y]!="function"){var E=Error((a||"React class")+": "+f+" type `"+y+"` is invalid; it must be a function, usually from the `prop-types` package, but received `"+typeof v[y]+"`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");throw E.name="Invariant Violation",E}S=v[y](_,y,a,f,null,m)}catch(O){S=O}if(S&&!(S instanceof Error)&&p((a||"React class")+": type specification of "+f+" `"+y+"` is invalid; the type checker function must return `null` or an `Error` but returned a "+typeof S+". You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument)."),S instanceof Error&&!(S.message in h)){h[S.message]=!0;var x=d?d():"";p("Failed "+f+" type: "+S.message+(x??""))}}}g.resetWarningCache=function(){h={}},u.exports=g},"./node_modules/prop-types/factoryWithTypeCheckers.js":(u,s,c)=>{var p=c("./node_modules/react-is/index.js"),m=c("./node_modules/object-assign/index.js"),h=c("./node_modules/prop-types/lib/ReactPropTypesSecret.js"),w=c("./node_modules/prop-types/lib/has.js"),g=c("./node_modules/prop-types/checkPropTypes.js"),v=function(){};v=function(f){var a="Warning: "+f;typeof console<"u"&&console.error(a);try{throw new Error(a)}catch{}};function _(){return null}u.exports=function(f,a){var d=typeof Symbol=="function"&&Symbol.iterator,y="@@iterator";function S(j){var $=j&&(d&&j[d]||j[y]);if(typeof $=="function")return $}var E="<<anonymous>>",x={array:A("array"),bigint:A("bigint"),bool:A("boolean"),func:A("function"),number:A("number"),object:A("object"),string:A("string"),symbol:A("symbol"),any:F(),arrayOf:I,element:me(),elementType:$e(),instanceOf:Be,node:U(),objectOf:R,oneOf:qt,oneOfType:D,shape:ae,exact:Rt};function O(j,$){return j===$?j!==0||1/j===1/$:j!==j&&$!==$}function P(j,$){this.message=j,this.data=$&&typeof $=="object"?$:{},this.stack=""}P.prototype=Error.prototype;function N(j){var $={},Y=0;function Q(G,H,B,X,b,Z,M){if(X=X||E,Z=Z||B,M!==h){if(a){var ye=new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use `PropTypes.checkPropTypes()` to call them. Read more at http://fb.me/use-check-prop-types");throw ye.name="Invariant Violation",ye}else if(typeof console<"u"){var lt=X+":"+B;!$[lt]&&Y<3&&(v("You are manually calling a React.PropTypes validation function for the `"+Z+"` prop on `"+X+"`. This is deprecated and will throw in the standalone `prop-types` package. You may be seeing this warning due to a third-party PropTypes library. See https://fb.me/react-warning-dont-call-proptypes for details."),$[lt]=!0,Y++)}}return H[B]==null?G?H[B]===null?new P("The "+b+" `"+Z+"` is marked as required "+("in `"+X+"`, but its value is `null`.")):new P("The "+b+" `"+Z+"` is marked as required in "+("`"+X+"`, but its value is `undefined`.")):null:j(H,B,X,b,Z)}var W=Q.bind(null,!1);return W.isRequired=Q.bind(null,!0),W}function A(j){function $(Y,Q,W,G,H,B){var X=Y[Q],b=ge(X);if(b!==j){var Z=Ve(X);return new P("Invalid "+G+" `"+H+"` of type "+("`"+Z+"` supplied to `"+W+"`, expected ")+("`"+j+"`."),{expectedType:j})}return null}return N($)}function F(){return N(_)}function I(j){function $(Y,Q,W,G,H){if(typeof j!="function")return new P("Property `"+H+"` of component `"+W+"` has invalid PropType notation inside arrayOf.");var B=Y[Q];if(!Array.isArray(B)){var X=ge(B);return new P("Invalid "+G+" `"+H+"` of type "+("`"+X+"` supplied to `"+W+"`, expected an array."))}for(var b=0;b<B.length;b++){var Z=j(B,b,W,G,H+"["+b+"]",h);if(Z instanceof Error)return Z}return null}return N($)}function me(){function j($,Y,Q,W,G){var H=$[Y];if(!f(H)){var B=ge(H);return new P("Invalid "+W+" `"+G+"` of type "+("`"+B+"` supplied to `"+Q+"`, expected a single ReactElement."))}return null}return N(j)}function $e(){function j($,Y,Q,W,G){var H=$[Y];if(!p.isValidElementType(H)){var B=ge(H);return new P("Invalid "+W+" `"+G+"` of type "+("`"+B+"` supplied to `"+Q+"`, expected a single ReactElement type."))}return null}return N(j)}function Be(j){function $(Y,Q,W,G,H){if(!(Y[Q]instanceof j)){var B=j.name||E,X=Hr(Y[Q]);return new P("Invalid "+G+" `"+H+"` of type "+("`"+X+"` supplied to `"+W+"`, expected ")+("instance of `"+B+"`."))}return null}return N($)}function qt(j){if(!Array.isArray(j))return arguments.length>1?v("Invalid arguments supplied to oneOf, expected an array, got "+arguments.length+" arguments. A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z])."):v("Invalid argument supplied to oneOf, expected an array."),_;function $(Y,Q,W,G,H){for(var B=Y[Q],X=0;X<j.length;X++)if(O(B,j[X]))return null;var b=JSON.stringify(j,function(M,ye){var lt=Ve(ye);return lt==="symbol"?String(ye):ye});return new P("Invalid "+G+" `"+H+"` of value `"+String(B)+"` "+("supplied to `"+W+"`, expected one of "+b+"."))}return N($)}function R(j){function $(Y,Q,W,G,H){if(typeof j!="function")return new P("Property `"+H+"` of component `"+W+"` has invalid PropType notation inside objectOf.");var B=Y[Q],X=ge(B);if(X!=="object")return new P("Invalid "+G+" `"+H+"` of type "+("`"+X+"` supplied to `"+W+"`, expected an object."));for(var b in B)if(w(B,b)){var Z=j(B,b,W,G,H+"."+b,h);if(Z instanceof Error)return Z}return null}return N($)}function D(j){if(!Array.isArray(j))return v("Invalid argument supplied to oneOfType, expected an instance of array."),_;for(var $=0;$<j.length;$++){var Y=j[$];if(typeof Y!="function")return v("Invalid argument supplied to oneOfType. Expected an array of check functions, but received "+hl(Y)+" at index "+$+"."),_}function Q(W,G,H,B,X){for(var b=[],Z=0;Z<j.length;Z++){var M=j[Z],ye=M(W,G,H,B,X,h);if(ye==null)return null;ye.data&&w(ye.data,"expectedType")&&b.push(ye.data.expectedType)}var lt=b.length>0?", expected one of type ["+b.join(", ")+"]":"";return new P("Invalid "+B+" `"+X+"` supplied to "+("`"+H+"`"+lt+"."))}return N(Q)}function U(){function j($,Y,Q,W,G){return Ie($[Y])?null:new P("Invalid "+W+" `"+G+"` supplied to "+("`"+Q+"`, expected a ReactNode."))}return N(j)}function te(j,$,Y,Q,W){return new P((j||"React class")+": "+$+" type `"+Y+"."+Q+"` is invalid; it must be a function, usually from the `prop-types` package, but received `"+W+"`.")}function ae(j){function $(Y,Q,W,G,H){var B=Y[Q],X=ge(B);if(X!=="object")return new P("Invalid "+G+" `"+H+"` of type `"+X+"` "+("supplied to `"+W+"`, expected `object`."));for(var b in j){var Z=j[b];if(typeof Z!="function")return te(W,G,H,b,Ve(Z));var M=Z(B,b,W,G,H+"."+b,h);if(M)return M}return null}return N($)}function Rt(j){function $(Y,Q,W,G,H){var B=Y[Q],X=ge(B);if(X!=="object")return new P("Invalid "+G+" `"+H+"` of type `"+X+"` "+("supplied to `"+W+"`, expected `object`."));var b=m({},Y[Q],j);for(var Z in b){var M=j[Z];if(w(j,Z)&&typeof M!="function")return te(W,G,H,Z,Ve(M));if(!M)return new P("Invalid "+G+" `"+H+"` key `"+Z+"` supplied to `"+W+"`.\nBad object: "+JSON.stringify(Y[Q],null,"  ")+`
-Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z,h);if(ye)return ye}return null}return N($)}function Ie(j){switch(typeof j){case"number":case"string":case"undefined":return!0;case"boolean":return!j;case"object":if(Array.isArray(j))return j.every(Ie);if(j===null||f(j))return!0;var $=S(j);if($){var Y=$.call(j),Q;if($!==j.entries){for(;!(Q=Y.next()).done;)if(!Ie(Q.value))return!1}else for(;!(Q=Y.next()).done;){var W=Q.value;if(W&&!Ie(W[1]))return!1}}else return!1;return!0;default:return!1}}function bt(j,$){return j==="symbol"?!0:$?$["@@toStringTag"]==="Symbol"||typeof Symbol=="function"&&$ instanceof Symbol:!1}function ge(j){var $=typeof j;return Array.isArray(j)?"array":j instanceof RegExp?"object":bt($,j)?"symbol":$}function Ve(j){if(typeof j>"u"||j===null)return""+j;var $=ge(j);if($==="object"){if(j instanceof Date)return"date";if(j instanceof RegExp)return"regexp"}return $}function hl(j){var $=Ve(j);switch($){case"array":case"object":return"an "+$;case"boolean":case"date":case"regexp":return"a "+$;default:return $}}function Hr(j){return!j.constructor||!j.constructor.name?E:j.constructor.name}return x.checkPropTypes=g,x.resetWarningCache=g.resetWarningCache,x.PropTypes=x,x}},"./node_modules/prop-types/index.js":(u,s,c)=>{{var p=c("./node_modules/react-is/index.js"),m=!0;u.exports=c("./node_modules/prop-types/factoryWithTypeCheckers.js")(p.isElement,m)}},"./node_modules/prop-types/lib/ReactPropTypesSecret.js":u=>{var s="SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";u.exports=s},"./node_modules/prop-types/lib/has.js":u=>{u.exports=Function.call.bind(Object.prototype.hasOwnProperty)},"./node_modules/react-is/cjs/react-is.development.js":(u,s)=>{/** @license React v16.13.1
+*/var s=Object.getOwnPropertySymbols,c=Object.prototype.hasOwnProperty,p=Object.prototype.propertyIsEnumerable;function m(w){if(w==null)throw new TypeError("Object.assign cannot be called with null or undefined");return Object(w)}function h(){try{if(!Object.assign)return!1;var w=new String("abc");if(w[5]="de",Object.getOwnPropertyNames(w)[0]==="5")return!1;for(var g={},v=0;v<10;v++)g["_"+String.fromCharCode(v)]=v;var _=Object.getOwnPropertyNames(g).map(function(a){return g[a]});if(_.join("")!=="0123456789")return!1;var f={};return"abcdefghijklmnopqrst".split("").forEach(function(a){f[a]=a}),Object.keys(Object.assign({},f)).join("")==="abcdefghijklmnopqrst"}catch{return!1}}u.exports=h()?Object.assign:function(w,g){for(var v,_=m(w),f,a=1;a<arguments.length;a++){v=Object(arguments[a]);for(var d in v)c.call(v,d)&&(_[d]=v[d]);if(s){f=s(v);for(var y=0;y<f.length;y++)p.call(v,f[y])&&(_[f[y]]=v[f[y]])}}return _}},"./node_modules/prop-types/checkPropTypes.js":(u,s,c)=>{var p=function(){};{var m=c("./node_modules/prop-types/lib/ReactPropTypesSecret.js"),h={},w=c("./node_modules/prop-types/lib/has.js");p=function(v){var _="Warning: "+v;typeof console<"u"&&console.error(_);try{throw new Error(_)}catch{}}}function g(v,_,f,a,d){for(var y in v)if(w(v,y)){var S;try{if(typeof v[y]!="function"){var E=Error((a||"React class")+": "+f+" type `"+y+"` is invalid; it must be a function, usually from the `prop-types` package, but received `"+typeof v[y]+"`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");throw E.name="Invariant Violation",E}S=v[y](_,y,a,f,null,m)}catch(O){S=O}if(S&&!(S instanceof Error)&&p((a||"React class")+": type specification of "+f+" `"+y+"` is invalid; the type checker function must return `null` or an `Error` but returned a "+typeof S+". You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument)."),S instanceof Error&&!(S.message in h)){h[S.message]=!0;var x=d?d():"";p("Failed "+f+" type: "+S.message+(x??""))}}}g.resetWarningCache=function(){h={}},u.exports=g},"./node_modules/prop-types/factoryWithTypeCheckers.js":(u,s,c)=>{var p=c("./node_modules/react-is/index.js"),m=c("./node_modules/object-assign/index.js"),h=c("./node_modules/prop-types/lib/ReactPropTypesSecret.js"),w=c("./node_modules/prop-types/lib/has.js"),g=c("./node_modules/prop-types/checkPropTypes.js"),v=function(){};v=function(f){var a="Warning: "+f;typeof console<"u"&&console.error(a);try{throw new Error(a)}catch{}};function _(){return null}u.exports=function(f,a){var d=typeof Symbol=="function"&&Symbol.iterator,y="@@iterator";function S(T){var $=T&&(d&&T[d]||T[y]);if(typeof $=="function")return $}var E="<<anonymous>>",x={array:A("array"),bigint:A("bigint"),bool:A("boolean"),func:A("function"),number:A("number"),object:A("object"),string:A("string"),symbol:A("symbol"),any:F(),arrayOf:I,element:me(),elementType:$e(),instanceOf:Be,node:U(),objectOf:R,oneOf:qt,oneOfType:D,shape:ae,exact:Rt};function O(T,$){return T===$?T!==0||1/T===1/$:T!==T&&$!==$}function P(T,$){this.message=T,this.data=$&&typeof $=="object"?$:{},this.stack=""}P.prototype=Error.prototype;function N(T){var $={},Y=0;function Q(G,H,B,X,b,Z,M){if(X=X||E,Z=Z||B,M!==h){if(a){var ye=new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use `PropTypes.checkPropTypes()` to call them. Read more at http://fb.me/use-check-prop-types");throw ye.name="Invariant Violation",ye}else if(typeof console<"u"){var lt=X+":"+B;!$[lt]&&Y<3&&(v("You are manually calling a React.PropTypes validation function for the `"+Z+"` prop on `"+X+"`. This is deprecated and will throw in the standalone `prop-types` package. You may be seeing this warning due to a third-party PropTypes library. See https://fb.me/react-warning-dont-call-proptypes for details."),$[lt]=!0,Y++)}}return H[B]==null?G?H[B]===null?new P("The "+b+" `"+Z+"` is marked as required "+("in `"+X+"`, but its value is `null`.")):new P("The "+b+" `"+Z+"` is marked as required in "+("`"+X+"`, but its value is `undefined`.")):null:T(H,B,X,b,Z)}var W=Q.bind(null,!1);return W.isRequired=Q.bind(null,!0),W}function A(T){function $(Y,Q,W,G,H,B){var X=Y[Q],b=ge(X);if(b!==T){var Z=Ve(X);return new P("Invalid "+G+" `"+H+"` of type "+("`"+Z+"` supplied to `"+W+"`, expected ")+("`"+T+"`."),{expectedType:T})}return null}return N($)}function F(){return N(_)}function I(T){function $(Y,Q,W,G,H){if(typeof T!="function")return new P("Property `"+H+"` of component `"+W+"` has invalid PropType notation inside arrayOf.");var B=Y[Q];if(!Array.isArray(B)){var X=ge(B);return new P("Invalid "+G+" `"+H+"` of type "+("`"+X+"` supplied to `"+W+"`, expected an array."))}for(var b=0;b<B.length;b++){var Z=T(B,b,W,G,H+"["+b+"]",h);if(Z instanceof Error)return Z}return null}return N($)}function me(){function T($,Y,Q,W,G){var H=$[Y];if(!f(H)){var B=ge(H);return new P("Invalid "+W+" `"+G+"` of type "+("`"+B+"` supplied to `"+Q+"`, expected a single ReactElement."))}return null}return N(T)}function $e(){function T($,Y,Q,W,G){var H=$[Y];if(!p.isValidElementType(H)){var B=ge(H);return new P("Invalid "+W+" `"+G+"` of type "+("`"+B+"` supplied to `"+Q+"`, expected a single ReactElement type."))}return null}return N(T)}function Be(T){function $(Y,Q,W,G,H){if(!(Y[Q]instanceof T)){var B=T.name||E,X=Hr(Y[Q]);return new P("Invalid "+G+" `"+H+"` of type "+("`"+X+"` supplied to `"+W+"`, expected ")+("instance of `"+B+"`."))}return null}return N($)}function qt(T){if(!Array.isArray(T))return arguments.length>1?v("Invalid arguments supplied to oneOf, expected an array, got "+arguments.length+" arguments. A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z])."):v("Invalid argument supplied to oneOf, expected an array."),_;function $(Y,Q,W,G,H){for(var B=Y[Q],X=0;X<T.length;X++)if(O(B,T[X]))return null;var b=JSON.stringify(T,function(M,ye){var lt=Ve(ye);return lt==="symbol"?String(ye):ye});return new P("Invalid "+G+" `"+H+"` of value `"+String(B)+"` "+("supplied to `"+W+"`, expected one of "+b+"."))}return N($)}function R(T){function $(Y,Q,W,G,H){if(typeof T!="function")return new P("Property `"+H+"` of component `"+W+"` has invalid PropType notation inside objectOf.");var B=Y[Q],X=ge(B);if(X!=="object")return new P("Invalid "+G+" `"+H+"` of type "+("`"+X+"` supplied to `"+W+"`, expected an object."));for(var b in B)if(w(B,b)){var Z=T(B,b,W,G,H+"."+b,h);if(Z instanceof Error)return Z}return null}return N($)}function D(T){if(!Array.isArray(T))return v("Invalid argument supplied to oneOfType, expected an instance of array."),_;for(var $=0;$<T.length;$++){var Y=T[$];if(typeof Y!="function")return v("Invalid argument supplied to oneOfType. Expected an array of check functions, but received "+hl(Y)+" at index "+$+"."),_}function Q(W,G,H,B,X){for(var b=[],Z=0;Z<T.length;Z++){var M=T[Z],ye=M(W,G,H,B,X,h);if(ye==null)return null;ye.data&&w(ye.data,"expectedType")&&b.push(ye.data.expectedType)}var lt=b.length>0?", expected one of type ["+b.join(", ")+"]":"";return new P("Invalid "+B+" `"+X+"` supplied to "+("`"+H+"`"+lt+"."))}return N(Q)}function U(){function T($,Y,Q,W,G){return Ie($[Y])?null:new P("Invalid "+W+" `"+G+"` supplied to "+("`"+Q+"`, expected a ReactNode."))}return N(T)}function te(T,$,Y,Q,W){return new P((T||"React class")+": "+$+" type `"+Y+"."+Q+"` is invalid; it must be a function, usually from the `prop-types` package, but received `"+W+"`.")}function ae(T){function $(Y,Q,W,G,H){var B=Y[Q],X=ge(B);if(X!=="object")return new P("Invalid "+G+" `"+H+"` of type `"+X+"` "+("supplied to `"+W+"`, expected `object`."));for(var b in T){var Z=T[b];if(typeof Z!="function")return te(W,G,H,b,Ve(Z));var M=Z(B,b,W,G,H+"."+b,h);if(M)return M}return null}return N($)}function Rt(T){function $(Y,Q,W,G,H){var B=Y[Q],X=ge(B);if(X!=="object")return new P("Invalid "+G+" `"+H+"` of type `"+X+"` "+("supplied to `"+W+"`, expected `object`."));var b=m({},Y[Q],T);for(var Z in b){var M=T[Z];if(w(T,Z)&&typeof M!="function")return te(W,G,H,Z,Ve(M));if(!M)return new P("Invalid "+G+" `"+H+"` key `"+Z+"` supplied to `"+W+"`.\nBad object: "+JSON.stringify(Y[Q],null,"  ")+`
+Valid keys: `+JSON.stringify(Object.keys(T),null,"  "));var ye=M(B,Z,W,G,H+"."+Z,h);if(ye)return ye}return null}return N($)}function Ie(T){switch(typeof T){case"number":case"string":case"undefined":return!0;case"boolean":return!T;case"object":if(Array.isArray(T))return T.every(Ie);if(T===null||f(T))return!0;var $=S(T);if($){var Y=$.call(T),Q;if($!==T.entries){for(;!(Q=Y.next()).done;)if(!Ie(Q.value))return!1}else for(;!(Q=Y.next()).done;){var W=Q.value;if(W&&!Ie(W[1]))return!1}}else return!1;return!0;default:return!1}}function bt(T,$){return T==="symbol"?!0:$?$["@@toStringTag"]==="Symbol"||typeof Symbol=="function"&&$ instanceof Symbol:!1}function ge(T){var $=typeof T;return Array.isArray(T)?"array":T instanceof RegExp?"object":bt($,T)?"symbol":$}function Ve(T){if(typeof T>"u"||T===null)return""+T;var $=ge(T);if($==="object"){if(T instanceof Date)return"date";if(T instanceof RegExp)return"regexp"}return $}function hl(T){var $=Ve(T);switch($){case"array":case"object":return"an "+$;case"boolean":case"date":case"regexp":return"a "+$;default:return $}}function Hr(T){return!T.constructor||!T.constructor.name?E:T.constructor.name}return x.checkPropTypes=g,x.resetWarningCache=g.resetWarningCache,x.PropTypes=x,x}},"./node_modules/prop-types/index.js":(u,s,c)=>{{var p=c("./node_modules/react-is/index.js"),m=!0;u.exports=c("./node_modules/prop-types/factoryWithTypeCheckers.js")(p.isElement,m)}},"./node_modules/prop-types/lib/ReactPropTypesSecret.js":u=>{var s="SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";u.exports=s},"./node_modules/prop-types/lib/has.js":u=>{u.exports=Function.call.bind(Object.prototype.hasOwnProperty)},"./node_modules/react-is/cjs/react-is.development.js":(u,s)=>{/** @license React v16.13.1
  * react-is.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */(function(){var c=typeof Symbol=="function"&&Symbol.for,p=c?Symbol.for("react.element"):60103,m=c?Symbol.for("react.portal"):60106,h=c?Symbol.for("react.fragment"):60107,w=c?Symbol.for("react.strict_mode"):60108,g=c?Symbol.for("react.profiler"):60114,v=c?Symbol.for("react.provider"):60109,_=c?Symbol.for("react.context"):60110,f=c?Symbol.for("react.async_mode"):60111,a=c?Symbol.for("react.concurrent_mode"):60111,d=c?Symbol.for("react.forward_ref"):60112,y=c?Symbol.for("react.suspense"):60113,S=c?Symbol.for("react.suspense_list"):60120,E=c?Symbol.for("react.memo"):60115,x=c?Symbol.for("react.lazy"):60116,O=c?Symbol.for("react.block"):60121,P=c?Symbol.for("react.fundamental"):60117,N=c?Symbol.for("react.responder"):60118,A=c?Symbol.for("react.scope"):60119;function F(M){return typeof M=="string"||typeof M=="function"||M===h||M===a||M===g||M===w||M===y||M===S||typeof M=="object"&&M!==null&&(M.$$typeof===x||M.$$typeof===E||M.$$typeof===v||M.$$typeof===_||M.$$typeof===d||M.$$typeof===P||M.$$typeof===N||M.$$typeof===A||M.$$typeof===O)}function I(M){if(typeof M=="object"&&M!==null){var ye=M.$$typeof;switch(ye){case p:var lt=M.type;switch(lt){case f:case a:case h:case g:case w:case y:return lt;default:var Fs=lt&&lt.$$typeof;switch(Fs){case _:case d:case x:case E:case v:return Fs;default:return ye}}case m:return ye}}}var me=f,$e=a,Be=_,qt=v,R=p,D=d,U=h,te=x,ae=E,Rt=m,Ie=g,bt=w,ge=y,Ve=!1;function hl(M){return Ve||(Ve=!0,console.warn("The ReactIs.isAsyncMode() alias has been deprecated, and will be removed in React 17+. Update your code to use ReactIs.isConcurrentMode() instead. It has the exact same API.")),Hr(M)||I(M)===f}function Hr(M){return I(M)===a}function j(M){return I(M)===_}function $(M){return I(M)===v}function Y(M){return typeof M=="object"&&M!==null&&M.$$typeof===p}function Q(M){return I(M)===d}function W(M){return I(M)===h}function G(M){return I(M)===x}function H(M){return I(M)===E}function B(M){return I(M)===m}function X(M){return I(M)===g}function b(M){return I(M)===w}function Z(M){return I(M)===y}s.AsyncMode=me,s.ConcurrentMode=$e,s.ContextConsumer=Be,s.ContextProvider=qt,s.Element=R,s.ForwardRef=D,s.Fragment=U,s.Lazy=te,s.Memo=ae,s.Portal=Rt,s.Profiler=Ie,s.StrictMode=bt,s.Suspense=ge,s.isAsyncMode=hl,s.isConcurrentMode=Hr,s.isContextConsumer=j,s.isContextProvider=$,s.isElement=Y,s.isForwardRef=Q,s.isFragment=W,s.isLazy=G,s.isMemo=H,s.isPortal=B,s.isProfiler=X,s.isStrictMode=b,s.isSuspense=Z,s.isValidElementType=F,s.typeOf=I})()},"./node_modules/react-is/index.js":(u,s,c)=>{u.exports=c("./node_modules/react-is/cjs/react-is.development.js")},"./node_modules/shallow-equal/dist/index.esm.js":(u,s,c)=>{c.r(s),c.d(s,{shallowEqualArrays:()=>m,shallowEqualObjects:()=>p});function p(h,w){if(h===w)return!0;if(!h||!w)return!1;var g=Object.keys(h),v=Object.keys(w),_=g.length;if(v.length!==_)return!1;for(var f=0;f<_;f++){var a=g[f];if(h[a]!==w[a]||!Object.prototype.hasOwnProperty.call(w,a))return!1}return!0}function m(h,w){if(h===w)return!0;if(!h||!w)return!1;var g=h.length;if(w.length!==g)return!1;for(var v=0;v<g;v++)if(h[v]!==w[v])return!1;return!0}},"./src/Component.ts":function(u,s,c){var p=this&&this.__rest||function(g,v){var _={};for(var f in g)Object.prototype.hasOwnProperty.call(g,f)&&v.indexOf(f)<0&&(_[f]=g[f]);if(g!=null&&typeof Object.getOwnPropertySymbols=="function")for(var a=0,f=Object.getOwnPropertySymbols(g);a<f.length;a++)v.indexOf(f[a])<0&&Object.prototype.propertyIsEnumerable.call(g,f[a])&&(_[f[a]]=g[f[a]]);return _},m=this&&this.__importDefault||function(g){return g&&g.__esModule?g:{default:g}};Object.defineProperty(s,"__esModule",{value:!0});var h=m(c("./src/useMediaQuery.ts")),w=function(g){var v=g.children,_=g.device,f=g.onChange,a=p(g,["children","device","onChange"]),d=(0,h.default)(a,_,f);return typeof v=="function"?v(d):d?v:null};s.default=w},"./src/Context.ts":(u,s,c)=>{Object.defineProperty(s,"__esModule",{value:!0});var p=c("react"),m=(0,p.createContext)(void 0);s.default=m},"./src/index.ts":function(u,s,c){var p=this&&this.__importDefault||function(v){return v&&v.__esModule?v:{default:v}};Object.defineProperty(s,"__esModule",{value:!0}),s.Context=s.toQuery=s.useMediaQuery=s.default=void 0;var m=p(c("./src/useMediaQuery.ts"));s.useMediaQuery=m.default;var h=p(c("./src/Component.ts"));s.default=h.default;var w=p(c("./src/toQuery.ts"));s.toQuery=w.default;var g=p(c("./src/Context.ts"));s.Context=g.default},"./src/mediaQuery.ts":function(u,s,c){var p=this&&this.__assign||function(){return p=Object.assign||function(y){for(var S,E=1,x=arguments.length;E<x;E++){S=arguments[E];for(var O in S)Object.prototype.hasOwnProperty.call(S,O)&&(y[O]=S[O])}return y},p.apply(this,arguments)},m=this&&this.__rest||function(y,S){var E={};for(var x in y)Object.prototype.hasOwnProperty.call(y,x)&&S.indexOf(x)<0&&(E[x]=y[x]);if(y!=null&&typeof Object.getOwnPropertySymbols=="function")for(var O=0,x=Object.getOwnPropertySymbols(y);O<x.length;O++)S.indexOf(x[O])<0&&Object.prototype.propertyIsEnumerable.call(y,x[O])&&(E[x[O]]=y[x[O]]);return E},h=this&&this.__importDefault||function(y){return y&&y.__esModule?y:{default:y}};Object.defineProperty(s,"__esModule",{value:!0});var w=h(c("./node_modules/prop-types/index.js")),g=w.default.oneOfType([w.default.string,w.default.number]),v={all:w.default.bool,grid:w.default.bool,aural:w.default.bool,braille:w.default.bool,handheld:w.default.bool,print:w.default.bool,projection:w.default.bool,screen:w.default.bool,tty:w.default.bool,tv:w.default.bool,embossed:w.default.bool},_={orientation:w.default.oneOf(["portrait","landscape"]),scan:w.default.oneOf(["progressive","interlace"]),aspectRatio:w.default.string,deviceAspectRatio:w.default.string,height:g,deviceHeight:g,width:g,deviceWidth:g,color:w.default.bool,colorIndex:w.default.bool,monochrome:w.default.bool,resolution:g,type:Object.keys(v)};_.type;var f=m(_,["type"]),a=p({minAspectRatio:w.default.string,maxAspectRatio:w.default.string,minDeviceAspectRatio:w.default.string,maxDeviceAspectRatio:w.default.string,minHeight:g,maxHeight:g,minDeviceHeight:g,maxDeviceHeight:g,minWidth:g,maxWidth:g,minDeviceWidth:g,maxDeviceWidth:g,minColor:w.default.number,maxColor:w.default.number,minColorIndex:w.default.number,maxColorIndex:w.default.number,minMonochrome:w.default.number,maxMonochrome:w.default.number,minResolution:g,maxResolution:g},f),d=p(p({},v),a);s.default={all:d,types:v,matchers:_,features:a}},"./src/toQuery.ts":function(u,s,c){var p=this&&this.__importDefault||function(f){return f&&f.__esModule?f:{default:f}};Object.defineProperty(s,"__esModule",{value:!0});var m=p(c("./node_modules/hyphenate-style-name/index.js")),h=p(c("./src/mediaQuery.ts")),w=function(f){return"not ".concat(f)},g=function(f,a){var d=(0,m.default)(f);return typeof a=="number"&&(a="".concat(a,"px")),a===!0?d:a===!1?w(d):"(".concat(d,": ").concat(a,")")},v=function(f){return f.join(" and ")},_=function(f){var a=[];return Object.keys(h.default.all).forEach(function(d){var y=f[d];y!=null&&a.push(g(d,y))}),v(a)};s.default=_},"./src/useMediaQuery.ts":function(u,s,c){var p=this&&this.__importDefault||function(P){return P&&P.__esModule?P:{default:P}};Object.defineProperty(s,"__esModule",{value:!0});var m=c("react"),h=p(c("./node_modules/matchmediaquery/index.js")),w=p(c("./node_modules/hyphenate-style-name/index.js")),g=c("./node_modules/shallow-equal/dist/index.esm.js"),v=p(c("./src/toQuery.ts")),_=p(c("./src/Context.ts")),f=function(P){return P.query||(0,v.default)(P)},a=function(P){if(P){var N=Object.keys(P);return N.reduce(function(A,F){return A[(0,w.default)(F)]=P[F],A},{})}},d=function(){var P=(0,m.useRef)(!1);return(0,m.useEffect)(function(){P.current=!0},[]),P.current},y=function(P){var N=(0,m.useContext)(_.default),A=function(){return a(P)||a(N)},F=(0,m.useState)(A),I=F[0],me=F[1];return(0,m.useEffect)(function(){var $e=A();(0,g.shallowEqualObjects)(I,$e)||me($e)},[P,N]),I},S=function(P){var N=function(){return f(P)},A=(0,m.useState)(N),F=A[0],I=A[1];return(0,m.useEffect)(function(){var me=N();F!==me&&I(me)},[P]),F},E=function(P,N){var A=function(){return(0,h.default)(P,N||{},!!N)},F=(0,m.useState)(A),I=F[0],me=F[1],$e=d();return(0,m.useEffect)(function(){if($e){var Be=A();return me(Be),function(){Be&&Be.dispose()}}},[P,N]),I},x=function(P){var N=(0,m.useState)(P.matches),A=N[0],F=N[1];return(0,m.useEffect)(function(){var I=function(me){F(me.matches)};return P.addListener(I),F(P.matches),function(){P.removeListener(I)}},[P]),A},O=function(P,N,A){var F=y(N),I=S(P);if(!I)throw new Error("Invalid or missing MediaQuery!");var me=E(I,F),$e=x(me),Be=d();return(0,m.useEffect)(function(){Be&&A&&A($e)},[$e]),(0,m.useEffect)(function(){return function(){me&&me.dispose()}},[]),$e};s.default=O},react:u=>{u.exports=n}},i={};function l(u){var s=i[u];if(s!==void 0)return s.exports;var c=i[u]={exports:{}};return r[u].call(c.exports,c,c.exports,l),c.exports}l.d=(u,s)=>{for(var c in s)l.o(s,c)&&!l.o(u,c)&&Object.defineProperty(u,c,{enumerable:!0,get:s[c]})},l.o=(u,s)=>Object.prototype.hasOwnProperty.call(u,s),l.r=u=>{typeof Symbol<"u"&&Symbol.toStringTag&&Object.defineProperty(u,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(u,"__esModule",{value:!0})};var o=l("./src/index.ts");return o})())})(Ff);var bm=Ff.exports;const eh=4,T={background:{light:"#FFFFFF",middle:"10, 34, 48, 0.25",dark:{background:"#0A2230",border:"1px solid #000000"}},palette:{primary:"#21243D",danger:"#D71E38",text_header:"#21243D;",text_content:"#FDFDFD"},fonts:{fontFamily:"Heebo",fontWeight:"normal"},skills:{emotion:{width:"100%",background:"#6639b6"},js:{width:"100%",background:"#F0DB4F"},ts:{width:"100%",background:"#007ACC"},gql:{width:"80%",background:"#E535AB"},sass:{width:"100%",background:"#CB6699"},node:{width:"80%",background:"#6DB35A"},mysql:{width:"70%",background:"#00758F"},mongoose:{width:"70%",background:"#3FA037"},vue:{width:"60%",background:"#4FC08D"},css:{width:"100%",background:"#33A9DC"},github:{width:"80%",background:"#000000"},vsc:{width:"100%",background:"#007ACC"},bootstrap:{width:"90%",background:"#6639B6"},git:{width:"70%",background:"#F34F29"},html:{width:"100%",background:"#F16529"},react:{width:"100%",background:"#61DAFB"},angular:{width:"60%",background:"#DD0031"},mui:{width:"60%",background:"#1976D2"}},rutaMyEmail:"programacionflavio@gmail.com",spacing:(e=1)=>`${e*eh}px`},th=L`
+ */(function(){var c=typeof Symbol=="function"&&Symbol.for,p=c?Symbol.for("react.element"):60103,m=c?Symbol.for("react.portal"):60106,h=c?Symbol.for("react.fragment"):60107,w=c?Symbol.for("react.strict_mode"):60108,g=c?Symbol.for("react.profiler"):60114,v=c?Symbol.for("react.provider"):60109,_=c?Symbol.for("react.context"):60110,f=c?Symbol.for("react.async_mode"):60111,a=c?Symbol.for("react.concurrent_mode"):60111,d=c?Symbol.for("react.forward_ref"):60112,y=c?Symbol.for("react.suspense"):60113,S=c?Symbol.for("react.suspense_list"):60120,E=c?Symbol.for("react.memo"):60115,x=c?Symbol.for("react.lazy"):60116,O=c?Symbol.for("react.block"):60121,P=c?Symbol.for("react.fundamental"):60117,N=c?Symbol.for("react.responder"):60118,A=c?Symbol.for("react.scope"):60119;function F(M){return typeof M=="string"||typeof M=="function"||M===h||M===a||M===g||M===w||M===y||M===S||typeof M=="object"&&M!==null&&(M.$$typeof===x||M.$$typeof===E||M.$$typeof===v||M.$$typeof===_||M.$$typeof===d||M.$$typeof===P||M.$$typeof===N||M.$$typeof===A||M.$$typeof===O)}function I(M){if(typeof M=="object"&&M!==null){var ye=M.$$typeof;switch(ye){case p:var lt=M.type;switch(lt){case f:case a:case h:case g:case w:case y:return lt;default:var Fs=lt&&lt.$$typeof;switch(Fs){case _:case d:case x:case E:case v:return Fs;default:return ye}}case m:return ye}}}var me=f,$e=a,Be=_,qt=v,R=p,D=d,U=h,te=x,ae=E,Rt=m,Ie=g,bt=w,ge=y,Ve=!1;function hl(M){return Ve||(Ve=!0,console.warn("The ReactIs.isAsyncMode() alias has been deprecated, and will be removed in React 17+. Update your code to use ReactIs.isConcurrentMode() instead. It has the exact same API.")),Hr(M)||I(M)===f}function Hr(M){return I(M)===a}function T(M){return I(M)===_}function $(M){return I(M)===v}function Y(M){return typeof M=="object"&&M!==null&&M.$$typeof===p}function Q(M){return I(M)===d}function W(M){return I(M)===h}function G(M){return I(M)===x}function H(M){return I(M)===E}function B(M){return I(M)===m}function X(M){return I(M)===g}function b(M){return I(M)===w}function Z(M){return I(M)===y}s.AsyncMode=me,s.ConcurrentMode=$e,s.ContextConsumer=Be,s.ContextProvider=qt,s.Element=R,s.ForwardRef=D,s.Fragment=U,s.Lazy=te,s.Memo=ae,s.Portal=Rt,s.Profiler=Ie,s.StrictMode=bt,s.Suspense=ge,s.isAsyncMode=hl,s.isConcurrentMode=Hr,s.isContextConsumer=T,s.isContextProvider=$,s.isElement=Y,s.isForwardRef=Q,s.isFragment=W,s.isLazy=G,s.isMemo=H,s.isPortal=B,s.isProfiler=X,s.isStrictMode=b,s.isSuspense=Z,s.isValidElementType=F,s.typeOf=I})()},"./node_modules/react-is/index.js":(u,s,c)=>{u.exports=c("./node_modules/react-is/cjs/react-is.development.js")},"./node_modules/shallow-equal/dist/index.esm.js":(u,s,c)=>{c.r(s),c.d(s,{shallowEqualArrays:()=>m,shallowEqualObjects:()=>p});function p(h,w){if(h===w)return!0;if(!h||!w)return!1;var g=Object.keys(h),v=Object.keys(w),_=g.length;if(v.length!==_)return!1;for(var f=0;f<_;f++){var a=g[f];if(h[a]!==w[a]||!Object.prototype.hasOwnProperty.call(w,a))return!1}return!0}function m(h,w){if(h===w)return!0;if(!h||!w)return!1;var g=h.length;if(w.length!==g)return!1;for(var v=0;v<g;v++)if(h[v]!==w[v])return!1;return!0}},"./src/Component.ts":function(u,s,c){var p=this&&this.__rest||function(g,v){var _={};for(var f in g)Object.prototype.hasOwnProperty.call(g,f)&&v.indexOf(f)<0&&(_[f]=g[f]);if(g!=null&&typeof Object.getOwnPropertySymbols=="function")for(var a=0,f=Object.getOwnPropertySymbols(g);a<f.length;a++)v.indexOf(f[a])<0&&Object.prototype.propertyIsEnumerable.call(g,f[a])&&(_[f[a]]=g[f[a]]);return _},m=this&&this.__importDefault||function(g){return g&&g.__esModule?g:{default:g}};Object.defineProperty(s,"__esModule",{value:!0});var h=m(c("./src/useMediaQuery.ts")),w=function(g){var v=g.children,_=g.device,f=g.onChange,a=p(g,["children","device","onChange"]),d=(0,h.default)(a,_,f);return typeof v=="function"?v(d):d?v:null};s.default=w},"./src/Context.ts":(u,s,c)=>{Object.defineProperty(s,"__esModule",{value:!0});var p=c("react"),m=(0,p.createContext)(void 0);s.default=m},"./src/index.ts":function(u,s,c){var p=this&&this.__importDefault||function(v){return v&&v.__esModule?v:{default:v}};Object.defineProperty(s,"__esModule",{value:!0}),s.Context=s.toQuery=s.useMediaQuery=s.default=void 0;var m=p(c("./src/useMediaQuery.ts"));s.useMediaQuery=m.default;var h=p(c("./src/Component.ts"));s.default=h.default;var w=p(c("./src/toQuery.ts"));s.toQuery=w.default;var g=p(c("./src/Context.ts"));s.Context=g.default},"./src/mediaQuery.ts":function(u,s,c){var p=this&&this.__assign||function(){return p=Object.assign||function(y){for(var S,E=1,x=arguments.length;E<x;E++){S=arguments[E];for(var O in S)Object.prototype.hasOwnProperty.call(S,O)&&(y[O]=S[O])}return y},p.apply(this,arguments)},m=this&&this.__rest||function(y,S){var E={};for(var x in y)Object.prototype.hasOwnProperty.call(y,x)&&S.indexOf(x)<0&&(E[x]=y[x]);if(y!=null&&typeof Object.getOwnPropertySymbols=="function")for(var O=0,x=Object.getOwnPropertySymbols(y);O<x.length;O++)S.indexOf(x[O])<0&&Object.prototype.propertyIsEnumerable.call(y,x[O])&&(E[x[O]]=y[x[O]]);return E},h=this&&this.__importDefault||function(y){return y&&y.__esModule?y:{default:y}};Object.defineProperty(s,"__esModule",{value:!0});var w=h(c("./node_modules/prop-types/index.js")),g=w.default.oneOfType([w.default.string,w.default.number]),v={all:w.default.bool,grid:w.default.bool,aural:w.default.bool,braille:w.default.bool,handheld:w.default.bool,print:w.default.bool,projection:w.default.bool,screen:w.default.bool,tty:w.default.bool,tv:w.default.bool,embossed:w.default.bool},_={orientation:w.default.oneOf(["portrait","landscape"]),scan:w.default.oneOf(["progressive","interlace"]),aspectRatio:w.default.string,deviceAspectRatio:w.default.string,height:g,deviceHeight:g,width:g,deviceWidth:g,color:w.default.bool,colorIndex:w.default.bool,monochrome:w.default.bool,resolution:g,type:Object.keys(v)};_.type;var f=m(_,["type"]),a=p({minAspectRatio:w.default.string,maxAspectRatio:w.default.string,minDeviceAspectRatio:w.default.string,maxDeviceAspectRatio:w.default.string,minHeight:g,maxHeight:g,minDeviceHeight:g,maxDeviceHeight:g,minWidth:g,maxWidth:g,minDeviceWidth:g,maxDeviceWidth:g,minColor:w.default.number,maxColor:w.default.number,minColorIndex:w.default.number,maxColorIndex:w.default.number,minMonochrome:w.default.number,maxMonochrome:w.default.number,minResolution:g,maxResolution:g},f),d=p(p({},v),a);s.default={all:d,types:v,matchers:_,features:a}},"./src/toQuery.ts":function(u,s,c){var p=this&&this.__importDefault||function(f){return f&&f.__esModule?f:{default:f}};Object.defineProperty(s,"__esModule",{value:!0});var m=p(c("./node_modules/hyphenate-style-name/index.js")),h=p(c("./src/mediaQuery.ts")),w=function(f){return"not ".concat(f)},g=function(f,a){var d=(0,m.default)(f);return typeof a=="number"&&(a="".concat(a,"px")),a===!0?d:a===!1?w(d):"(".concat(d,": ").concat(a,")")},v=function(f){return f.join(" and ")},_=function(f){var a=[];return Object.keys(h.default.all).forEach(function(d){var y=f[d];y!=null&&a.push(g(d,y))}),v(a)};s.default=_},"./src/useMediaQuery.ts":function(u,s,c){var p=this&&this.__importDefault||function(P){return P&&P.__esModule?P:{default:P}};Object.defineProperty(s,"__esModule",{value:!0});var m=c("react"),h=p(c("./node_modules/matchmediaquery/index.js")),w=p(c("./node_modules/hyphenate-style-name/index.js")),g=c("./node_modules/shallow-equal/dist/index.esm.js"),v=p(c("./src/toQuery.ts")),_=p(c("./src/Context.ts")),f=function(P){return P.query||(0,v.default)(P)},a=function(P){if(P){var N=Object.keys(P);return N.reduce(function(A,F){return A[(0,w.default)(F)]=P[F],A},{})}},d=function(){var P=(0,m.useRef)(!1);return(0,m.useEffect)(function(){P.current=!0},[]),P.current},y=function(P){var N=(0,m.useContext)(_.default),A=function(){return a(P)||a(N)},F=(0,m.useState)(A),I=F[0],me=F[1];return(0,m.useEffect)(function(){var $e=A();(0,g.shallowEqualObjects)(I,$e)||me($e)},[P,N]),I},S=function(P){var N=function(){return f(P)},A=(0,m.useState)(N),F=A[0],I=A[1];return(0,m.useEffect)(function(){var me=N();F!==me&&I(me)},[P]),F},E=function(P,N){var A=function(){return(0,h.default)(P,N||{},!!N)},F=(0,m.useState)(A),I=F[0],me=F[1],$e=d();return(0,m.useEffect)(function(){if($e){var Be=A();return me(Be),function(){Be&&Be.dispose()}}},[P,N]),I},x=function(P){var N=(0,m.useState)(P.matches),A=N[0],F=N[1];return(0,m.useEffect)(function(){var I=function(me){F(me.matches)};return P.addListener(I),F(P.matches),function(){P.removeListener(I)}},[P]),A},O=function(P,N,A){var F=y(N),I=S(P);if(!I)throw new Error("Invalid or missing MediaQuery!");var me=E(I,F),$e=x(me),Be=d();return(0,m.useEffect)(function(){Be&&A&&A($e)},[$e]),(0,m.useEffect)(function(){return function(){me&&me.dispose()}},[]),$e};s.default=O},react:u=>{u.exports=n}},i={};function l(u){var s=i[u];if(s!==void 0)return s.exports;var c=i[u]={exports:{}};return r[u].call(c.exports,c,c.exports,l),c.exports}l.d=(u,s)=>{for(var c in s)l.o(s,c)&&!l.o(u,c)&&Object.defineProperty(u,c,{enumerable:!0,get:s[c]})},l.o=(u,s)=>Object.prototype.hasOwnProperty.call(u,s),l.r=u=>{typeof Symbol<"u"&&Symbol.toStringTag&&Object.defineProperty(u,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(u,"__esModule",{value:!0})};var o=l("./src/index.ts");return o})())})(Ff);var bm=Ff.exports;const eh=4,j={background:{light:"#FFFFFF",middle:"10, 34, 48, 0.25",dark:{background:"#0A2230",border:"1px solid #000000"}},palette:{primary:"#21243D",danger:"#D71E38",text_header:"#21243D;",text_content:"#FDFDFD"},fonts:{fontFamily:"Heebo",fontWeight:"normal"},skills:{emotion:{width:"100%",background:"#6639b6"},js:{width:"100%",background:"#F0DB4F"},ts:{width:"100%",background:"#007ACC"},gql:{width:"80%",background:"#E535AB"},sass:{width:"100%",background:"#CB6699"},node:{width:"80%",background:"#6DB35A"},mysql:{width:"70%",background:"#00758F"},mongoose:{width:"70%",background:"#3FA037"},vue:{width:"60%",background:"#4FC08D"},css:{width:"100%",background:"#33A9DC"},github:{width:"80%",background:"#000000"},vsc:{width:"100%",background:"#007ACC"},bootstrap:{width:"90%",background:"#6639B6"},git:{width:"70%",background:"#F34F29"},html:{width:"100%",background:"#F16529"},react:{width:"100%",background:"#61DAFB"},angular:{width:"60%",background:"#DD0031"},mui:{width:"60%",background:"#1976D2"}},rutaMyEmail:"programacionflavio@gmail.com",spacing:(e=1)=>`${e*eh}px`},th=L`
   display: flex;
   flex-direction: row;
   justify-content: end;
-  padding: ${T.spacing(8)} ${T.spacing(8)};
+  padding: ${j.spacing(8)} ${j.spacing(8)};
 
   @media (min-width: 1024px) {
-    padding: ${T.spacing(8)} ${T.spacing(16)};
+    padding: ${j.spacing(8)} ${j.spacing(16)};
   }
 `,nh=L`
   display: flex;
   flex-direction: row;
-  gap: ${T.spacing(8)};
+  gap: ${j.spacing(8)};
 `,rh=()=>k.jsx("div",{className:th,children:k.jsxs("ul",{className:nh,children:[k.jsx("li",{children:k.jsx("a",{"aria-label":"my-LinkedIn",target:"_blank",rel:"noopener",href:"https://www.linkedin.com/in/flavio-forte-/",children:k.jsx("img",{src:"assets/icons/LinkedIn-icon.svg",alt:"LinkedIn"})})}),k.jsx("li",{children:k.jsx("a",{"aria-label":"my-Github",target:"_blank",rel:"noopener",href:"https://github.com/salino3",children:k.jsx("img",{src:"assets/icons/Github-icon.svg",alt:"Github"})})})]})}),ih="/my-portfolio/assets/CV_Flavio-aa9011d3.pdf",lh=L`
 
   display: flex;
@@ -78,8 +78,8 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    padding: ${T.spacing(2)} ${T.spacing(16)} ${T.spacing(16)};
-    gap: ${T.spacing(16)};
+    padding: ${j.spacing(2)} ${j.spacing(16)} ${j.spacing(16)};
+    gap: ${j.spacing(16)};
   }
 `,sh=L`
   img {
@@ -115,7 +115,7 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
     justify-content: flex-start;
   }
 `,ia=L`
-  color: ${T.palette.text_header};
+  color: ${j.palette.text_header};
   font-weight: 700;
   font-size: 25px;
   line-height: 37px;
@@ -123,7 +123,7 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   span {
     font-size: 34px;
     line-height: 50px;
-    color: ${T.palette.danger};
+    color: ${j.palette.danger};
   }
 
 `,ch=L`
@@ -134,10 +134,10 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   letter-spacing: 0.05em;
   color: #000000;
 
-  padding: ${T.spacing(8)} ${T.spacing(8)};
+  padding: ${j.spacing(8)} ${j.spacing(8)};
 
   @media (min-width: 500px) {
-    padding: ${T.spacing(8)} 20%;
+    padding: ${j.spacing(8)} 20%;
     font-size: 20px;
   }
 
@@ -145,22 +145,22 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
     text-align: start;
     justify-content: flex-start;
     padding-left: 0px;
-    width: ${T.spacing(105)};
+    width: ${j.spacing(105)};
   }
 `,fh=L`
 
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: ${T.spacing(2)} ${T.spacing(4.25)};
-  background-color: ${T.palette.danger};
-  margin: 0px ${T.spacing(8)} ${T.spacing(8)};
+  padding: ${j.spacing(2)} ${j.spacing(4.25)};
+  background-color: ${j.palette.danger};
+  margin: 0px ${j.spacing(8)} ${j.spacing(8)};
 
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 29px;
-  color: ${T.palette.text_content};
+  color: ${j.palette.text_content};
 
   @media (min-width: 1024px) {
    
@@ -196,8 +196,8 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  padding: ${T.spacing(1)} 0px 0px ${T.spacing(1)};
-  color: ${T.palette.text_content};
+  padding: ${j.spacing(1)} 0px 0px ${j.spacing(1)};
+  color: ${j.palette.text_content};
   box-sizing: border-box;
 `,we=e=>{const{className:t,img:n,alt:r="icon",skill:i}=e;return k.jsxs(Ch,{children:[k.jsx("img",{src:n,alt:r}),k.jsx("div",{className:Ph,children:k.jsx(jh,{className:t,children:i})})]})},Th=L`
   display: flex;
@@ -223,7 +223,7 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: ${T.spacing(8)};
+    gap: ${j.spacing(8)};
 
     hr {
       display: unset;
@@ -233,67 +233,67 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
     }
   }
 `,Oh=L`
-  ${T.skills.emotion}
+  ${j.skills.emotion}
 `,Nh=L`
-  ${T.skills.js}
+  ${j.skills.js}
 `,Rh=L`
-  ${T.skills.ts}
+  ${j.skills.ts}
 `,Mh=L`
-  ${T.skills.gql}
+  ${j.skills.gql}
 `,zh=L`
-  ${T.skills.sass}
+  ${j.skills.sass}
 `,Lh=L`
-  ${T.skills.node}
+  ${j.skills.node}
 `,$h=L`
-  ${T.skills.mysql}
+  ${j.skills.mysql}
 `,Ih=L`
-  ${T.skills.mongoose}
+  ${j.skills.mongoose}
 `,Dh=L`
-  ${T.skills.vue}
+  ${j.skills.vue}
 `,Ah=L`
-  ${T.skills.css}
+  ${j.skills.css}
 `,Fh=L`
-  ${T.skills.github}
+  ${j.skills.github}
 `,Uh=L`
-  ${T.skills.vsc}
+  ${j.skills.vsc}
 `,Wh=L`
-  ${T.skills.bootstrap}
+  ${j.skills.bootstrap}
 `,Hh=L`
-  ${T.skills.git}
+  ${j.skills.git}
 `,Qh=L`
-  ${T.skills.html}
+  ${j.skills.html}
 `,Bh=L`
-  ${T.skills.react}
+  ${j.skills.react}
 `,Vh=L`
-  ${T.skills.angular}
+  ${j.skills.angular}
 `,Yh=L`
-  ${T.skills.mui}
+  ${j.skills.mui}
 `,Kh=()=>k.jsxs("div",{className:Th,children:[k.jsxs("div",{children:[k.jsx(we,{className:Bh,img:"assets/icons/react-original.svg",skill:"React"}),k.jsx(we,{className:Rh,img:"assets/icons/typescript.svg",skill:"Typescript"}),k.jsx(we,{className:Nh,img:"assets/icons/javascript.svg",skill:"Javascript"}),k.jsx(we,{className:Ah,img:"assets/icons/css3-original-wordmark.svg",skill:"CSS"}),k.jsx(we,{className:Qh,img:"assets/icons/html5-original-wordmark.svg",skill:"HTML"}),k.jsx(we,{className:zh,img:"assets/icons/sass-original.svg",skill:"Sass"}),k.jsx(we,{className:Uh,img:"assets/icons/vscode-original.svg",skill:"Visual Studio Code"}),k.jsx(we,{className:Oh,img:"assets/icons/logo--emotion.svg",skill:"Emotion"}),k.jsx(we,{className:Mh,img:"assets/icons/graphql-plain.svg",skill:"GraphQL"})]}),k.jsx("hr",{}),k.jsxs("div",{children:[k.jsx(we,{className:Lh,img:"assets/icons/nodejs-plain.svg",skill:"NodeJS"}),k.jsx(we,{className:$h,img:"assets/icons/mysql-original.svg",skill:"MySQL"}),k.jsx(we,{className:Fh,img:"assets/icons/Github-white.svg",skill:"GitHub"}),k.jsx(we,{className:Wh,img:"assets/icons/bootstrap-original.svg",skill:"Bootstrap"}),k.jsx(we,{className:Hh,img:"assets/icons/git-original.svg",skill:"Git"}),k.jsx(we,{className:Ih,img:"assets/icons/mongoose.svg",skill:"Mongoose"}),k.jsx(we,{className:Dh,img:"assets/icons/vuejs-original.svg",skill:"Vue"}),k.jsx(we,{className:Vh,img:"assets/icons/angularjs-original.svg",skill:"Angular"}),k.jsx(we,{className:Yh,img:"assets/icons/materialui-original.svg",skill:"Material UI"})]})]}),Gh=L`
 
- margin-bottom: ${T.spacing(25)};
+ margin-bottom: ${j.spacing(25)};
 `,Xh=L`
 
   font-weight: 400;
   font-size: 28px;
   line-height: 41px;
-  color: ${T.palette.text_content};
+  color: ${j.palette.text_content};
 `,Zh=L`
   border: 1px solid #edf7fa;
-  margin: ${T.spacing(4)} 0px ${T.spacing(8)};
-  width: ${T.spacing(28)};
+  margin: ${j.spacing(4)} 0px ${j.spacing(8)};
+  width: ${j.spacing(28)};
 `,Jh=L`
 
  display: flex;
  flex-direction: column;
  justify-content: space-between;
- gap: ${T.spacing(8)};
+ gap: ${j.spacing(8)};
 `,sa=L`
-  color: ${T.palette.text_content};
+  color: ${j.palette.text_content};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  gap: ${T.spacing(10)};
+  gap: ${j.spacing(10)};
 
   @media (min-width: 1024px) {
     flex-direction: row;
@@ -301,7 +301,7 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
 `,ua=L`
   display: flex;
   flex-direction: row;
-  gap: ${T.spacing(4)};
+  gap: ${j.spacing(4)};
   align-self: flex-start;
   justify-content: space-between;
 
@@ -337,7 +337,7 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
 
   a{
    text-decoration: none;
-   color: ${T.palette.text_content}
+   color: ${j.palette.text_content}
  }
 
   @media (min-width: 1024px) {
@@ -349,7 +349,7 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   align-items: center;
 
   @media (min-width: 1024px) {
-    padding: ${T.spacing(12)} 0px;
+    padding: ${j.spacing(12)} 0px;
   }
 `,ev=L`
   display: flex;
@@ -357,34 +357,42 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   align-items: center;
   width: 100%;
 
-  background: rgba(${T.background.middle});
-  padding: ${T.spacing(12)} 0px;
+  background: rgba(${j.background.middle});
+  padding: ${j.spacing(12)} 0px;
 
   @media (min-width: 1024px) {
     padding: 0px;
-    height: ${T.spacing(324)};
+    height: ${j.spacing(324)};
   }
 
   @media (min-width: 1072px) {
-    height: ${T.spacing(310)};
+    height: ${j.spacing(310)};
   }
 
   @media (min-width: 1156px) {
-    height: ${T.spacing(296)};
+    height: ${j.spacing(296)};
+  }
+
+  @media (min-width: 1311px) {
+    height: ${j.spacing(288)};
+  }
+
+  @media (min-width: 1390px) {
+    height: ${j.spacing(277)};
   }
 `,tv=L`
-  background: ${T.background.dark.background};
-  border: ${T.background.dark.border};
-  padding: 16px ${T.spacing(8)};
+  background: ${j.background.dark.background};
+  border: ${j.background.dark.border};
+  padding: 16px ${j.spacing(8)};
   width: 100%;
   box-sizing: border-box;
 
   @media (min-width: 1024px) {
     position: absolute;
-    top: ${T.spacing(140)};
+    top: ${j.spacing(140)};
     width: unset;
-    padding: ${T.spacing(12)} ${T.spacing(8)};
-    margin: 0rem ${T.spacing(40)};
+    padding: ${j.spacing(12)} ${j.spacing(8)};
+    margin: 0rem ${j.spacing(40)};
   }
 `,nv=L`
   display: flex;
@@ -394,14 +402,14 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
     text-align: center;
   }
 `,rv=L`
-  color: ${T.palette.text_content};
+  color: ${j.palette.text_content};
   font-weight: 400;
   font-size: 36px;
   line-height: 53px;
-  padding: ${T.spacing(4)} ${T.spacing(8)};
+  padding: ${j.spacing(4)} ${j.spacing(8)};
 `,iv=L`
   border: 1px solid #edf7fa;
-  margin: ${T.spacing(12)} auto;
+  margin: ${j.spacing(12)} auto;
   width: 100%;
 `,lv=()=>k.jsx("div",{className:bh,children:k.jsx("div",{className:ev,children:k.jsx("div",{className:tv,children:k.jsxs("main",{className:nv,children:[k.jsx("h2",{className:rv,children:"My Skills"}),k.jsx(Kh,{}),k.jsx("hr",{className:iv}),k.jsx(qh,{})]})})})}),ov=L`
   animation: fadeIn;
@@ -419,7 +427,7 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: ${T.spacing(2.5)};
+  padding: ${j.spacing(2.5)};
 
   @media (min-width: 725px) {
     width: 360px;
@@ -431,14 +439,14 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   align-items: center;
   justify-content: center;
   gap: 26px;
-  padding: 0px ${T.spacing(4)};
+  padding: 0px ${j.spacing(4)};
 
   box-shadow: 0px 2px 8px rgba(31, 3, 34, 0.15);
   border-radius: 24px;
   width: 100%;
   max-width: 346px;
   top: 35%;
-  background-color: ${T.background.light};
+  background-color: ${j.background.light};
   padding-bottom: 15px;
 
   p {
@@ -475,8 +483,8 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
-  background-color: ${T.palette.danger};
-  color: ${T.palette.text_content};
+  background-color: ${j.palette.danger};
+  color: ${j.palette.text_content};
   cursor: pointer;
 `,dv=e=>{const{className:t,handleModal:n}=e,[r,i]=$n.useState(!1);function l(){navigator.clipboard.writeText(o),i(!0),setTimeout(()=>{i(!1)},1e3)}const o="666873670";return k.jsx("div",{className:Gi(ov,t),children:k.jsx("div",{className:sv,children:k.jsxs("div",{className:uv,children:[k.jsx("img",{className:av,onClick:n,src:"assets/icons/icon-X.svg",alt:"close"}),k.jsx("img",{className:cv,src:"assets/icons/phone-icon-2.svg",alt:"mobile"}),k.jsx("p",{children:"666 87 36 70"}),k.jsx("button",{onClick:l,className:fv,children:r?"Copied!":"Copy"})]})})})},pv=L`
   animation: fadeIn;
@@ -495,7 +503,7 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
 
   justify-content: center;
   align-items: center;
-  padding: ${T.spacing(2.5)};
+  padding: ${j.spacing(2.5)};
 
   @media (min-width: 725px) {
     width: 360px;
@@ -509,13 +517,13 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   top: 30%;
 
   gap: 22px;
-  padding: 0px ${T.spacing(4)};
+  padding: 0px ${j.spacing(4)};
   box-shadow: 0px 2px 8px rgba(31, 3, 34, 0.15);
   border-radius: 24px;
   width: 100%;
   max-width: 346px;
   padding-bottom: 15px;
-  background-color: ${T.background.light};
+  background-color: ${j.background.light};
 
   p {
     font-weight: 700;
@@ -556,8 +564,8 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
-  background-color: ${T.palette.danger};
-  color: ${T.palette.text_content};
+  background-color: ${j.palette.danger};
+  color: ${j.palette.text_content};
   cursor: pointer;
 `,wv=L`
   width: 100%;
@@ -567,8 +575,8 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
-  background-color: ${T.background.dark.background};
-  color: ${T.palette.text_content};
+  background-color: ${j.background.dark.background};
+  color: ${j.palette.text_content};
   cursor: pointer;
 `,xv=e=>{const{className:t,handleModal:n}=e,[r,i]=$n.useState(!1);function l(){navigator.clipboard.writeText(o),i(!0),setTimeout(()=>{i(!1)},1e3)}const o="programacionflavio@gmail.com";return k.jsx("div",{className:Gi(pv,t),children:k.jsxs("div",{className:mv,children:[k.jsx("img",{className:hv,onClick:n,src:"assets/icons/icon-X.svg",alt:"close"}),k.jsx("img",{className:vv,src:"assets/icons/email-icon.svg",alt:"mobile"}),k.jsx("p",{children:"programacionflavio@gmail.com"}),k.jsx("button",{onClick:l,className:yv,children:r?"Copied!":"Copy"}),k.jsx("a",{href:`mailto:${o}`,className:gv,children:k.jsx("button",{className:wv,children:"Send"})})]})})},kv=L`
   display: flex;
@@ -608,12 +616,12 @@ body {
     display: none;
   }
 
-  background-color: ${T.background.light};
+  background-color: ${j.background.light};
   width: 100%;
   height: 100%;
   overflow-y: auto;
-  font-family: ${T.fonts.fontFamily};
-  font-weight: ${T.fonts.fontWeight};
+  font-family: ${j.fonts.fontFamily};
+  font-weight: ${j.fonts.fontWeight};
 	position: relative;
 
 
