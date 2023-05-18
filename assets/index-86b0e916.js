@@ -64,7 +64,7 @@ Valid keys: `+JSON.stringify(Object.keys(j),null,"  "));var ye=M(B,Z,W,G,H+"."+Z
   display: flex;
   flex-direction: row;
   gap: ${T.spacing(8)};
-`,rh=()=>k.jsx("div",{className:th,children:k.jsxs("ul",{className:nh,children:[k.jsx("li",{children:k.jsx("a",{"aria-label":"my-LinkedIn",target:"_blank",rel:"noopener",href:"https://www.linkedin.com/in/flavio-forte-/",children:k.jsx("img",{src:"/assets/icons/LinkedIn-icon.svg",alt:"LinkedIn"})})}),k.jsx("li",{children:k.jsx("a",{"aria-label":"my-Github",target:"_blank",rel:"noopener",href:"https://github.com/salino3",children:k.jsx("img",{src:"/assets/icons/Github-icon.svg",alt:"Github"})})})]})}),ih="/assets/CV_Flavio-aa9011d3.pdf",lh=L`
+`,rh=()=>k.jsx("div",{className:th,children:k.jsxs("ul",{className:nh,children:[k.jsx("li",{children:k.jsx("a",{"aria-label":"my-LinkedIn",target:"_blank",rel:"noopener",href:"https://www.linkedin.com/in/flavio-forte-/",children:k.jsx("img",{src:"/assets/icons/LinkedIn-icon.svg",alt:"LinkedIn"})})}),k.jsx("li",{children:k.jsx("a",{"aria-label":"my-Github",target:"_blank",rel:"noopener",href:"https://github.com/salino3",children:k.jsx("img",{src:"/assets/icons/Github-icon.svg",alt:"Github"})})})]})}),ih="/my-portfolio/assets/CV_Flavio-aa9011d3.pdf",lh=L`
 
   display: flex;
   flex-direction: column; 
