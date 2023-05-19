@@ -5,7 +5,7 @@ export const root = css`
   display: flex;
   justify-content: center;
   align-items: stretch;
-  box-sizing: border-box;
+  box-sizing: border-box; 
   width: 100%;
 
   @media (min-width: 1024px) {
@@ -51,13 +51,12 @@ export const progressLines = css`
   display: flex;
   flex-direction: column;
 
-  h2 {
-    text-align: center;
-  }
 `;
 
 export const title = css`
   color: ${theme.palette.text_content};
+  text-align: center;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 53px;

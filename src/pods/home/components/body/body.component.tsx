@@ -11,28 +11,12 @@ export const BodyComponent: React.FC = () => {
   const [elementHeight, setElementHeight] = React.useState<number>(initialHeight);
   const elementRef = React.useRef<HTMLDivElement>(null);
 
-   React.useEffect(() => {
+   React.useEffect(() => { 
      if (elementRef.current) {     
        setElementHeight(elementRef.current.clientHeight);
      };
   
    }, [elementRef.current?.clientHeight]);
-
-    React.useLayoutEffect(() => {
-      // const handleResize = () => {
-        // };
-        
-        if (elementRef.current) {
-          setElementHeight(elementRef.current.clientHeight);
-        }
-      // handleResize(); // Actualizar el height inicial
-
-      // window.addEventListener("resize", handleResize);
-
-      // return () => {
-      //   window.removeEventListener("resize", handleResize);
-      // };
-    }, [elementRef.current?.clientHeight]);
 
 
    console.log("elementHeight", elementHeight); 
@@ -44,9 +28,7 @@ export const BodyComponent: React.FC = () => {
       }}
       className={classes.root}
     >
-      <div
-        className={classes.container}
-      >
+      <div className={classes.container}>
         <div ref={elementRef} className={classes.content}>
           <main className={classes.progressLines}>
             <h2 className={classes.title}>My Skills</h2>
