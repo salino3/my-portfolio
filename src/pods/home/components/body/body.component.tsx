@@ -5,12 +5,7 @@ import { BoxStudies } from "../box-studies";
 import * as classes from "./body.styles";
 
 export const BodyComponent: React.FC = () => {
-//!
-  // const rootFontSize = parseFloat(
-  //   getComputedStyle(document.documentElement).fontSize
-  // );
-  // console.log(rootFontSize); 
-//!
+
   const initialHeight = 300;
   
   const [elementHeight, setElementHeight] = React.useState<number>(initialHeight);
@@ -24,19 +19,19 @@ export const BodyComponent: React.FC = () => {
    }, [elementRef.current?.clientHeight]);
 
     React.useLayoutEffect(() => {
-      const handleResize = () => {
+      // const handleResize = () => {
+        // };
+        
         if (elementRef.current) {
           setElementHeight(elementRef.current.clientHeight);
         }
-      };
+      // handleResize(); // Actualizar el height inicial
 
-      handleResize(); // Actualizar el height inicial
+      // window.addEventListener("resize", handleResize);
 
-      window.addEventListener("resize", handleResize);
-
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
+      // return () => {
+      //   window.removeEventListener("resize", handleResize);
+      // };
     }, [elementRef.current?.clientHeight]);
 
 
@@ -50,9 +45,6 @@ export const BodyComponent: React.FC = () => {
       className={classes.root}
     >
       <div
-        // style={{
-        //   minHeight: `${elementHeight}px`,
-        // }}
         className={classes.container}
       >
         <div ref={elementRef} className={classes.content}>
