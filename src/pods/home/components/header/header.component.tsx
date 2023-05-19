@@ -34,7 +34,7 @@ export const Header: React.FC = () => {
           </div>
           <div className={classes.description}>
             I have passion for software programming and I am excited to apply my
-            skills and knowledge to real-world projects , I really want to keep
+            skills and knowledge to real world projects, I really want to keep
             learning and growing in the software development field and I search
             new challenges and opportunities.
           </div>

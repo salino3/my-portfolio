@@ -13,10 +13,8 @@ body {
   background-color: ${theme.background.light};
   width: 100%;
   height: 100%;
-  overflow-y: auto;
   font-family: ${theme.fonts.fontFamily};
   font-weight: ${theme.fonts.fontWeight};
-	position: relative;
 
 
   -ms-overflow-style: none;

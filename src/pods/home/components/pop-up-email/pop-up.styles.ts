@@ -53,12 +53,12 @@ export const content = css`
   }
 
   @media (min-width: 725px) {
-    top: 48%;
+    top: 20%;
     max-width: 360px;
   }
 
   @media (min-width: 1024px) {
-    top: 8%;
+    top: 15%;
   }
 `;
 

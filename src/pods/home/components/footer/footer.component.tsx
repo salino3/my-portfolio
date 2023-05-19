@@ -73,7 +73,7 @@ export const Footer: React.FC = () => {
           />
         </a>
       </nav>
-      <p>Copyright ©2023 All rights reserved </p>
+      <p>Thanks for visit my web page </p>
     </div>
   );
 };

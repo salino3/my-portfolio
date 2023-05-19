@@ -6,7 +6,7 @@ export const BoxExperiences: React.FC = () => {
 
   return (
     <main className={classes.root}>
-      <h3 className={classes.title}>Experiences</h3>
+      <h3 className={classes.title}>Experience</h3>
       <hr className={classes.hr} />
       <div className={classes.boxArcticles}>
         <article className={classes.article}>

@@ -1,4 +1,5 @@
 import { css } from "@emotion/css";
+import { theme } from "../../../../theme";
 
 export const root = css`
   display: flex;
@@ -7,7 +8,7 @@ export const root = css`
   align-items: center;
   gap: 50px;
 
-  margin: 5rem 0rem;
+  margin: ${theme.spacing(24)} 0px;
   color: #25314d;
   font-weight: 500;
   font-size: 16px;
