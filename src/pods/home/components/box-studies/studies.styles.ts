@@ -15,7 +15,7 @@ export const title = css`
 export const hr = css`
   border: 1px solid #edf7fa;
   margin: ${theme.spacing(4)} 0px ${theme.spacing(8)};
-  width: ${theme.spacing(28)};
+  width: ${theme.spacing(17.5)};
 `;
 
 export const boxArcticles = css`
@@ -44,11 +44,19 @@ export const contentArcticle = css`
   gap: ${theme.spacing(4)};
   align-self: flex-start;
   justify-content: space-between;
+  
+`;
 
-  img {
-    max-width: 64px;
-    width: 100%;
-  }
+export const imgLemoncode = css`
+  background-color: ${theme.background.light};
+  max-width: 64px;
+  width: 100%;
+`;
+
+
+export const imgPixelpro = css`
+  max-width: 64px;
+  width: 100%;
 `;
 
 export const titleArticle = css`

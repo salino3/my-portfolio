@@ -9,7 +9,11 @@ export const BoxStudies: React.FC = () => {
       <div className={classes.boxArcticles}>
         <article className={classes.article}>
           <div className={classes.contentArcticle}>
-            <img src="assets/icons/icon_manfred.svg" alt="manfred" />
+            <img
+              className={classes.imgLemoncode}
+              src="assets/icons/icon-lemoncode.svg"
+              alt="lemoncode"
+            />
             <div className={classes.titleArticle}>
               <h4>Lemoncode</h4>
               <small> (Jan - Apr 2023)</small>
@@ -32,7 +36,12 @@ export const BoxStudies: React.FC = () => {
         </article>
         <article className={classes.article}>
           <div className={classes.contentArcticle}>
-            <img src="assets/icons/icon_omix.svg" alt="omix" />
+            <img
+              className={classes.imgPixelpro}
+              src="assets/icons/icon-pixel-pro.svg"
+              alt="pixelpro"
+            />
+
             <div className={classes.titleArticle}>
               <h4>Pixelpro</h4>
               <small> (Feb - Jul 2022)</small>

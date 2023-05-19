@@ -16,6 +16,7 @@ export const BodyComponent: React.FC = () => {
             <BoxSkills />
             <hr className={classes.centralHr} />
             <BoxExperiences />
+            <hr className={classes.centralHr} />
             <BoxStudies />
           </main>
         </div>
