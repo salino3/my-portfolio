@@ -1,55 +1,45 @@
-import {css} from '@emotion/css';
-import { theme } from '../../../../theme';
-
+import { css } from "@emotion/css";
+import { theme } from "../../../../theme";
 
 export const root = css`
-  height: 100%;
+  display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  box-sizing: border-box;
+  width: 100%;
 
   @media (min-width: 1024px) {
-    padding: ${theme.spacing(14)} 0px ${theme.spacing(30)};
+    padding: ${theme.spacing(14)} 0px;
+    position: relative;
   }
 `;
 
 export const container = css`
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background: rgba(${theme.background.middle});
-  /* padding: ${theme.spacing(12)} 0px; */
-/* 
-  @media (min-width: 1024px) {
-    padding: 0px;
-    height: ${theme.spacing(458)};
-  }
+  padding: ${theme.spacing(12)} 0px;
 
-  @media (min-width: 1112px) {
-    height: ${theme.spacing(436)};
-  }
-
-  @media (min-width: 1156px) {
-    height: ${theme.spacing(426)};
+  /* @media (min-width: 1024px) {
+    padding: ${theme.spacing(12)} 0px;
   } */
-
 `;
-
 
 export const content = css`
   background: ${theme.background.dark.background};
   border: ${theme.background.dark.border};
   padding: ${theme.spacing(4)} ${theme.spacing(8)};
   width: 100%;
+  min-width: 375px;
+  max-width: 1024px;
   box-sizing: border-box;
 
   @media (min-width: 1024px) {
     position: absolute;
-    top: ${theme.spacing(140)};
-    width: unset;
+    top: 0;
     padding: ${theme.spacing(0)} ${theme.spacing(8)};
-    margin: 0px ${theme.spacing(40)};
   }
 `;
 
@@ -74,4 +64,4 @@ export const centralHr = css`
   border: 1px solid #edf7fa;
   margin: ${theme.spacing(12)} auto;
   width: 100%;
-`; 
+`;
