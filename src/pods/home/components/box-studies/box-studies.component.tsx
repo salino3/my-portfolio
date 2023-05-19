@@ -2,6 +2,7 @@ import React from 'react';
 import * as classes from './studies.styles';
 
 export const BoxStudies: React.FC = () => {
+  
   return (
     <main className={classes.root}>
       <h3 className={classes.title}>Studies</h3>

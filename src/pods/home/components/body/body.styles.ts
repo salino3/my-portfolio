@@ -8,7 +8,7 @@ export const root = css`
   align-items: center;
 
   @media (min-width: 1024px) {
-    padding: ${theme.spacing(12)} 0px;
+    padding: ${theme.spacing(14)} 0px ${theme.spacing(30)};
   }
 `;
 
@@ -17,10 +17,10 @@ export const container = css`
   justify-content: center;
   align-items: center;
   width: 100%;
-
+  height: 100%;
   background: rgba(${theme.background.middle});
-  padding: ${theme.spacing(12)} 0px;
-
+  /* padding: ${theme.spacing(12)} 0px; */
+/* 
   @media (min-width: 1024px) {
     padding: 0px;
     height: ${theme.spacing(458)};
@@ -32,7 +32,7 @@ export const container = css`
 
   @media (min-width: 1156px) {
     height: ${theme.spacing(426)};
-  }
+  } */
 
 `;
 
