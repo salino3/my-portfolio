@@ -5,26 +5,56 @@ import { BoxStudies } from "../box-studies";
 import * as classes from "./body.styles";
 
 export const BodyComponent: React.FC = () => {
+//!
+  // const rootFontSize = parseFloat(
+  //   getComputedStyle(document.documentElement).fontSize
+  // );
+  // console.log(rootFontSize); 
+//!
   const initialHeight = 300;
+  
   const [elementHeight, setElementHeight] = React.useState<number>(initialHeight);
-
   const elementRef = React.useRef<HTMLDivElement>(null);
 
    React.useEffect(() => {
-
-     if (elementRef.current) {
-      setElementHeight(elementRef.current.clientHeight);
+     if (elementRef.current) {     
+       setElementHeight(elementRef.current.clientHeight);
      };
+  
    }, [elementRef.current?.clientHeight]);
 
+    React.useLayoutEffect(() => {
+      const handleResize = () => {
+        if (elementRef.current) {
+          setElementHeight(elementRef.current.clientHeight);
+        }
+      };
+
+      handleResize(); // Actualizar el height inicial
+
+      window.addEventListener("resize", handleResize);
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, [elementRef.current?.clientHeight]);
+
+
+   console.log("elementHeight", elementHeight); 
+ 
   return (
     <div
       style={{
-        minHeight: `${elementHeight}px`,
+        minHeight: `${elementHeight}px `,
       }}
       className={classes.root}
     >
-      <div className={classes.container}>
+      <div
+        // style={{
+        //   minHeight: `${elementHeight}px`,
+        // }}
+        className={classes.container}
+      >
         <div ref={elementRef} className={classes.content}>
           <main className={classes.progressLines}>
             <h2 className={classes.title}>My Skills</h2>
