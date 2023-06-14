@@ -3,7 +3,7 @@ const BASE_SPACING = 4;
 export const theme = {
   background: {
     light: "#FFFFFF",
-    middle: "10, 34, 48, 0.25" ,
+    middle: "10, 34, 48, 0.25",
     dark: {
       background: "#0A2230",
       border: "1px solid #000000",
@@ -11,7 +11,7 @@ export const theme = {
   },
   palette: {
     primary: "#21243D",
-    danger: "#D71E38",
+    important: "#D71E38",
     text_header: "#21243D;",
     text_content: "#FDFDFD",
   },
@@ -96,5 +96,3 @@ export const theme = {
   rutaMyEmail: "programacionflavio@gmail.com",
   spacing: (multiplier: number = 1) => `${multiplier * BASE_SPACING}px`,
 };
-
-

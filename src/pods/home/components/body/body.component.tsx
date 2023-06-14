@@ -19,7 +19,6 @@ export const BodyComponent: React.FC = () => {
    }, [elementRef.current?.clientHeight]);
 
 
-   console.log("elementHeight", elementHeight); 
  
   return (
     <div

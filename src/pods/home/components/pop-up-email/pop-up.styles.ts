@@ -63,7 +63,6 @@ export const content = css`
 `;
 
 export const btnClose = css`
-  
   padding-top: 20px;
   align-self: flex-end;
   width: 20px;
@@ -73,8 +72,6 @@ export const btnClose = css`
 export const emailIcon = css`
   width: 60px;
   height: 60px;
-
- 
 `;
 
 export const a = css`
@@ -91,7 +88,7 @@ export const btnCopy = css`
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
-  background-color: ${theme.palette.danger};
+  background-color: ${theme.palette.important};
   color: ${theme.palette.text_content};
   cursor: pointer;
 `;

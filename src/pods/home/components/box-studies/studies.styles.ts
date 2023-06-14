@@ -49,7 +49,8 @@ export const contentArcticle = css`
 
 export const imgLemoncode = css`
   background-color: ${theme.background.light};
-  max-width: 64px;
+  max-width: 60px;
+  border: solid 2px white;
   width: 100%;
 `;
 

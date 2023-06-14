@@ -29,7 +29,11 @@ export const BoxStudies: React.FC = () => {
               Actions, Azure, AWS.
             </li>
             <li>
-              <a href="https://lemoncode.net/master-frontend#inicio-banner">
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://lemoncode.net/master-frontend#inicio-banner"
+              >
                 https://lemoncode.net/master-frontend#inicio-banner
               </a>
             </li>

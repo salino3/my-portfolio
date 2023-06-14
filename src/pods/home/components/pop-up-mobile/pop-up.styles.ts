@@ -68,11 +68,9 @@ export const btnClose = css`
   cursor: pointer;
 `;
 
-
 export const mobileIcon = css`
   width: 60px;
   height: 60px;
-
 `;
 
 export const btnCopy = css`
@@ -84,7 +82,7 @@ export const btnCopy = css`
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
-  background-color: ${theme.palette.danger};
+  background-color: ${theme.palette.important};
   color: ${theme.palette.text_content};
   cursor: pointer;
 `;

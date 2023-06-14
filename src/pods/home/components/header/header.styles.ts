@@ -1,13 +1,10 @@
-import {css} from '@emotion/css';
-import { theme } from '../../../../theme';
-
+import { css } from "@emotion/css";
+import { theme } from "../../../../theme";
 
 export const root = css`
-
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 `;
-
 
 export const container = css`
   display: flex;
@@ -41,16 +38,15 @@ export const content = css`
   justify-content: center;
   align-items: center;
 
-    a {
-      text-decoration: none;
-    }
-  
+  a {
+    text-decoration: none;
+  }
+
   @media (min-width: 1024px) {
     justify-content: unset;
     align-items: unset;
   }
 `;
-
 
 export const boxTitle = css`
   display: flex;
@@ -64,7 +60,6 @@ export const boxTitle = css`
   }
 `;
 
-
 export const title = css`
   color: ${theme.palette.text_header};
   font-weight: 700;
@@ -74,9 +69,8 @@ export const title = css`
   span {
     font-size: 34px;
     line-height: 50px;
-    color: ${theme.palette.danger};
+    color: ${theme.palette.important};
   }
-
 `;
 
 export const description = css`
@@ -103,12 +97,11 @@ export const description = css`
 `;
 
 export const btn = css`
-
   display: flex;
   justify-content: center;
   align-items: center;
   padding: ${theme.spacing(2)} ${theme.spacing(4.25)};
-  background-color: ${theme.palette.danger};
+  background-color: ${theme.palette.important};
   margin: 0px ${theme.spacing(8)} ${theme.spacing(8)};
 
   font-style: normal;
@@ -118,7 +111,6 @@ export const btn = css`
   color: ${theme.palette.text_content};
 
   @media (min-width: 1024px) {
-   
     margin-left: 0px;
   }
 `;

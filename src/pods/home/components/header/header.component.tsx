@@ -1,7 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Navbar } from "../navbar";
-import resumePDF from "../../../../assets/CV_Flavio.pdf";
+import resumePDF from "../../../../assets/CV_Flavio_Forte.pdf";
 import * as classes from "./header.styles";
 
 export const Header: React.FC = () => {
@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
             ) : (
               <h1 className={classes.title}>
                 Hi, I am <span>Flavio FORTE</span> <br />
-                FrontEnd Developer
+                Front-end Developer
               </h1>
             )}
           </div>
@@ -38,7 +38,7 @@ export const Header: React.FC = () => {
             learning and growing in the software development field and I search
             new challenges and opportunities.
           </div>
-          <a href={resumePDF} download="CV_Flavio.pdf">
+          <a href={resumePDF} download="CV_Flavio_Forte.pdf">
             <div className={classes.btn}>Download Resume</div>
           </a>
         </div>

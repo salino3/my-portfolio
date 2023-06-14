@@ -27,7 +27,11 @@ export const BoxExperiences: React.FC = () => {
               (CSS in JS) and following a Figma based design.
             </li>
             <li>
-              <a href="https://github.com/Lemoncode/manfred-export-app">
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://github.com/Lemoncode/manfred-export-app"
+              >
                 https://github.com/Lemoncode/manfred-export-app
               </a>
             </li>
@@ -47,12 +51,20 @@ export const BoxExperiences: React.FC = () => {
               details, and shopping cart implementation.
             </li>
             <li>
-              <a href="https://github.com/salino3/react-e-commerce-vite">
-                https://github.com/salino3/react-e-commerce-vite
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://github.com/salino3/e-commerce-lemoncode"
+              >
+                https://github.com/salino3/e-commerce-lemoncode
               </a>
             </li>
             <li>
-              <a href="https://e-commerce-lemoncode.vercel.app/">
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://e-commerce-lemoncode.vercel.app/"
+              >
                 https://e-commerce-lemoncode.vercel.app/
               </a>
             </li>
