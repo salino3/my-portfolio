@@ -375,7 +375,8 @@ Valid keys: `+JSON.stringify(Object.keys(T),null,"  "));var ye=z(B,Z,H,K,W+"."+Z
   
 `,av=R`
   background-color: ${j.background.light};
-  max-width: 64px;
+  max-width: 60px;
+  border: solid 2px white;
   width: 100%;
 `,uv=R`
   max-width: 64px;
