@@ -50,6 +50,7 @@ export const contentArcticle = css`
 export const imgLemoncode = css`
   background-color: ${theme.background.light};
   max-width: 60px;
+  max-height: 60px;
   border: solid 2px white;
   width: 100%;
 `;
@@ -57,6 +58,7 @@ export const imgLemoncode = css`
 
 export const imgPixelpro = css`
   max-width: 64px;
+  max-height: 64px;
   width: 100%;
 `;
 
@@ -77,6 +79,7 @@ export const titleArticle = css`
 
   white-space: nowrap;
 `;
+
 
 export const ul = css`
   display: flex;
