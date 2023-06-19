@@ -425,7 +425,7 @@ Valid keys: `+JSON.stringify(Object.keys(T),null,"  "));var ye=z(Q,Z,H,K,W+"."+Z
   @media (min-width: 1024px) {
     padding: ${j.spacing(14)} 0px;
     position: relative;
-    height: 1827px;
+    height: 2030px;
   }
 `,dv=R`
   display: flex;
@@ -470,7 +470,7 @@ Valid keys: `+JSON.stringify(Object.keys(T),null,"  "));var ye=z(Q,Z,H,K,W+"."+Z
   border: 1px solid #edf7fa;
   margin: ${j.spacing(12)} auto;
   width: 100%;
-`,vv=()=>{var i;const[t,n]=Ct.useState(300),r=Ct.useRef(null);return Ct.useEffect(()=>{r.current&&n(r.current.clientHeight)},[(i=r.current)==null?void 0:i.clientHeight]),w.jsx("div",{style:{minHeight:`${t}px `},className:fv,children:w.jsx("div",{className:dv,children:w.jsx("div",{ref:r,className:pv,children:w.jsxs("main",{className:mv,children:[w.jsx("h2",{className:hv,children:"My Skills"}),w.jsx(qh,{}),w.jsx("hr",{className:vu}),w.jsx(iv,{}),w.jsx("hr",{className:vu}),w.jsx(cv,{})]})})})})},gv=R`
+`,vv=()=>{var i;const[t,n]=Ct.useState(300),r=Ct.useRef(null);return Ct.useEffect(()=>{r.current&&n(r.current.clientHeight)},[(i=r.current)==null?void 0:i.clientHeight]),console.log("elementHeight",t),w.jsx("div",{style:{minHeight:`${t}px `},className:fv,children:w.jsx("div",{className:dv,children:w.jsx("div",{ref:r,className:pv,children:w.jsxs("main",{className:mv,children:[w.jsx("h2",{className:hv,children:"My Skills"}),w.jsx(qh,{}),w.jsx("hr",{className:vu}),w.jsx(iv,{}),w.jsx("hr",{className:vu}),w.jsx(cv,{})]})})})})},gv=R`
   animation: fadeIn;
   animation-duration: 2s;
   position: fixed;
