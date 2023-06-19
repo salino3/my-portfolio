@@ -425,7 +425,7 @@ Valid keys: `+JSON.stringify(Object.keys(T),null,"  "));var ye=z(Q,Z,H,K,W+"."+Z
   @media (min-width: 1024px) {
     padding: ${j.spacing(14)} 0px;
     position: relative;
-    height: 2150px;
+    height: 2080px;
   }
 `,dv=R`
   display: flex;
