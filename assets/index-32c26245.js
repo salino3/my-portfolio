@@ -400,9 +400,9 @@ Valid keys: `+JSON.stringify(Object.keys(T),null,"  "));var ye=z(Q,Z,H,K,W+"."+Z
 
   white-space: nowrap;
 `,vu=R`
-  display: none;
+  display: unset;
   @media (min-width: 725px) {
-    display: unset;
+    display: none;
   }
 `,Yl=R`
   display: flex;
