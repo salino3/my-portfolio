@@ -16,17 +16,51 @@ export const BoxStudies: React.FC = () => {
               alt="lemoncode"
             />
             <div className={classes.titleArticle}>
-              <h4>Lemoncode</h4>
+              <h4>Bootcamp Back-end</h4>
+              <small> (In progress)</small>
+            </div>
+          </div>
+          <ul className={classes.ul}>
+            <li>
+              Bootcamp Lemoncode focused on teaching the last and most useful
+              technologies in back-end such as Mongo, Mongoose, nodejs, express,
+              socket.io, Typescript, SQL Server, .net 5, entity framework,
+              signalR
+            </li>
+            <li>
+              Infrastructure: Docker Cloud, Microsoft, Azure, Amazon, AWS,
+              Heroku, Github
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://lemoncode.net/bootcamp-backend#bootcamp-backend/banner"
+              >
+                https://lemoncode.net/bootcamp-backend#bootcamp-backend/banner
+              </a>
+            </li>
+          </ul>
+        </article>
+        <article className={classes.article}>
+          <div className={classes.contentArcticle}>
+            <img
+              className={classes.imgLemoncode}
+              src="assets/icons/icon-lemoncode.svg"
+              alt="lemoncode"
+            />
+            <div className={classes.titleArticle}>
+              <h4>Master Front-end</h4>
               <small> (Jan - Apr 2023)</small>
             </div>
           </div>
           <ul className={classes.ul}>
             <li>
-              Master focused on teaching the last and most useful technologies
-              in front‑end web development such as React, Angular, Vuejs,
-              Svelte, d3js, HTML / CSS, Material Design, CSS in JS, Jest,
+              Master Lemoncode focused on teaching the last and most useful
+              technologies in front‑end web development such as React, Angular,
+              Vuejs, Svelte, d3js, HTML / CSS, Material Design, CSS in JS, Jest,
               GraphQL Webpack, Parcel, Vite, ES6/ES7, Typescript, Docker, Github
-              Actions, Azure, AWS.
+              Actions, Azure, AWS
             </li>
             <li>
               <a
