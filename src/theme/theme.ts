@@ -53,7 +53,7 @@ export const theme = {
       background: "#3FA037",
     },
     vue: {
-      width: "60%",
+      width: "70%",
       background: "#4FC08D",
     },
     css: {
@@ -80,12 +80,16 @@ export const theme = {
       width: "100%",
       background: "#F16529",
     },
+    docker: {
+      width: "60%",
+      background: "#2496ED",
+    },
     react: {
       width: "100%",
       background: "#61DAFB",
     },
     angular: {
-      width: "60%",
+      width: "70%",
       background: "#DD0031",
     },
     mui: {

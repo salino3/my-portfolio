@@ -40,6 +40,10 @@ export const emotion = css`
   ${theme.skills.emotion}
 `;
 
+export const docker = css`
+  ${theme.skills.docker}
+`;
+
 export const js = css`
   ${theme.skills.js}
 `;

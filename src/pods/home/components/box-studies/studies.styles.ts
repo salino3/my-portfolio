@@ -80,6 +80,12 @@ export const titleArticle = css`
   white-space: nowrap;
 `;
 
+export const lineJump = css`
+  display: unset;
+  @media (min-width: 725px) {
+    display: none;
+  }
+`;
 
 export const ul = css`
   display: flex;
