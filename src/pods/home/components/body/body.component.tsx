@@ -12,14 +12,14 @@ export const BodyComponent: React.FC = () => {
   const elementRef = React.useRef<HTMLDivElement>(null);
 
    React.useEffect(() => { 
-     if (elementRef.current) {     
+     if (elementRef.current) {
        setElementHeight(elementRef.current.clientHeight);
      };
   
    }, [elementRef.current?.clientHeight]);
 
 
- 
+ console.log("elementHeight", elementHeight);
   return (
     <div
       style={{

@@ -16,7 +16,9 @@ export const BoxStudies: React.FC = () => {
               alt="lemoncode"
             />
             <div className={classes.titleArticle}>
-              <h4>Bootcamp Back-end</h4>
+              <h4>
+                Bootcamp <br className={classes.lineJump} /> Back-end
+              </h4>
               <small> (In progress)</small>
             </div>
           </div>
@@ -50,7 +52,9 @@ export const BoxStudies: React.FC = () => {
               alt="lemoncode"
             />
             <div className={classes.titleArticle}>
-              <h4>Master Front-end</h4>
+              <h4>
+                Master <br className={classes.lineJump} /> Front-end
+              </h4>
               <small> (Jan - Apr 2023)</small>
             </div>
           </div>

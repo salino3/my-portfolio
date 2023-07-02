@@ -37,9 +37,9 @@ export const BoxSkills: React.FC = () => {
           skill="Sass"
         />
         <ProgressLine
-          className={classes.vsc}
-          img="assets/icons/vscode-original.svg"
-          skill="Visual Studio Code"
+          className={classes.node}
+          img="assets/icons/nodejs-plain.svg"
+          skill="NodeJS"
         />
         <ProgressLine
           className={classes.emotion}
@@ -55,9 +55,9 @@ export const BoxSkills: React.FC = () => {
       <hr />
       <div>
         <ProgressLine
-          className={classes.node}
-          img="assets/icons/nodejs-plain.svg"
-          skill="NodeJS"
+          className={classes.docker}
+          img="assets/icons/docker-icon.svg"
+          skill="Docker"
         />
         <ProgressLine
           className={classes.mysql}

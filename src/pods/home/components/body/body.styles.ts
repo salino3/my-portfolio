@@ -5,15 +5,15 @@ export const root = css`
   display: flex;
   justify-content: center;
   align-items: stretch;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   width: 100%;
 
   @media (min-width: 1024px) {
     padding: ${theme.spacing(14)} 0px;
     position: relative;
-    height: 1827px;
+    height: 2078px;
   }
-`;
+`; 
 
 export const container = css`
   display: flex;
