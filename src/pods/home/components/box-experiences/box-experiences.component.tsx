@@ -11,6 +11,34 @@ export const BoxExperiences: React.FC = () => {
       <div className={classes.boxArcticles}>
         <article className={classes.article}>
           <div className={classes.contentArcticle}>
+            <img
+              src="assets/gallery/logo_d_databay.webp"
+              alt="Databay Solution"
+            />
+            <div className={classes.titleArticle}>
+              <h4>Databay Solution</h4>
+              <small> (Web Development - since July 2023)</small>
+            </div>
+          </div>
+          <ul className={classes.ul}>
+            <li>Web development consulting</li>
+              <li>
+                My Role is web development, principally Front-end and Back-end too.
+              </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://databay.solutions/index.html"
+              >
+                https://databay.solutions/index.html
+              </a>
+            </li>
+          </ul>
+        </article>
+        {/*  */}
+        <article className={classes.article}>
+          <div className={classes.contentArcticle}>
             <img src="assets/icons/icon_manfred.svg" alt="manfred" />
             <div className={classes.titleArticle}>
               <h4>Manfred Export</h4>

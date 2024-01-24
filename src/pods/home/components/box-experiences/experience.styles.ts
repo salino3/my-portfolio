@@ -78,12 +78,13 @@ export const titleArticle = css`
 export const ul = css`
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 5px;
   list-style-type: disc;
   text-align: start;
   padding: 0px 32px;
 
-  a{
+  a {
    text-decoration: none;
    color: ${theme.palette.text_content}
  }
