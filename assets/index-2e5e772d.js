@@ -429,8 +429,10 @@ Valid keys: `+JSON.stringify(Object.keys(T),null,"  "));var ye=z(Q,Z,H,K,W+"."+Z
   align-items: stretch;
   box-sizing: border-box;
   width: 100%;
-
+  
+  
   @media (min-width: 1024px) {
+
     padding: ${j.spacing(14)} 0px;
     position: relative;
     height: 2078px;
@@ -443,10 +445,13 @@ Valid keys: `+JSON.stringify(Object.keys(T),null,"  "));var ye=z(Q,Z,H,K,W+"."+Z
   min-height: 100%;
   background: rgba(${j.background.middle});
   padding: ${j.spacing(12)} 0px;
+  overflow-x: hidden;
 
   @media (min-width: 1024px) {
+    overflow-x: unset;
+
     padding: 0px;
-  }  
+  }
 `,mv=R`
   background: ${j.background.dark.background};
   border: ${j.background.dark.border};
@@ -455,6 +460,8 @@ Valid keys: `+JSON.stringify(Object.keys(T),null,"  "));var ye=z(Q,Z,H,K,W+"."+Z
   min-width: 375px;
   max-width: 1024px;
   box-sizing: border-box;
+  
+  
    
   @media (min-width: 1024px) {
     position: absolute; 
