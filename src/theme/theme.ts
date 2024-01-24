@@ -45,7 +45,7 @@ export const theme = {
       background: "#6DB35A",
     },
     mysql: {
-      width: "70%",
+      width: "80%",
       background: "#00758F",
     },
     mongoose: {
