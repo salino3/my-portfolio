@@ -334,10 +334,14 @@ Valid keys: `+JSON.stringify(Object.keys(T),null,"  "));var ye=z(Q,Z,H,K,W+"."+Z
   text-align: start;
   padding: 0px 32px;
 
+  li {
+    padding-right: 12px;
+  }
+  
   a {
-   text-decoration: none;
-   color: ${j.palette.text_content}
- }
+    text-decoration: none;
+    color: ${j.palette.text_content};
+  }
 
   @media (min-width: 1024px) {
     max-width: 40%;
