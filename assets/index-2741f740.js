@@ -67,6 +67,7 @@ Valid keys: `+JSON.stringify(Object.keys(T),null,"  "));var ye=z(Q,J,H,K,W+"."+J
 `,ch=()=>y.jsx("div",{className:ah,children:y.jsxs("ul",{className:uh,children:[y.jsx("li",{children:y.jsx("a",{"aria-label":"my-LinkedIn",target:"_blank",rel:"noopener",href:"https://www.linkedin.com/in/flavio-forte-/",children:y.jsx("img",{src:"assets/icons/LinkedIn-icon.svg",alt:"LinkedIn"})})}),y.jsx("li",{children:y.jsx("a",{"aria-label":"my-Github",target:"_blank",rel:"noopener",href:"https://github.com/salino3",children:y.jsx("img",{src:"assets/icons/Github-icon.svg",alt:"Github"})})})]})}),fh="/my-portfolio/assets/salino3_03_my_spanish_cv_2024 -cd026ef9.pdf",dh=R`
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 `,ph=R`
   display: flex;
   flex-direction: column;
