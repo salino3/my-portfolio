@@ -5,21 +5,18 @@ import { BoxStudies } from "../box-studies";
 import * as classes from "./body.styles";
 
 export const BodyComponent: React.FC = () => {
-
   const initialHeight = 300;
-  
-  const [elementHeight, setElementHeight] = React.useState<number>(initialHeight);
+
+  const [elementHeight, setElementHeight] =
+    React.useState<number>(initialHeight);
   const elementRef = React.useRef<HTMLDivElement>(null);
 
-   React.useEffect(() => { 
-     if (elementRef.current) {
-       setElementHeight(elementRef.current.clientHeight);
-     };
-  
-   }, [elementRef.current?.clientHeight]);
+  React.useEffect(() => {
+    if (elementRef.current) {
+      setElementHeight(elementRef.current.clientHeight);
+    }
+  }, [elementRef.current?.clientHeight]);
 
-
- console.log("elementHeight", elementHeight);
   return (
     <div
       style={{
