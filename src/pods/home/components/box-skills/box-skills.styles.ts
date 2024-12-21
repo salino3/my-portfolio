@@ -6,33 +6,32 @@ export const container = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`;
+
+export const ReactBox = css`
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  gap: 16px;
+`;
 
-  & > div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    gap: 16px;
-  }
+export const box1 = css`
+  position: relative;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  top: 0;
+  float: left;
+  shape-outside: circle();
+  margin-right: 18px;
 
-  hr {
-    display: none;
-  }
-
-  @media (min-width: 1024px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: ${theme.spacing(8)};
-
-    hr {
-      display: unset;
-      height: 450px;
-      border: 1px solid #edf7fa;
-      margin: 1rem;
-    }
+  & > img {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    image-rendering: pixelated;
+    object-fit: cover;
   }
 `;
 
