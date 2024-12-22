@@ -6,6 +6,7 @@ export const container = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 `;
 
 export const ReactBox = css`
@@ -30,7 +31,52 @@ export const box1 = css`
     height: 100%;
     top: 0;
     left: 0;
-    image-rendering: pixelated;
+    object-fit: cover;
+  }
+`;
+
+export const BackendBox = css`
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+`;
+
+export const box2 = css`
+  position: relative;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  top: 0;
+  float: left;
+  shape-outside: circle();
+  margin-right: 18px;
+
+  & > img {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+`;
+
+export const box3 = css`
+  position: relative;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+
+  top: 0;
+  float: right;
+  shape-outside: circle();
+  margin-left: 50px;
+
+  & > img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
     object-fit: cover;
   }
 `;

@@ -1,5 +1,4 @@
 import React from "react";
-import { ProgressLine } from "../progress-line";
 import * as classes from "./box-skills.styles";
 import "./styles.css";
 
@@ -27,6 +26,33 @@ export const BoxSkills: React.FC = () => {
             need someone who can handle the entire front-end process with
             precision, React is the tool I use the most for front-end
             development.
+          </p>
+        </div>
+      </div>
+
+      <div className={classes.BackendBox}>
+        <div className={classes.box2}>
+          <img src="assets/icons/nodejs-plain.svg" alt="Node.js icon" />
+        </div>
+        <div className={classes.box3}>
+          <img src="assets/icons/mysql-original.svg" alt="MySQL icon" />
+        </div>
+        <div className="text">
+          <p>
+            I have practical experience in back-end development using Node.js,
+            Express and MySQL. While my experience is more extensive in
+            front-end development, I’ve successfully worked on projects
+            involving Node.js, with Typescript as well, including creating
+            repositories from zero and building APIs for user authentication
+            (register and login) using tools like JSON Web Tokens (JWT) and
+            cookies, GraphQL, etc. MySQL is the database I am most familiar, and
+            I have designed and managed multiple relational database schemas
+            with relationships between tables. I’ve implemented CRUD operations,
+            optimized queries, and ensured data integrity in my projects. I’ve
+            also worked with MongoDB but MySQL remains my primary database tool
+            due to my experience in writing SQL queries and handling database
+            design. I am comfortable setting up back-end architectures to
+            integrate efficiently with front-end systems.
           </p>
         </div>
       </div>
