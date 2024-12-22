@@ -26,11 +26,11 @@ export const BoxStudies: React.FC = () => {
               Bootcamp Lemoncode focused on teaching the last and most useful
               technologies in back-end such as Mongo, Mongoose, nodejs, express,
               socket.io, Typescript, SQL Server, .net 5, entity framework,
-              signalR
+              signalR.
             </li>
             <li>
               Infrastructure: Docker Cloud, Microsoft, Azure, Amazon, AWS,
-              Heroku, Github
+              Heroku, Github.
             </li>
             <li>
               <a
@@ -66,7 +66,7 @@ export const BoxStudies: React.FC = () => {
               technologies in front‑end web development such as React, Angular,
               Vuejs, Svelte, d3js, HTML / CSS, Material Design, CSS in JS, Jest,
               GraphQL Webpack, Parcel, Vite, ES6/ES7, Typescript, Docker, Github
-              Actions, Azure, AWS
+              Actions, Azure, AWS.
             </li>
             <li>
               <a
@@ -101,7 +101,7 @@ export const BoxStudies: React.FC = () => {
               fundamentals (ES6 / TypeScript), as well as the use of libraries
               and frameworks such as React, Angular, Vue, JQuery, HTML and CSS
               standards, and an introduction to nodejs and MySql was also
-              carried out
+              carried out.
             </li>
           </ul>
         </article>
