@@ -1,14 +1,11 @@
-import {css} from '@emotion/css';
-import { theme } from '../../../../theme';
-
+import { css } from "@emotion/css";
+import { theme } from "../../../../theme";
 
 export const root = css`
-
- margin-bottom: ${theme.spacing(25)};
+  margin-bottom: ${theme.spacing(25)};
 `;
 
 export const title = css`
-
   font-weight: 400;
   font-size: 28px;
   line-height: 41px;
@@ -22,11 +19,10 @@ export const hr = css`
 `;
 
 export const boxArcticles = css`
-
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- gap: ${theme.spacing(8)};
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: ${theme.spacing(8)};
 `;
 
 export const article = css`
@@ -40,7 +36,7 @@ export const article = css`
   @media (min-width: 1024px) {
     flex-direction: row;
   }
-`; 
+`;
 
 export const contentArcticle = css`
   display: flex;
@@ -52,7 +48,6 @@ export const contentArcticle = css`
   img {
     max-width: 64px;
     width: 100%;
-
   }
 `;
 
@@ -72,28 +67,23 @@ export const titleArticle = css`
   }
 
   white-space: nowrap;
-
 `;
 
 export const ul = css`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  box-sizing: border-box;
   gap: 5px;
   list-style-type: disc;
   text-align: start;
   padding: 0px 32px;
 
   a {
-   text-decoration: none;
-   color: ${theme.palette.text_content}
- }
+    text-decoration: none;
+    color: ${theme.palette.text_content};
+  }
 
   @media (min-width: 1024px) {
     max-width: 40%;
   }
 `;
-
-
-
-
