@@ -44,7 +44,6 @@ export const contentArcticle = css`
   gap: ${theme.spacing(4)};
   align-self: flex-start;
   justify-content: space-between;
-  
 `;
 
 export const imgLemoncode = css`
@@ -54,7 +53,6 @@ export const imgLemoncode = css`
   border: solid 2px white;
   width: 100%;
 `;
-
 
 export const imgPixelpro = css`
   max-width: 64px;
@@ -92,6 +90,7 @@ export const ul = css`
   flex-direction: column;
   gap: 5px;
   list-style-type: disc;
+  box-sizing: border-box;
   text-align: start;
   padding: 0px 32px;
 
