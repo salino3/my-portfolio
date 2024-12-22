@@ -9,10 +9,7 @@ export const BoxExperiences: React.FC = () => {
       <div className={classes.boxArcticles}>
         <article className={classes.article}>
           <div className={classes.contentArcticle}>
-            <img
-              src="assets/gallery/logo_d_databay.webp"
-              alt="Databay Solution"
-            />
+            <img src="assets/gallery/saurus.png" alt="Saurus" />
             <div className={classes.titleArticle}>
               <h4>Saurus</h4>
               <small> (Web Development - since Febbruary 2024 )</small>
