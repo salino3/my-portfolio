@@ -1,8 +1,7 @@
-import React from 'react';
-import * as classes from './studies.styles';
+import React from "react";
+import * as classes from "./studies.styles";
 
 export const BoxStudies: React.FC = () => {
-  
   return (
     <main className={classes.root}>
       <h3 className={classes.title}>Studies</h3>
@@ -35,11 +34,14 @@ export const BoxStudies: React.FC = () => {
             </li>
             <li>
               <a
+                style={{
+                  textDecoration: "underline",
+                }}
                 target="_blank"
                 rel="noopener"
                 href="https://lemoncode.net/bootcamp-backend#bootcamp-backend/banner"
               >
-                https://lemoncode.net/bootcamp-backend#bootcamp-backend/banner
+                Lemoncode bootcamp backend
               </a>
             </li>
           </ul>
@@ -68,11 +70,14 @@ export const BoxStudies: React.FC = () => {
             </li>
             <li>
               <a
+                style={{
+                  textDecoration: "underline",
+                }}
                 target="_blank"
                 rel="noopener"
                 href="https://lemoncode.net/master-frontend#inicio-banner"
               >
-                https://lemoncode.net/master-frontend#inicio-banner
+                Lemoncode master frontend
               </a>
             </li>
           </ul>
@@ -103,4 +108,4 @@ export const BoxStudies: React.FC = () => {
       </div>
     </main>
   );
-}
+};
