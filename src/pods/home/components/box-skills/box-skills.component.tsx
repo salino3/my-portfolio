@@ -1,6 +1,5 @@
 import React from "react";
 import * as classes from "./box-skills.styles";
-import "./styles.css";
 
 export const BoxSkills: React.FC = () => {
   return (

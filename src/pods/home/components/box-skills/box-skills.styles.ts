@@ -7,12 +7,14 @@ export const container = css`
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  color: #fff;
 `;
 
 export const ReactBox = css`
   position: relative;
   overflow: hidden;
   width: 100%;
+  text-align: justify;
 `;
 
 export const box1 = css`
@@ -39,6 +41,7 @@ export const BackendBox = css`
   position: relative;
   overflow: hidden;
   width: 100%;
+  text-align: justify;
 `;
 
 export const box2 = css`
