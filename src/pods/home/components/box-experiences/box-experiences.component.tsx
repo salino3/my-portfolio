@@ -9,7 +9,8 @@ export const BoxExperiences: React.FC = () => {
       <div className={classes.boxArcticles}>
         <article className={classes.article}>
           <div className={classes.contentArcticle}>
-            <img src="assets/gallery/saurus.png" alt="Saurus" />
+            {/* <img src="assets/gallery/.png" alt="" /> */}
+            <div className={classes.divImg}></div>
             <div className={classes.titleArticle}>
               <h4>Saurus</h4>
               <small> (Web Development - since Febbruary 2024 )</small>
