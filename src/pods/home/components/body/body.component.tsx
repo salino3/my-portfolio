@@ -5,27 +5,10 @@ import { BoxStudies } from "../box-studies";
 import * as classes from "./body.styles";
 
 export const BodyComponent: React.FC = () => {
-  const initialHeight = 300;
-
-  const [elementHeight, setElementHeight] =
-    React.useState<number>(initialHeight);
-  const elementRef = React.useRef<HTMLDivElement>(null);
-
-  React.useEffect(() => {
-    if (elementRef.current) {
-      setElementHeight(elementRef.current.clientHeight);
-    }
-  }, [elementRef.current?.clientHeight]);
-
   return (
-    <div
-      style={{
-        minHeight: `${elementHeight}px `,
-      }}
-      className={classes.root}
-    >
+    <div className={classes.root}>
       <div className={classes.container}>
-        <div ref={elementRef} className={classes.content}>
+        <div className={classes.content}>
           <main className={classes.progressLines}>
             <h2 className={classes.title}>My Skills</h2>
             <BoxSkills />
