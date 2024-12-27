@@ -1,104 +1,59 @@
 import React from "react";
-import { ProgressLine } from "../progress-line";
 import * as classes from "./box-skills.styles";
 
 export const BoxSkills: React.FC = () => {
   return (
     <div className={classes.container}>
-      <div>
-        <ProgressLine
-          className={classes.react}
-          img="assets/icons/react-original.svg"
-          skill="React"
-        />
-        <ProgressLine
-          className={classes.ts}
-          img="assets/icons/typescript.svg"
-          skill="Typescript"
-        />
-        <ProgressLine
-          className={classes.js}
-          img="assets/icons/javascript.svg"
-          skill="Javascript"
-        />
-        <ProgressLine
-          className={classes.css_icon}
-          img="assets/icons/css3-original-wordmark.svg"
-          skill="CSS"
-        />
-        <ProgressLine
-          className={classes.html}
-          img="assets/icons/html5-original-wordmark.svg"
-          skill="HTML"
-        />
-        <ProgressLine
-          className={classes.sass}
-          img="assets/icons/sass-original.svg"
-          skill="Sass"
-        />
-        <ProgressLine
-          className={classes.node}
-          img="assets/icons/nodejs-plain.svg"
-          skill="NodeJS"
-        />
-        <ProgressLine
-          className={classes.emotion}
-          img="assets/icons/logo--emotion.svg"
-          skill="Emotion"
-        />
-        <ProgressLine
-          className={classes.gql}
-          img="assets/icons/graphql-plain.svg"
-          skill="GraphQL"
-        />
+      <div className={classes.ReactBox}>
+        <div className={classes.box1}>
+          <img src="assets/icons/react-original.svg" alt="React icon" />
+        </div>
+        <div>
+          <p>
+            I have over two years of experience working as a web developer and
+            have been studying web technologies for four years. Among the
+            front-end technologies I’ve worked with, React stands out as my
+            specialty. I have a deep understanding of creating dynamic and
+            responsive applications using React, with Typescript as well, from
+            setting up projects to managing complex states with tools like
+            Context API. My experience also includes working with vanilla
+            JavaScript. I can make custom components, and integrating APIs
+            efficiently. I am highly skilled in HTML, SCSS, and designing web
+            interfaces from zero with multiple pages using React Router DOM,
+            GraphQL, etc. My proficiency extends to optimizing performance,
+            implementing best practices, and build maintainable code. If you
+            need someone who can handle the entire front-end process with
+            precision, React is the tool I use the most for front-end
+            development.
+          </p>
+        </div>
       </div>
-      <hr />
-      <div>
-        <ProgressLine
-          className={classes.docker}
-          img="assets/icons/docker-icon.svg"
-          skill="Docker"
-        />
-        <ProgressLine
-          className={classes.mysql}
-          img="assets/icons/mysql-original.svg"
-          skill="MySQL"
-        />
-        <ProgressLine
-          className={classes.github}
-          img="assets/icons/Github-white.svg"
-          skill="GitHub"
-        />
-        <ProgressLine
-          className={classes.bootstrap}
-          img="assets/icons/bootstrap-original.svg"
-          skill="Bootstrap"
-        />
-        <ProgressLine
-          className={classes.git}
-          img="assets/icons/git-original.svg"
-          skill="Git"
-        />
-        <ProgressLine
-          className={classes.mongoose}
-          img="assets/icons/mongoose.svg"
-          skill="Mongoose"
-        />
-        <ProgressLine
-          className={classes.vue}
-          img="assets/icons/vuejs-original.svg"
-          skill="Vue"
-        />
-        <ProgressLine
-          className={classes.angular}
-          img="assets/icons/angularjs-original.svg"
-          skill="Angular"
-        />
-        <ProgressLine
-          className={classes.mui}
-          img="assets/icons/materialui-original.svg"
-          skill="Material UI"
-        />
+
+      <div className={classes.BackendBox}>
+        <div className={classes.box2}>
+          <img src="assets/icons/nodejs-plain.svg" alt="Node.js icon" />
+        </div>
+        <div className={classes.box3}>
+          <img src="assets/icons/mysql-original.svg" alt="MySQL icon" />
+        </div>
+        <div>
+          <p>
+            I have practical experience in back-end development using Node.js,
+            Express and MySQL. While my experience is more extensive in
+            front-end development, I’ve successfully worked on projects
+            involving Node.js, with Typescript as well, including creating
+            repositories from zero and building APIs for user authentication
+            (register and login) using tools like JSON Web Tokens (JWT) and
+            cookies, GraphQL, etc. MySQL is the database I am most familiar, and
+            I have designed and managed multiple relational database schemas
+            with relationships between tables. I’ve implemented CRUD operations,
+            optimized queries, and ensured data integrity in my projects. I’ve
+            also worked with MongoDB but MySQL remains my primary database tool
+            due to my experience in writing SQL queries and handling database
+            design. I am comfortable setting up back-end architectures to
+            integrate efficiently with front-end systems.
+          </p>
+        </div>
       </div>
     </div>
   );

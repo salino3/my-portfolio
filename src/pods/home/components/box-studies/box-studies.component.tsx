@@ -1,8 +1,7 @@
-import React from 'react';
-import * as classes from './studies.styles';
+import React from "react";
+import * as classes from "./studies.styles";
 
 export const BoxStudies: React.FC = () => {
-  
   return (
     <main className={classes.root}>
       <h3 className={classes.title}>Studies</h3>
@@ -27,19 +26,22 @@ export const BoxStudies: React.FC = () => {
               Bootcamp Lemoncode focused on teaching the last and most useful
               technologies in back-end such as Mongo, Mongoose, nodejs, express,
               socket.io, Typescript, SQL Server, .net 5, entity framework,
-              signalR
+              signalR.
             </li>
             <li>
               Infrastructure: Docker Cloud, Microsoft, Azure, Amazon, AWS,
-              Heroku, Github
+              Heroku, Github.
             </li>
             <li>
               <a
+                style={{
+                  textDecoration: "underline",
+                }}
                 target="_blank"
                 rel="noopener"
                 href="https://lemoncode.net/bootcamp-backend#bootcamp-backend/banner"
               >
-                https://lemoncode.net/bootcamp-backend#bootcamp-backend/banner
+                Lemoncode bootcamp backend
               </a>
             </li>
           </ul>
@@ -64,15 +66,18 @@ export const BoxStudies: React.FC = () => {
               technologies in front‑end web development such as React, Angular,
               Vuejs, Svelte, d3js, HTML / CSS, Material Design, CSS in JS, Jest,
               GraphQL Webpack, Parcel, Vite, ES6/ES7, Typescript, Docker, Github
-              Actions, Azure, AWS
+              Actions, Azure, AWS.
             </li>
             <li>
               <a
+                style={{
+                  textDecoration: "underline",
+                }}
                 target="_blank"
                 rel="noopener"
                 href="https://lemoncode.net/master-frontend#inicio-banner"
               >
-                https://lemoncode.net/master-frontend#inicio-banner
+                Lemoncode master frontend
               </a>
             </li>
           </ul>
@@ -96,11 +101,11 @@ export const BoxStudies: React.FC = () => {
               fundamentals (ES6 / TypeScript), as well as the use of libraries
               and frameworks such as React, Angular, Vue, JQuery, HTML and CSS
               standards, and an introduction to nodejs and MySql was also
-              carried out
+              carried out.
             </li>
           </ul>
         </article>
       </div>
     </main>
   );
-}
+};

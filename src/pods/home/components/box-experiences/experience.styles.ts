@@ -51,6 +51,12 @@ export const contentArcticle = css`
   }
 `;
 
+export const divImg = css`
+  max-width: 64px;
+  min-width: 64px;
+  width: 100%;
+`;
+
 export const titleArticle = css`
   display: flex;
   flex-direction: column;
