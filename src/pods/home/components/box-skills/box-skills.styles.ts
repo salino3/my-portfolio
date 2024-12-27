@@ -15,6 +15,7 @@ export const ReactBox = css`
   overflow: hidden;
   width: 100%;
   text-align: justify;
+  word-break: break-all;
 `;
 
 export const box1 = css`
@@ -42,6 +43,7 @@ export const BackendBox = css`
   overflow: hidden;
   width: 100%;
   text-align: justify;
+  word-break: break-all;
 `;
 
 export const box2 = css`
