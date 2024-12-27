@@ -10,15 +10,13 @@ export const root = css`
 
   @media (min-width: 1024px) {
     padding: ${theme.spacing(14)} 0px;
-    position: relative;
-    height: 2078px;
   }
-`; 
+`;
 
 export const container = css`
   display: flex;
-  position: relative;
   justify-content: center;
+  align-items: center;
   width: 100%;
   min-height: 100%;
   background: rgba(${theme.background.middle});
@@ -26,9 +24,8 @@ export const container = css`
 
   @media (min-width: 1024px) {
     padding: 0px;
-  }  
-`; 
-
+  }
+`;
 
 export const content = css`
   background: ${theme.background.dark.background};
@@ -38,19 +35,15 @@ export const content = css`
   min-width: 375px;
   max-width: 1024px;
   box-sizing: border-box;
-   
+
   @media (min-width: 1024px) {
-    position: absolute; 
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    height: calc(100% + ${theme.spacing(32)});
   }
 `;
 
 export const progressLines = css`
   display: flex;
   flex-direction: column;
-
 `;
 
 export const title = css`
