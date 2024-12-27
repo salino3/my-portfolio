@@ -8,7 +8,7 @@ export const BoxSkills: React.FC = () => {
         <div className={classes.box1}>
           <img src="assets/icons/react-original.svg" alt="React icon" />
         </div>
-        <div className="text">
+        <div>
           <p>
             I have over two years of experience working as a web developer and
             have been studying web technologies for four years. Among the
@@ -36,7 +36,7 @@ export const BoxSkills: React.FC = () => {
         <div className={classes.box3}>
           <img src="assets/icons/mysql-original.svg" alt="MySQL icon" />
         </div>
-        <div className="text">
+        <div>
           <p>
             I have practical experience in back-end development using Node.js,
             Express and MySQL. While my experience is more extensive in
