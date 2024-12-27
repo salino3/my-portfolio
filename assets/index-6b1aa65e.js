@@ -271,8 +271,8 @@ Valid keys: `+JSON.stringify(Object.keys(T),null,"  "));var ye=z(B,X,W,G,H+"."+X
 
   @media (max-width: 725px) {
     margin-top: 155px;
-    margin-left: 40px;
-    transform: translate(calc(-50% + 65px), -50%);
+    margin-left: 50px;
+    transform: translate(calc(-50% + 60px), -50%);
 
     & > img {
       top: 50%;
