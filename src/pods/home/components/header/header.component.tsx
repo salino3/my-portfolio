@@ -25,15 +25,15 @@ export const Header: React.FC = () => {
             ) : (
               <h1 className={classes.title}>
                 Hi, I am <span>Flavio Forte</span> <br />
-                Front-end Developer
+                Software Developer
               </h1>
             )}
           </div>
           <div className={classes.description}>
-            I have passion for software programming and I am excited to apply my
-            skills and knowledge to real world projects, I really want to keep
-            learning and growing in the software development field and I search
-            new challenges and opportunities.
+            I am passionate about software programming and dedicated to applying
+            my experience to impactful and innovative projects. I am motivated
+            to keep learning and growing in the software development field and I
+            search new challenges and opportunities.
           </div>
           <a href={resumePDF} download="My_CV_Flavio_Forte.pdf">
             <div className={classes.btn}>Download Resume</div>
