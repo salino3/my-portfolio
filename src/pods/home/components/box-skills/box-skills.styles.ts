@@ -15,7 +15,8 @@ export const ReactBox = css`
   overflow: hidden;
   width: 100%;
   text-align: justify;
-  word-break: break-all;
+  word-wrap: break-word; // Allows long words to break onto the next line if they exceed the container's width. Prevents overflow issues.
+  text-justify: inter-word; // Justifies text by adjusting spacing only between words, ensuring alignment on both left and right edges.
 `;
 
 export const box1 = css`
@@ -23,6 +24,9 @@ export const box1 = css`
   overflow: hidden;
   width: 150px;
   height: 150px;
+  max-width: 150px;
+  max-height: 150px;
+  min-height: 150px;
   border-radius: 50%;
   top: 0;
   float: left;
@@ -31,6 +35,7 @@ export const box1 = css`
 
   & > img {
     position: absolute;
+    width: 100%;
     height: 100%;
     top: 0;
     left: 0;
@@ -43,7 +48,8 @@ export const BackendBox = css`
   overflow: hidden;
   width: 100%;
   text-align: justify;
-  word-break: break-all;
+  word-wrap: break-word; // Allows long words to break onto the next line if they exceed the container's width. Prevents overflow issues.
+  text-justify: inter-word; // Justifies text by adjusting spacing only between words, ensuring alignment on both left and right edges.
 `;
 
 export const box2 = css`
@@ -51,6 +57,9 @@ export const box2 = css`
   overflow: hidden;
   width: 150px;
   height: 150px;
+  min-height: 150px;
+  max-width: 150px;
+  max-height: 150px;
   border-radius: 50%;
   top: 0;
   float: left;
@@ -58,8 +67,10 @@ export const box2 = css`
   margin-right: 18px;
 
   & > img {
+    min-height: 150px;
     position: absolute;
     height: 100%;
+    width: 100%;
     top: 0;
     left: 0;
     object-fit: cover;
@@ -71,15 +82,18 @@ export const box3 = css`
   overflow: hidden;
   width: 150px;
   height: 150px;
-
+  max-width: 150px;
+  max-height: 150px;
+  min-height: 150px;
   top: 0;
   float: right;
   shape-outside: circle();
   margin-left: 50px;
-
   & > img {
+    min-height: 150px;
     position: absolute;
     width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     object-fit: cover;
