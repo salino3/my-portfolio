@@ -12,7 +12,11 @@ export const Header: React.FC = () => {
       <Navbar />
       <div className={classes.container}>
         <div className={classes.mainImg}>
-          <img src="assets/gallery/main-image.png" alt="main-images" />
+          <img
+            loading="lazy"
+            src="assets/gallery/main-image.png"
+            alt="main-images"
+          />
         </div>
         <div className={classes.content}>
           <div className={classes.boxTitle}>

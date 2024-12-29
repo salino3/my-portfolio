@@ -43,12 +43,14 @@ export const Footer: React.FC = () => {
           onClick={handlePopupEmail}
           src="assets/icons/email-icon.svg"
           alt="email"
+          loading="lazy"
         />
 
         <img
           onClick={handlePopupMobile}
           src="assets/icons/phone-icon.svg"
           alt="phone"
+          loading="lazy"
         />
 
         <a
@@ -60,7 +62,8 @@ export const Footer: React.FC = () => {
           <img
             className={classes.icon}
             src="assets/icons/Github-icon.svg"
-            alt="github"
+            alt="Github"
+            loading="lazy"
           />
         </a>
 
@@ -73,7 +76,8 @@ export const Footer: React.FC = () => {
           <img
             className={classes.icon}
             src="assets/icons/LinkedIn-icon.svg"
-            alt="linkedin"
+            alt="Linkedin"
+            loading="lazy"
           />
         </a>
       </nav>

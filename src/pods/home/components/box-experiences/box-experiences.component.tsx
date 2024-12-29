@@ -9,7 +9,7 @@ export const BoxExperiences: React.FC = () => {
       <div className={classes.boxArcticles}>
         <article className={classes.article}>
           <div className={classes.contentArcticle}>
-            {/* <img src="assets/gallery/.png" alt="" /> */}
+            {/* <img src="assets/gallery/.png" alt=""  loading="lazy"  /> */}
             <div className={classes.divImg}></div>
             <div className={classes.titleArticle}>
               <h4>Saurus</h4>
@@ -39,6 +39,7 @@ export const BoxExperiences: React.FC = () => {
             <img
               src="assets/gallery/logo_d_databay.webp"
               alt="Databay Solution"
+              loading="lazy"
             />
             <div className={classes.titleArticle}>
               <h4>Databay Solution</h4>
@@ -69,7 +70,11 @@ export const BoxExperiences: React.FC = () => {
         </article>
         <article className={classes.article}>
           <div className={classes.contentArcticle}>
-            <img src="assets/icons/icon_manfred.svg" alt="manfred" />
+            <img
+              src="assets/icons/icon_manfred.svg"
+              alt="Manfred"
+              loading="lazy"
+            />
             <div className={classes.titleArticle}>
               <h4>Manfred Export</h4>
               <small> (Open source proyect - 2023)</small>
@@ -100,7 +105,7 @@ export const BoxExperiences: React.FC = () => {
         </article>
         <article className={classes.article}>
           <div className={classes.contentArcticle}>
-            <img src="assets/icons/icon_omix.svg" alt="omix" />
+            <img src="assets/icons/icon_omix.svg" alt="Omix" loading="lazy" />
             <div className={classes.titleArticle}>
               <h4>E-commerce app</h4>
               <small> (Open source proyect - 2023)</small>

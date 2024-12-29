@@ -6,7 +6,11 @@ export const BoxSkills: React.FC = () => {
     <div className={classes.container}>
       <div className={classes.ReactBox}>
         <div className={classes.box1}>
-          <img src="assets/icons/react-original.svg" alt="React icon" />
+          <img
+            loading="lazy"
+            src="assets/icons/react-original.svg"
+            alt="React icon"
+          />
         </div>
         <div>
           <p>
@@ -31,10 +35,18 @@ export const BoxSkills: React.FC = () => {
 
       <div className={classes.BackendBox}>
         <div className={classes.box2}>
-          <img src="assets/icons/nodejs-plain.svg" alt="Node.js icon" />
+          <img
+            loading="lazy"
+            src="assets/icons/nodejs-plain.svg"
+            alt="Node.js icon"
+          />
         </div>
         <div className={classes.box3}>
-          <img src="assets/icons/mysql-original.svg" alt="MySQL icon" />
+          <img
+            loading="lazy"
+            src="assets/icons/mysql-original.svg"
+            alt="MySQL icon"
+          />
         </div>
         <div>
           <p>

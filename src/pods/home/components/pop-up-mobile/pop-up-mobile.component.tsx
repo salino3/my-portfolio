@@ -48,11 +48,13 @@ export const PopUpMobile: React.FC<Props> = (props) => {
             onClick={handleModal}
             src="assets/icons/icon-X.svg"
             alt="close"
+            loading="lazy"
           />
           <img
             className={classes.mobileIcon}
             src="assets/icons/phone-icon-2.svg"
             alt="mobile"
+            loading="lazy"
           />
           <p>666 87 36 70</p>
           <button onClick={handleClick} className={classes.btnCopy}>

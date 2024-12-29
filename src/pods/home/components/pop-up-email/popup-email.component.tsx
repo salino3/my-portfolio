@@ -48,11 +48,13 @@ export const PopUpEmail: React.FC<Props> = (props) => {
           onClick={handleModal}
           src="assets/icons/icon-X.svg"
           alt="close"
+          loading="lazy"
         />
         <img
           className={classes.emailIcon}
           src="assets/icons/email-icon.svg"
           alt="mobile"
+          loading="lazy"
         />
         <p>{theme?.routeMyEmail}</p>
         <button onClick={handleClick} className={classes.btnCopy}>
