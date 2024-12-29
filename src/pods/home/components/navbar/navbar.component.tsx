@@ -1,8 +1,7 @@
-import React from 'react';
-import * as classes from './navbar.styles'
+import React from "react";
+import * as classes from "./navbar.styles";
 
 export const Navbar: React.FC = () => {
-
   return (
     <div className={classes.container}>
       <ul className={classes.content}>
@@ -14,6 +13,7 @@ export const Navbar: React.FC = () => {
             href="https://www.linkedin.com/in/flavio-forte-/"
           >
             <img
+              loading="lazy"
               src="assets/icons/LinkedIn-icon.svg"
               alt="LinkedIn"
             />
@@ -26,10 +26,14 @@ export const Navbar: React.FC = () => {
             rel="noopener"
             href="https://github.com/salino3"
           >
-            <img src="assets/icons/Github-icon.svg" alt="Github" />
+            <img
+              loading="lazy"
+              src="assets/icons/Github-icon.svg"
+              alt="Github"
+            />
           </a>
         </li>
       </ul>
     </div>
   );
-}
+};

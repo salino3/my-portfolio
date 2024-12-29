@@ -6,7 +6,11 @@ export const BoxSkills: React.FC = () => {
     <div className={classes.container}>
       <div className={classes.ReactBox}>
         <div className={classes.box1}>
-          <img src="assets/icons/react-original.svg" alt="React icon" />
+          <img
+            loading="lazy"
+            src="assets/icons/react-original.svg"
+            alt="React icon"
+          />
         </div>
         <div>
           <p>
@@ -21,20 +25,27 @@ export const BoxSkills: React.FC = () => {
             efficiently. I am highly skilled in HTML, SCSS, and designing web
             interfaces from zero with multiple pages using React Router DOM,
             GraphQL, etc. My proficiency extends to optimizing performance,
-            implementing best practices, and build maintainable code. If you
-            need someone who can handle the entire front-end process with
-            precision, React is the tool I use the most for front-end
-            development.
+            implementing best practices, and build maintainable code. If I need
+            to handle the entire front-end process with precision, React is the
+            tool I use the most for front-end development.
           </p>
         </div>
       </div>
 
       <div className={classes.BackendBox}>
         <div className={classes.box2}>
-          <img src="assets/icons/nodejs-plain.svg" alt="Node.js icon" />
+          <img
+            loading="lazy"
+            src="assets/icons/nodejs-plain.svg"
+            alt="Node.js icon"
+          />
         </div>
         <div className={classes.box3}>
-          <img src="assets/icons/mysql-original.svg" alt="MySQL icon" />
+          <img
+            loading="lazy"
+            src="assets/icons/mysql-original.svg"
+            alt="MySQL icon"
+          />
         </div>
         <div>
           <p>
