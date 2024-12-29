@@ -98,18 +98,6 @@ export const box3 = css`
     left: 0;
     object-fit: cover;
   }
-
-  @media (max-width: 725px) {
-    margin-top: 155px;
-    margin-left: 50px;
-    transform: translate(calc(-50% + 60px), -50%);
-
-    & > img {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
 `;
 
 export const emotion = css`
