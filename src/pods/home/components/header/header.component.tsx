@@ -20,7 +20,7 @@ export const Header: React.FC = () => {
               <h1 className={classes.title}>
                 Hi, I am <br />
                 <span>Flavio Forte</span> <br />
-                FrontEnd Developer
+                Software Developer
               </h1>
             ) : (
               <h1 className={classes.title}>

@@ -26,14 +26,18 @@ export const Footer: React.FC = () => {
 
   return (
     <div className={classes.root}>
-      <PopUpMobile
-        className={cx({ [classes.popUp]: !showPopupMobile })}
-        handleModal={handleMobileModal}
-      />
-      <PopUpEmail
-        className={cx({ [classes.popUp]: !showPopupEmail })}
-        handleModal={handleEmailModal}
-      />
+      {showPopupMobile && (
+        <PopUpMobile
+          className={cx({ [classes.popUp]: !showPopupMobile })}
+          handleModal={handleMobileModal}
+        />
+      )}
+      {showPopupEmail && (
+        <PopUpEmail
+          className={cx({ [classes.popUp]: !showPopupEmail })}
+          handleModal={handleEmailModal}
+        />
+      )}
       <nav className={classes.nav}>
         <img
           onClick={handlePopupEmail}

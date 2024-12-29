@@ -86,3 +86,21 @@ export const btnCopy = css`
   color: ${theme.palette.text_content};
   cursor: pointer;
 `;
+
+export const a = css`
+  cursor: pointer;
+  width: 100%;
+`;
+
+export const btnSend = css`
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: ${theme.background.dark.background};
+  color: ${theme.palette.text_content};
+  cursor: pointer;
+`;
