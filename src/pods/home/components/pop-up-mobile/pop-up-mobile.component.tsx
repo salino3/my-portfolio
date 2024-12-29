@@ -10,6 +10,7 @@ interface Props {
 
 export const PopUpMobile: React.FC<Props> = (props) => {
   const { className, handleModal } = props;
+  const contentRef = React.useRef<HTMLDivElement>(null);
 
   const [copied, setCopied] = React.useState(false);
 
@@ -22,10 +23,26 @@ export const PopUpMobile: React.FC<Props> = (props) => {
     }, 1000);
   }
 
+  React.useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      if (
+        contentRef.current &&
+        !contentRef.current.contains(event.target as Node)
+      ) {
+        handleModal?.();
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [handleModal]);
+
   return (
     <div className={cx(classes.main, className)}>
       <div className={classes.container}>
-        <div className={classes.content}>
+        <div className={classes.content} ref={contentRef}>
           <img
             className={classes.btnClose}
             onClick={handleModal}
