@@ -135,9 +135,9 @@ export const BoxExperiences: React.FC = () => {
                 }}
                 target="_blank"
                 rel="noopener"
-                href="https://e-commerce-lemoncode.vercel.app/"
+                href="https://e-commerce-lemoncode.vercel.app"
               >
-                https://e-commerce-lemoncode.vercel.app/
+                https://e-commerce-lemoncode.vercel.app
               </a>
             </li>
           </ul>

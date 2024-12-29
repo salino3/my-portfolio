@@ -25,10 +25,9 @@ export const BoxSkills: React.FC = () => {
             efficiently. I am highly skilled in HTML, SCSS, and designing web
             interfaces from zero with multiple pages using React Router DOM,
             GraphQL, etc. My proficiency extends to optimizing performance,
-            implementing best practices, and build maintainable code. If you
-            need someone who can handle the entire front-end process with
-            precision, React is the tool I use the most for front-end
-            development.
+            implementing best practices, and build maintainable code. If I need
+            to handle the entire front-end process with precision, React is the
+            tool I use the most for front-end development.
           </p>
         </div>
       </div>
