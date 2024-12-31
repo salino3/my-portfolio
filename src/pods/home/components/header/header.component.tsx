@@ -1,7 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Navbar } from "../navbar";
-import resumePDF from "../../../../assets/My_CV_Flavio_Forte.pdf";
+import resumePDF from "../../../../assets/my-cv-english-latest.pdf";
 import * as classes from "./header.styles";
 
 export const Header: React.FC = () => {
