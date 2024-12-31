@@ -39,7 +39,7 @@ export const Header: React.FC = () => {
             to keep learning and growing in the software development field and I
             search new challenges and opportunities.
           </div>
-          <a href={resumePDF} download="My_CV_Flavio_Forte.pdf">
+          <a href={resumePDF} download="my-cv-english-latest.pdf">
             <div className={classes.btn}>Download Resume</div>
           </a>
         </div>
