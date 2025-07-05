@@ -15,7 +15,7 @@ export const BoxSkills: React.FC = () => {
         <div>
           <p>
             I have over two years of experience working as a web developer and
-            have been studying web technologies for four years. Among the
+            have been studying web technologies for five years. Among the
             front-end technologies I’ve worked with, React stands out as my
             specialty. I have a deep understanding of creating dynamic and
             responsive applications using React, with Typescript as well, from
@@ -25,9 +25,10 @@ export const BoxSkills: React.FC = () => {
             efficiently. I am highly skilled in HTML, SCSS, and designing web
             interfaces from zero with multiple pages using React Router DOM,
             GraphQL, etc. My proficiency extends to optimizing performance,
-            implementing best practices, and build maintainable code. If I need
-            to handle the entire front-end process with precision, React is the
-            tool I use the most for front-end development.
+            implementing best practices, implementing WCAG, and build
+            maintainable code. If I need to handle the entire front-end process
+            with precision, React is the tool I use the most for front-end
+            development.
           </p>
         </div>
       </div>
