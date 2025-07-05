@@ -12,6 +12,7 @@ export const PopUpMobile: React.FC<Props> = (props) => {
   const { className, handleModal } = props;
   const contentRef = React.useRef<HTMLDivElement>(null);
   const copyButtonRef = React.useRef<HTMLButtonElement>(null);
+  const closeBtnRef = React.useRef<HTMLImageElement>(null);
 
   const [copied, setCopied] = React.useState(false);
 
@@ -67,6 +68,7 @@ export const PopUpMobile: React.FC<Props> = (props) => {
             alt="Close icon"
             aria-label="Close pop up"
             loading="lazy"
+            ref={closeBtnRef}
           />
           <img
             className={classes.mobileIcon}
@@ -96,6 +98,12 @@ export const PopUpMobile: React.FC<Props> = (props) => {
 
           <button
             aria-label="Call me"
+            onKeyDown={(e: React.KeyboardEvent<HTMLButtonElement>) => {
+              if (e.key === "Tab" && !e.shiftKey) {
+                e.preventDefault();
+                closeBtnRef.current?.focus();
+              }
+            }}
             onClick={() => {
               window.location.href = `tel:${theme?.mobileNumber}`;
             }}

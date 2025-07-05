@@ -13,6 +13,7 @@ export const PopUpEmail: React.FC<Props> = (props) => {
 
   const contentRef = React.useRef<HTMLDivElement>(null);
   const copyButtonRef = React.useRef<HTMLButtonElement>(null);
+  const closeBtnRef = React.useRef<HTMLImageElement>(null);
 
   const [copied, setCopied] = React.useState(false);
 
@@ -67,6 +68,7 @@ export const PopUpEmail: React.FC<Props> = (props) => {
           alt="Close icon"
           aria-label="Close pop up"
           loading="lazy"
+          ref={closeBtnRef}
         />
         <img
           className={classes.emailIcon}
@@ -95,6 +97,12 @@ export const PopUpEmail: React.FC<Props> = (props) => {
 
         <button
           aria-label="Send me a email"
+          onKeyDown={(e: React.KeyboardEvent<HTMLButtonElement>) => {
+            if (e.key === "Tab" && !e.shiftKey) {
+              e.preventDefault();
+              closeBtnRef.current?.focus();
+            }
+          }}
           onClick={() => {
             window.location.href = `mailto:${theme?.routeMyEmail}`;
           }}
