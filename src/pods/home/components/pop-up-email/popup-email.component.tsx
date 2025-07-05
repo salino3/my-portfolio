@@ -12,6 +12,7 @@ export const PopUpEmail: React.FC<Props> = (props) => {
   const { className, handleModal } = props;
 
   const contentRef = React.useRef<HTMLDivElement>(null);
+  const copyButtonRef = React.useRef<HTMLButtonElement>(null);
 
   const [copied, setCopied] = React.useState(false);
 
@@ -39,6 +40,17 @@ export const PopUpEmail: React.FC<Props> = (props) => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };
   }, [handleModal]);
+
+  React.useEffect(() => {
+    // 'requestAnimationFrame' schedules a function to run just after DOM and before the next repaint or synchronous javascript.
+    // It ensures that any DOM updates are completed, making it useful for visual changes or focus logic.
+    // This provides better performance and avoids layout thrashing compared to setTimeout.
+    // similar to 'useLayoutEffect
+    const id = requestAnimationFrame(() => {
+      copyButtonRef.current?.focus();
+    });
+    return () => cancelAnimationFrame(id);
+  }, []);
 
   return (
     <div className={cx(classes.root, className)}>
@@ -73,6 +85,7 @@ export const PopUpEmail: React.FC<Props> = (props) => {
           </span>
         </p>
         <button
+          ref={copyButtonRef}
           aria-label="Copy my email"
           onClick={handleClick}
           className={classes.btnCopy}
