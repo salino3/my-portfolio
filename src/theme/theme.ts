@@ -98,6 +98,6 @@ export const theme = {
     },
   },
   routeMyEmail: "programacionflavio@gmail.com",
-  mobileNumber: "+34666873670",
+  mobileNumber: "+34 666873670",
   spacing: (multiplier: number = 1) => `${multiplier * BASE_SPACING}px`,
 };

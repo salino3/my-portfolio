@@ -7,7 +7,7 @@ export const Navbar: React.FC = () => {
       <ul className={classes.content}>
         <li>
           <a
-            aria-label="my-LinkedIn"
+            aria-label="My LinkedIn"
             target="_blank"
             rel="noopener"
             href="https://www.linkedin.com/in/flavio-forte-/"
@@ -21,7 +21,7 @@ export const Navbar: React.FC = () => {
         </li>
         <li>
           <a
-            aria-label="my-Github"
+            aria-label="My Github"
             target="_blank"
             rel="noopener"
             href="https://github.com/salino3"

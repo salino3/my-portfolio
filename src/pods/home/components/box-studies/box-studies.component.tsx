@@ -12,7 +12,7 @@ export const BoxStudies: React.FC = () => {
             <img
               className={classes.imgLemoncode}
               src="assets/icons/icon-lemoncode.svg"
-              alt="Lemoncode"
+              alt="Lemoncode bootcamp"
               loading="lazy"
             />
             <div className={classes.titleArticle}>
@@ -52,7 +52,7 @@ export const BoxStudies: React.FC = () => {
             <img
               className={classes.imgLemoncode}
               src="assets/icons/icon-lemoncode.svg"
-              alt="Lemoncode"
+              alt="Lemoncode bootcamp"
               loading="lazy"
             />
             <div className={classes.titleArticle}>
@@ -89,7 +89,7 @@ export const BoxStudies: React.FC = () => {
             <img
               className={classes.imgPixelpro}
               src="assets/icons/icon-pixel-pro.svg"
-              alt="Pixelpro"
+              alt="Pixelpro bootcamp"
               loading="lazy"
             />
 

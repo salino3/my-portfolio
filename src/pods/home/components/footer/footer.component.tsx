@@ -40,21 +40,35 @@ export const Footer: React.FC = () => {
       )}
       <nav className={classes.nav}>
         <img
+          id="handlePopupEmailID"
+          tabIndex={0}
+          role="button"
           onClick={handlePopupEmail}
+          onKeyDown={(e: React.KeyboardEvent<HTMLImageElement>) =>
+            e.key === "Enter" && handlePopupEmail()
+          }
           src="assets/icons/email-icon.svg"
-          alt="email"
+          alt="Icon email"
+          aria-label="Open pop up email"
           loading="lazy"
         />
 
         <img
+          id="handlePopupPhoneID"
+          tabIndex={0}
+          role="button"
           onClick={handlePopupMobile}
+          onKeyDown={(e: React.KeyboardEvent<HTMLImageElement>) =>
+            e.key === "Enter" && handlePopupMobile()
+          }
           src="assets/icons/phone-icon.svg"
-          alt="phone"
+          alt="Icon phone"
+          aria-label="Open pop up phone"
           loading="lazy"
         />
 
         <a
-          aria-label="my-Github"
+          aria-label="My Github"
           target="_blank"
           rel="noopener"
           href="https://github.com/salino3"
@@ -62,13 +76,13 @@ export const Footer: React.FC = () => {
           <img
             className={classes.icon}
             src="assets/icons/Github-icon.svg"
-            alt="Github"
+            alt="Icon Github"
             loading="lazy"
           />
         </a>
 
         <a
-          aria-label="my-LinkedIn"
+          aria-label="My LinkedIn"
           target="_blank"
           rel="noopener"
           href="https://www.linkedin.com/in/flavio-forte-/"
@@ -76,7 +90,7 @@ export const Footer: React.FC = () => {
           <img
             className={classes.icon}
             src="assets/icons/LinkedIn-icon.svg"
-            alt="Linkedin"
+            alt="Icon Linkedin"
             loading="lazy"
           />
         </a>

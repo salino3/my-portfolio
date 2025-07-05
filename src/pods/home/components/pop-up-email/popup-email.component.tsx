@@ -12,6 +12,8 @@ export const PopUpEmail: React.FC<Props> = (props) => {
   const { className, handleModal } = props;
 
   const contentRef = React.useRef<HTMLDivElement>(null);
+  const copyButtonRef = React.useRef<HTMLButtonElement>(null);
+  const closeBtnRef = React.useRef<HTMLImageElement>(null);
 
   const [copied, setCopied] = React.useState(false);
 
@@ -40,29 +42,81 @@ export const PopUpEmail: React.FC<Props> = (props) => {
     };
   }, [handleModal]);
 
+  React.useEffect(() => {
+    // 'requestAnimationFrame' schedules a function to run just after DOM and before the next repaint or synchronous javascript.
+    // It ensures that any DOM updates are completed, making it useful for visual changes or focus logic.
+    // This provides better performance and avoids layout thrashing compared to setTimeout.
+    // similar to 'useLayoutEffect
+    const element = requestAnimationFrame(() => {
+      copyButtonRef.current?.focus();
+    });
+    return () => {
+      cancelAnimationFrame(element);
+      const iconEmail: HTMLElement | null =
+        document.getElementById("handlePopupEmailID");
+      if (iconEmail) {
+        iconEmail.focus();
+      }
+    };
+  }, []);
+
   return (
-    <div className={cx(classes.root, className)}>
+    <div role="dialog" className={cx(classes.root, className)}>
       <div className={classes.content} ref={contentRef}>
         <img
+          tabIndex={0}
+          role="button"
           className={classes.btnClose}
           onClick={handleModal}
+          onKeyDown={(e: React.KeyboardEvent<HTMLImageElement>) =>
+            e.key === "Enter" && handleModal?.()
+          }
           src="assets/icons/icon-X.svg"
-          alt="close"
+          alt="Close icon"
+          aria-label="Close pop up"
           loading="lazy"
+          ref={closeBtnRef}
         />
         <img
           className={classes.emailIcon}
           src="assets/icons/email-icon.svg"
-          alt="mobile"
+          alt="Icon email"
           loading="lazy"
         />
-        <p>{theme?.routeMyEmail}</p>
-        <button onClick={handleClick} className={classes.btnCopy}>
+        <p
+          style={{
+            position: "relative",
+          }}
+        >
+          {theme?.routeMyEmail}
+          <span aria-live="polite" className={classes.copiedMessage}>
+            {copied ? "Email copied to clipboard" : ""}
+          </span>
+        </p>
+        <button
+          ref={copyButtonRef}
+          aria-label="Copy my email"
+          onClick={handleClick}
+          className={classes.btnCopy}
+        >
           {copied ? "Copied!" : "Copy"}
         </button>
-        <a href={`mailto:${theme?.routeMyEmail}`} className={classes.a}>
-          <button className={classes.btnSend}>Send</button>
-        </a>
+
+        <button
+          aria-label="Send me a email"
+          onKeyDown={(e: React.KeyboardEvent<HTMLButtonElement>) => {
+            if (e.key === "Tab" && !e.shiftKey) {
+              e.preventDefault();
+              closeBtnRef.current?.focus();
+            }
+          }}
+          onClick={() => {
+            window.location.href = `mailto:${theme?.routeMyEmail}`;
+          }}
+          className={classes.btnSend}
+        >
+          Send
+        </button>
       </div>
     </div>
   );
