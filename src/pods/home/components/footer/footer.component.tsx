@@ -40,6 +40,7 @@ export const Footer: React.FC = () => {
       )}
       <nav className={classes.nav}>
         <img
+          id="handlePopupEmailID"
           tabIndex={0}
           role="button"
           onClick={handlePopupEmail}
@@ -53,6 +54,7 @@ export const Footer: React.FC = () => {
         />
 
         <img
+          id="handlePopupPhoneID"
           tabIndex={0}
           role="button"
           onClick={handlePopupMobile}

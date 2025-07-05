@@ -49,7 +49,14 @@ export const PopUpMobile: React.FC<Props> = (props) => {
     const element = requestAnimationFrame(() => {
       copyButtonRef.current?.focus();
     });
-    return () => cancelAnimationFrame(element);
+    return () => {
+      cancelAnimationFrame(element);
+      const iconPhone: HTMLElement | null =
+        document.getElementById("handlePopupPhoneID");
+      if (iconPhone) {
+        iconPhone.focus();
+      }
+    };
   }, []);
 
   return (

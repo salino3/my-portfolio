@@ -50,7 +50,14 @@ export const PopUpEmail: React.FC<Props> = (props) => {
     const element = requestAnimationFrame(() => {
       copyButtonRef.current?.focus();
     });
-    return () => cancelAnimationFrame(element);
+    return () => {
+      cancelAnimationFrame(element);
+      const iconEmail: HTMLElement | null =
+        document.getElementById("handlePopupEmailID");
+      if (iconEmail) {
+        iconEmail.focus();
+      }
+    };
   }, []);
 
   return (
