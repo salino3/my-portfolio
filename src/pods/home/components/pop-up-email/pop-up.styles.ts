@@ -86,11 +86,6 @@ export const copiedMessage = css`
   border: 0;
 `;
 
-export const a = css`
-  cursor: pointer;
-  width: 100%;
-`;
-
 export const btnCopy = css`
   width: 100%;
   min-height: 50px;

@@ -11,6 +11,7 @@ interface Props {
 export const PopUpMobile: React.FC<Props> = (props) => {
   const { className, handleModal } = props;
   const contentRef = React.useRef<HTMLDivElement>(null);
+  const copyButtonRef = React.useRef<HTMLButtonElement>(null);
 
   const [copied, setCopied] = React.useState(false);
 
@@ -38,6 +39,17 @@ export const PopUpMobile: React.FC<Props> = (props) => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };
   }, [handleModal]);
+
+  React.useEffect(() => {
+    // 'requestAnimationFrame' schedules a function to run just after DOM and before the next repaint or synchronous javascript.
+    // It ensures that any DOM updates are completed, making it useful for visual changes or focus logic.
+    // This provides better performance and avoids layout thrashing compared to setTimeout.
+    // similar to 'useLayoutEffect
+    const element = requestAnimationFrame(() => {
+      copyButtonRef.current?.focus();
+    });
+    return () => cancelAnimationFrame(element);
+  }, []);
 
   return (
     <div role="dialog" className={cx(classes.main, className)}>
@@ -74,19 +86,23 @@ export const PopUpMobile: React.FC<Props> = (props) => {
             </span>
           </p>
           <button
+            ref={copyButtonRef}
             aria-label="Copy my telefon number"
             onClick={handleClick}
             className={classes.btnCopy}
           >
             {copied ? "Copied!" : "Copy"}
           </button>
-          <a
+
+          <button
             aria-label="Call me"
-            href={`tel:${theme?.mobileNumber}`}
-            className={classes.a}
+            onClick={() => {
+              window.location.href = `tel:${theme?.mobileNumber}`;
+            }}
+            className={classes.btnSend}
           >
-            <button className={classes.btnSend}>Call</button>
-          </a>
+            Call
+          </button>
         </div>
       </div>
     </div>

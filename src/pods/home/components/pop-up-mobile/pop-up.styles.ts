@@ -100,11 +100,6 @@ export const btnCopy = css`
   cursor: pointer;
 `;
 
-export const a = css`
-  cursor: pointer;
-  width: 100%;
-`;
-
 export const btnSend = css`
   width: 100%;
   height: 50px;

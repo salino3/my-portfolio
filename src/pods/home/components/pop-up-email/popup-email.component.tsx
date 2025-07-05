@@ -46,10 +46,10 @@ export const PopUpEmail: React.FC<Props> = (props) => {
     // It ensures that any DOM updates are completed, making it useful for visual changes or focus logic.
     // This provides better performance and avoids layout thrashing compared to setTimeout.
     // similar to 'useLayoutEffect
-    const id = requestAnimationFrame(() => {
+    const element = requestAnimationFrame(() => {
       copyButtonRef.current?.focus();
     });
-    return () => cancelAnimationFrame(id);
+    return () => cancelAnimationFrame(element);
   }, []);
 
   return (
@@ -92,13 +92,16 @@ export const PopUpEmail: React.FC<Props> = (props) => {
         >
           {copied ? "Copied!" : "Copy"}
         </button>
-        <a
+
+        <button
           aria-label="Send me a email"
-          href={`mailto:${theme?.routeMyEmail}`}
-          className={classes.a}
+          onClick={() => {
+            window.location.href = `mailto:${theme?.routeMyEmail}`;
+          }}
+          className={classes.btnSend}
         >
-          <button className={classes.btnSend}>Send</button>
-        </a>
+          Send
+        </button>
       </div>
     </div>
   );
