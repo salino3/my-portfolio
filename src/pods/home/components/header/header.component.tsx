@@ -15,7 +15,7 @@ export const Header: React.FC = () => {
           <img
             loading="lazy"
             src="assets/gallery/main-image.png"
-            alt="main-images"
+            alt="Main images, personal image"
           />
         </div>
         <div className={classes.content}>
@@ -39,7 +39,11 @@ export const Header: React.FC = () => {
             to keep learning and growing in the software development field and I
             search new challenges and opportunities.
           </div>
-          <a href={resumePDF} download="my_cv_latest_09.pdf">
+          <a
+            aria-label="Button for download my curriculum"
+            href={resumePDF}
+            download="my_cv_latest_09.pdf"
+          >
             <div className={classes.btn}>Download Resume</div>
           </a>
         </div>

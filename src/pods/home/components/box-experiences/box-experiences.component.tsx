@@ -62,6 +62,7 @@ export const BoxExperiences: React.FC = () => {
                 target="_blank"
                 rel="noopener"
                 href="https://databay.solutions/"
+                aria-label="Icon company Databay Solutions"
               >
                 Databay Solutions
               </a>
@@ -72,7 +73,7 @@ export const BoxExperiences: React.FC = () => {
           <div className={classes.contentArcticle}>
             <img
               src="assets/icons/icon_manfred.svg"
-              alt="Manfred"
+              aria-label="Icon company Manfred"
               loading="lazy"
             />
             <div className={classes.titleArticle}>
@@ -105,7 +106,11 @@ export const BoxExperiences: React.FC = () => {
         </article>
         <article className={classes.article}>
           <div className={classes.contentArcticle}>
-            <img src="assets/icons/icon_omix.svg" alt="Omix" loading="lazy" />
+            <img
+              src="assets/icons/icon_omix.svg"
+              aria-label="Icon web Omix"
+              loading="lazy"
+            />
             <div className={classes.titleArticle}>
               <h4>E-commerce app</h4>
               <small> (Open source proyect - 2023)</small>
