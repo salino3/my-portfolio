@@ -44,23 +44,46 @@ export const PopUpEmail: React.FC<Props> = (props) => {
     <div className={cx(classes.root, className)}>
       <div className={classes.content} ref={contentRef}>
         <img
+          tabIndex={0}
+          role="button"
           className={classes.btnClose}
           onClick={handleModal}
+          onKeyDown={(e: React.KeyboardEvent<HTMLImageElement>) =>
+            e.key === "Enter" && handleModal?.()
+          }
           src="assets/icons/icon-X.svg"
-          alt="close"
+          alt="Close icon"
+          aria-label="Close pop up"
           loading="lazy"
         />
         <img
           className={classes.emailIcon}
           src="assets/icons/email-icon.svg"
-          alt="mobile"
+          alt="Icon email"
           loading="lazy"
         />
-        <p>{theme?.routeMyEmail}</p>
-        <button onClick={handleClick} className={classes.btnCopy}>
+        <p
+          style={{
+            position: "relative",
+          }}
+        >
+          {theme?.routeMyEmail}
+          <span aria-live="polite" className={classes.copiedMessage}>
+            {copied ? "Email copied to clipboard" : ""}
+          </span>
+        </p>
+        <button
+          aria-label="Copy my email"
+          onClick={handleClick}
+          className={classes.btnCopy}
+        >
           {copied ? "Copied!" : "Copy"}
         </button>
-        <a href={`mailto:${theme?.routeMyEmail}`} className={classes.a}>
+        <a
+          aria-label="Send me a email"
+          href={`mailto:${theme?.routeMyEmail}`}
+          className={classes.a}
+        >
           <button className={classes.btnSend}>Send</button>
         </a>
       </div>
