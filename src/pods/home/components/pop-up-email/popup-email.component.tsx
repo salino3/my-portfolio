@@ -53,7 +53,7 @@ export const PopUpEmail: React.FC<Props> = (props) => {
   }, []);
 
   return (
-    <div className={cx(classes.root, className)}>
+    <div role="dialog" className={cx(classes.root, className)}>
       <div className={classes.content} ref={contentRef}>
         <img
           tabIndex={0}

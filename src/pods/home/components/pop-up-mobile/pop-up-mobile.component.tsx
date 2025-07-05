@@ -40,7 +40,7 @@ export const PopUpMobile: React.FC<Props> = (props) => {
   }, [handleModal]);
 
   return (
-    <div className={cx(classes.main, className)}>
+    <div role="dialog" className={cx(classes.main, className)}>
       <div className={classes.container}>
         <div className={classes.content} ref={contentRef}>
           <img
