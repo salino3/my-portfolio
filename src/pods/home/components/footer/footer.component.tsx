@@ -40,16 +40,28 @@ export const Footer: React.FC = () => {
       )}
       <nav className={classes.nav}>
         <img
+          tabIndex={0}
+          role="button"
           onClick={handlePopupEmail}
+          onKeyDown={(e: React.KeyboardEvent<HTMLImageElement>) =>
+            e.key === "Enter" && handlePopupEmail()
+          }
           src="assets/icons/email-icon.svg"
           alt="Icon email"
+          aria-label="Open pop up email"
           loading="lazy"
         />
 
         <img
+          tabIndex={0}
+          role="button"
           onClick={handlePopupMobile}
+          onKeyDown={(e: React.KeyboardEvent<HTMLImageElement>) =>
+            e.key === "Enter" && handlePopupMobile()
+          }
           src="assets/icons/phone-icon.svg"
           alt="Icon phone"
+          aria-label="Open pop up phone"
           loading="lazy"
         />
 
