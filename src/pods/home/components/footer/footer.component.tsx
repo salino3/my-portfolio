@@ -42,19 +42,19 @@ export const Footer: React.FC = () => {
         <img
           onClick={handlePopupEmail}
           src="assets/icons/email-icon.svg"
-          alt="email"
+          alt="Icon email"
           loading="lazy"
         />
 
         <img
           onClick={handlePopupMobile}
           src="assets/icons/phone-icon.svg"
-          alt="phone"
+          alt="Icon phone"
           loading="lazy"
         />
 
         <a
-          aria-label="my-Github"
+          aria-label="My Github"
           target="_blank"
           rel="noopener"
           href="https://github.com/salino3"
@@ -62,13 +62,13 @@ export const Footer: React.FC = () => {
           <img
             className={classes.icon}
             src="assets/icons/Github-icon.svg"
-            alt="Github"
+            alt="Icon Github"
             loading="lazy"
           />
         </a>
 
         <a
-          aria-label="my-LinkedIn"
+          aria-label="My LinkedIn"
           target="_blank"
           rel="noopener"
           href="https://www.linkedin.com/in/flavio-forte-/"
@@ -76,7 +76,7 @@ export const Footer: React.FC = () => {
           <img
             className={classes.icon}
             src="assets/icons/LinkedIn-icon.svg"
-            alt="Linkedin"
+            alt="Icon Linkedin"
             loading="lazy"
           />
         </a>
