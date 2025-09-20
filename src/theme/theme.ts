@@ -97,7 +97,7 @@ export const theme = {
       background: "#1976D2",
     },
   },
-  routeMyEmail: "programacionflavio@gmail.com",
+  routeMyEmail: "flaviofortedev@gmail.com",
   mobileNumber: "+34 666873670",
   spacing: (multiplier: number = 1) => `${multiplier * BASE_SPACING}px`,
 };
