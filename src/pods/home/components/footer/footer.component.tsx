@@ -80,7 +80,6 @@ export const Footer: React.FC = () => {
             loading="lazy"
           />
         </a>
-
         <a
           aria-label="My LinkedIn"
           target="_blank"
@@ -91,6 +90,19 @@ export const Footer: React.FC = () => {
             className={classes.icon}
             src="assets/icons/LinkedIn-icon.svg"
             alt="Icon Linkedin"
+            loading="lazy"
+          />
+        </a>
+        <a
+          aria-label="My CV on-line"
+          target="_blank"
+          rel="noopener"
+          href="https://salino3.github.io/my-cv-english-latest/"
+        >
+          <img
+            className={classes.icon}
+            src="assets/icons/cv.svg"
+            alt="Icon CV"
             loading="lazy"
           />
         </a>
