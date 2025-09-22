@@ -103,7 +103,7 @@ export const BoxStudies: React.FC = () => {
               Programming initiation bootcamp, which covered programming
               fundamentals (ES6 / TypeScript), as well as the use of libraries
               and frameworks such as React, Angular, Vue, JQuery, HTML and CSS
-              standards, and an introduction to nodejs and MySql was also
+              standards, and an introduction to nodejs and MySQL was also
               carried out.
             </li>
           </ul>
