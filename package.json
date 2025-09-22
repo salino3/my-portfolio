@@ -1,11 +1,11 @@
 {
-  "homepage":"https://salino3.github.io/my-portfolio",
+  "homepage": "https://salino3.github.io/my-portfolio",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite --port 7070",
+    "dev": "vite --port 7070",
     "build": "tsc && vite build",
     "deploy": "gh-pages -d dist",
     "preview": "vite preview"
