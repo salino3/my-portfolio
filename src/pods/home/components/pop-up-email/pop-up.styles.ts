@@ -7,24 +7,12 @@ export const root = css`
   position: fixed;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   background-color: rgba(0, 0, 0, 0.4);
-`;
-
-export const container = css`
-  width: 100%;
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-  padding: ${theme.spacing(2.5)};
-
-  @media (min-width: 725px) {
-    width: 360px;
-  }
+  padding: 0 ${theme.spacing(4)};
 `;
 
 export const content = css`
@@ -39,7 +27,7 @@ export const content = css`
   box-shadow: 0px 2px 8px rgba(31, 3, 34, 0.15);
   border-radius: 24px;
   width: 100%;
-  max-width: 346px;
+  max-width: 300px;
   padding-bottom: 15px;
   background-color: ${theme.background.light};
 

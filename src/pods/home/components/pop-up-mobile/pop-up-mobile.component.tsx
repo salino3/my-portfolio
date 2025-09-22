@@ -60,65 +60,63 @@ export const PopUpMobile: React.FC<Props> = (props) => {
   }, []);
 
   return (
-    <div role="dialog" className={cx(classes.main, className)}>
-      <div className={classes.container}>
-        <div className={classes.content} ref={contentRef}>
-          <img
-            tabIndex={0}
-            role="button"
-            className={classes.btnClose}
-            onClick={handleModal}
-            onKeyDown={(e: React.KeyboardEvent<HTMLImageElement>) =>
-              e.key === "Enter" && handleModal?.()
-            }
-            src="assets/icons/icon-X.svg"
-            alt="Close icon"
-            aria-label="Close pop up"
-            loading="lazy"
-            ref={closeBtnRef}
-          />
-          <img
-            className={classes.mobileIcon}
-            src="assets/icons/phone-icon-2.svg"
-            alt="Icon mobile"
-            loading="lazy"
-          />
-          <p
-            style={{
-              position: "relative",
-            }}
-          >
-            {" "}
-            {theme?.mobileNumber}
-            <span aria-live="polite" className={classes.copiedMessage}>
-              {copied ? "Telefon number copied to clipboard" : ""}
-            </span>
-          </p>
-          <button
-            ref={copyButtonRef}
-            aria-label="Copy my telefon number"
-            onClick={handleClick}
-            className={classes.btnCopy}
-          >
-            {copied ? "Copied!" : "Copy"}
-          </button>
+    <div role="dialog" className={cx(classes.root, className)}>
+      <div className={classes.content} ref={contentRef}>
+        <img
+          tabIndex={0}
+          role="button"
+          className={classes.btnClose}
+          onClick={handleModal}
+          onKeyDown={(e: React.KeyboardEvent<HTMLImageElement>) =>
+            e.key === "Enter" && handleModal?.()
+          }
+          src="assets/icons/icon-X.svg"
+          alt="Close icon"
+          aria-label="Close pop up"
+          loading="lazy"
+          ref={closeBtnRef}
+        />
+        <img
+          className={classes.mobileIcon}
+          src="assets/icons/phone-icon-2.svg"
+          alt="Icon mobile"
+          loading="lazy"
+        />
+        <p
+          style={{
+            position: "relative",
+          }}
+        >
+          {" "}
+          {theme?.mobileNumber}
+          <span aria-live="polite" className={classes.copiedMessage}>
+            {copied ? "Telefon number copied to clipboard" : ""}
+          </span>
+        </p>
+        <button
+          ref={copyButtonRef}
+          aria-label="Copy my telefon number"
+          onClick={handleClick}
+          className={classes.btnCopy}
+        >
+          {copied ? "Copied!" : "Copy"}
+        </button>
 
-          <button
-            aria-label="Call me"
-            onKeyDown={(e: React.KeyboardEvent<HTMLButtonElement>) => {
-              if (e.key === "Tab" && !e.shiftKey) {
-                e.preventDefault();
-                closeBtnRef.current?.focus();
-              }
-            }}
-            onClick={() => {
-              window.location.href = `tel:${theme?.mobileNumber}`;
-            }}
-            className={classes.btnSend}
-          >
-            Call
-          </button>
-        </div>
+        <button
+          aria-label="Call me"
+          onKeyDown={(e: React.KeyboardEvent<HTMLButtonElement>) => {
+            if (e.key === "Tab" && !e.shiftKey) {
+              e.preventDefault();
+              closeBtnRef.current?.focus();
+            }
+          }}
+          onClick={() => {
+            window.location.href = `tel:${theme?.mobileNumber}`;
+          }}
+          className={classes.btnSend}
+        >
+          Call
+        </button>
       </div>
     </div>
   );
