@@ -64,7 +64,7 @@ Valid keys: `+JSON.stringify(Object.keys(T),null,"  "));var ye=M(Q,X,W,K,B+"."+X
   display: flex;
   flex-direction: row;
   gap: ${E.spacing(8)};
-`,um=()=>g.jsx("div",{className:am,children:g.jsxs("ul",{className:sm,children:[g.jsx("li",{children:g.jsx("a",{"aria-label":"My LinkedIn",target:"_blank",rel:"noopener",href:"https://www.linkedin.com/in/flavio-forte-/",children:g.jsx("img",{loading:"lazy",src:"assets/icons/LinkedIn-icon.svg",alt:"LinkedIn"})})}),g.jsx("li",{children:g.jsx("a",{"aria-label":"My Github",target:"_blank",rel:"noopener",href:"https://github.com/salino3",children:g.jsx("img",{loading:"lazy",src:"assets/icons/Github-icon.svg",alt:"Github"})})})]})}),cm="/my-portfolio/assets/my_latest_cv_2025-88775ea9.pdf",fm=O`
+`,um=()=>g.jsx("div",{className:am,children:g.jsxs("ul",{className:sm,children:[g.jsx("li",{children:g.jsx("a",{"aria-label":"My LinkedIn",target:"_blank",rel:"noopener",href:"https://www.linkedin.com/in/flavio-forte-/",children:g.jsx("img",{loading:"lazy",src:"assets/icons/LinkedIn-icon.svg",alt:"LinkedIn"})})}),g.jsx("li",{children:g.jsx("a",{"aria-label":"My Github",target:"_blank",rel:"noopener",href:"https://github.com/salino3",children:g.jsx("img",{loading:"lazy",src:"assets/icons/Github-icon.svg",alt:"Github"})})})]})}),cm="/my-portfolio/assets/my_latest_cv_2025-73804b49.pdf",fm=O`
   display: flex;
   flex-direction: column;
 `,dm=O`
