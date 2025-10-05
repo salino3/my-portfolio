@@ -78,7 +78,7 @@ export const PopUpMobile: React.FC<Props> = (props) => {
         />
         <img
           className={classes.mobileIcon}
-          src="assets/icons/phone-icon-2.svg"
+          src="assets/icons/mobile-icon.svg"
           alt="Icon mobile"
           loading="lazy"
         />
@@ -87,7 +87,6 @@ export const PopUpMobile: React.FC<Props> = (props) => {
             position: "relative",
           }}
         >
-          {" "}
           {theme?.mobileNumber}
           <span aria-live="polite" className={classes.copiedMessage}>
             {copied ? "Telefon number copied to clipboard" : ""}
