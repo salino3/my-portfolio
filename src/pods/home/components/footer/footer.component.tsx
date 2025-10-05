@@ -61,9 +61,9 @@ export const Footer: React.FC = () => {
           onKeyDown={(e: React.KeyboardEvent<HTMLImageElement>) =>
             e.key === "Enter" && handlePopupMobile()
           }
-          src="assets/icons/phone-icon.svg"
-          alt="Icon phone"
-          aria-label="Open pop up phone"
+          src="assets/icons/mobile-icon.svg"
+          alt="Icon mobile"
+          aria-label="Open pop up mobile"
           loading="lazy"
         />
 
