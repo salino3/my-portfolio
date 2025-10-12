@@ -12,7 +12,9 @@ export const BoxExperiences: React.FC = () => {
             <img src="assets/gallery/saurus.png" alt="Saurus" loading="lazy" />
             <div className={classes.titleArticle}>
               <h4>Saurus</h4>
-              <small> (Web Development - since Febbruary 2024 )</small>
+              <small>
+                (Web Development - since February 2024 until October 2025)
+              </small>
             </div>
           </div>
           <ul className={classes.ul}>
@@ -43,7 +45,7 @@ export const BoxExperiences: React.FC = () => {
             <div className={classes.titleArticle}>
               <h4>Databay Solution</h4>
               <small>
-                (Web Development - since July 2023 untill Jannuary 2024)
+                (Web Development - since July 2023 until Jannuary 2024)
               </small>
             </div>
           </div>
