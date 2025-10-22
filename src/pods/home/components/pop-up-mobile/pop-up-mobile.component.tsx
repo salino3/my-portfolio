@@ -59,6 +59,16 @@ export const PopUpMobile: React.FC<Props> = (props) => {
     };
   }, []);
 
+  function chunkStringAddSpace(str: string, n: number) {
+    var arrayNumbers = [];
+    var i;
+
+    for (i = 0; i < str.length; i += n) {
+      arrayNumbers.push(str.slice(i, i + n));
+    }
+    return arrayNumbers.join(" ");
+  }
+
   return (
     <div role="dialog" className={cx(classes.root, className)}>
       <div className={classes.content} ref={contentRef}>
@@ -87,7 +97,7 @@ export const PopUpMobile: React.FC<Props> = (props) => {
             position: "relative",
           }}
         >
-          {theme?.mobileNumber}
+          {chunkStringAddSpace(theme?.mobileNumber, 3)}
           <span aria-live="polite" className={classes.copiedMessage}>
             {copied ? "Telefon number copied to clipboard" : ""}
           </span>

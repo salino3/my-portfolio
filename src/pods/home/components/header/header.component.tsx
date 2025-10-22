@@ -1,7 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Navbar } from "../navbar";
-import resumePDF from "../../../../assets/CV_Forte_Flavio.pdf";
+import resumePDF from "../../../../assets/Curriculum_Vitae_Flavio_Forte.pdf";
 import * as classes from "./header.styles";
 
 export const Header: React.FC = () => {
@@ -42,7 +42,7 @@ export const Header: React.FC = () => {
           <a
             aria-label="Button for download my curriculum"
             href={resumePDF}
-            download="CV_Forte_Flavio.pdf"
+            download="Curriculum_Vitae_Flavio_Forte.pdf"
           >
             <div className={classes.btn}>Download Resume</div>
           </a>
