@@ -19,7 +19,7 @@ export const BoxStudies: React.FC = () => {
               <h4>
                 Bootcamp <br className={classes.lineJump} /> Back-end
               </h4>
-              <small> (In progress)</small>
+              <small> (Jun 2023 - Feb 2024)</small>
             </div>
           </div>
           <ul className={classes.ul}>
