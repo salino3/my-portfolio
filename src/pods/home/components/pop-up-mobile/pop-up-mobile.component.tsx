@@ -59,15 +59,15 @@ export const PopUpMobile: React.FC<Props> = (props) => {
     };
   }, []);
 
-  function chunkStringAddSpace(str: string, n: number) {
-    var arrayNumbers = [];
-    var i;
+  // function chunkStringAddSpace(str: string, n: number) {
+  //   var arrayNumbers = [];
+  //   var i;
 
-    for (i = 0; i < str.length; i += n) {
-      arrayNumbers.push(str.slice(i, i + n));
-    }
-    return arrayNumbers.join(" ");
-  }
+  //   for (i = 0; i < str.length; i += n) {
+  //     arrayNumbers.push(str.slice(i, i + n));
+  //   }
+  //   return arrayNumbers.join(" ");
+  // }
 
   return (
     <div role="dialog" className={cx(classes.root, className)}>
@@ -97,7 +97,8 @@ export const PopUpMobile: React.FC<Props> = (props) => {
             position: "relative",
           }}
         >
-          {chunkStringAddSpace(theme?.mobileNumber, 3)}
+          {/* {chunkStringAddSpace(theme?.mobileNumber, 3)} */}
+          +39 35 34987 726
           <span aria-live="polite" className={classes.copiedMessage}>
             {copied ? "Telefon number copied to clipboard" : ""}
           </span>
