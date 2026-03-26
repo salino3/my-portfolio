@@ -14,7 +14,7 @@ export const BoxSkills: React.FC = () => {
         </div>
         <div>
           <p>
-            I have over three years of experience working as a web developer and
+            I have over three years of experience working as a web engineer and
             have been studying web technologies for five years. Among the
             front-end technologies I’ve worked with, React stands out as my
             specialty. I have a deep understanding of creating dynamic and

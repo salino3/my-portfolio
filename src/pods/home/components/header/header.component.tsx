@@ -24,12 +24,12 @@ export const Header: React.FC = () => {
               <h1 className={classes.title}>
                 Hi, I am <br />
                 <span>Flavio Forte</span> <br />
-                Software Developer
+                Software Engineer
               </h1>
             ) : (
               <h1 className={classes.title}>
                 Hi, I am <span>Flavio Forte</span> <br />
-                Software Developer
+                Software Engineer
               </h1>
             )}
           </div>
