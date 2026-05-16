@@ -33,18 +33,18 @@ export const Header: React.FC = () => {
               </h1>
             )}
           </div>
-          <div className={classes.description}>
+          <p className={classes.description}>
             I am passionate about software programming and dedicated to applying
             my experience to impactful and innovative projects. I am motivated
             to keep learning and growing in the software development field and I
             search new challenges and opportunities.
-          </div>
+          </p>
           <a
             aria-label="Button for download my curriculum"
             href={resumePDF}
             download="FlavioForteCV2025ENG.pdf"
           >
-            <div className={classes.btn}>Download Resume</div>
+            <span className={classes.btn}>Download Resume</span>
           </a>
         </div>
       </div>
