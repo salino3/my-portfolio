@@ -45,7 +45,7 @@ export const BoxExperiences: React.FC = () => {
             <div className={classes.titleArticle}>
               <h4>Databay Solution</h4>
               <small>
-                (Web Development - since July 2023 until Jannuary 2024)
+                (Web Development - since July 2023 until January 2024)
               </small>
             </div>
           </div>
