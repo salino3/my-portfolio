@@ -45,7 +45,7 @@ export const BoxExperiences: React.FC = () => {
             <div className={classes.titleArticle}>
               <h4>Databay Solution</h4>
               <small>
-                (Web Development - since July 2023 until Jannuary 2024)
+                (Web Development - since July 2023 until January 2024)
               </small>
             </div>
           </div>
@@ -79,7 +79,7 @@ export const BoxExperiences: React.FC = () => {
             />
             <div className={classes.titleArticle}>
               <h4>Manfred Export</h4>
-              <small> (Open source proyect - 2023)</small>
+              <small> (Open source project - 2023)</small>
             </div>
           </div>
           <ul className={classes.ul}>
@@ -114,7 +114,7 @@ export const BoxExperiences: React.FC = () => {
             />
             <div className={classes.titleArticle}>
               <h4>E-commerce app</h4>
-              <small> (Open source proyect - 2023)</small>
+              <small> (Open source project - 2023)</small>
             </div>
           </div>
           <ul className={classes.ul}>

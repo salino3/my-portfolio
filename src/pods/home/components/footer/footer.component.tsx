@@ -107,7 +107,7 @@ export const Footer: React.FC = () => {
           />
         </a>
       </nav>
-      <p>Thanks for visit my web page </p>
+      <p>Thanks for visiting my web page</p>
     </div>
   );
 };

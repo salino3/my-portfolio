@@ -100,12 +100,12 @@ export const PopUpMobile: React.FC<Props> = (props) => {
           {/* {chunkStringAddSpace(theme?.mobileNumber, 3)} */}
           +39 35 34987 726
           <span aria-live="polite" className={classes.copiedMessage}>
-            {copied ? "Telefon number copied to clipboard" : ""}
+            {copied ? "Telephone number copied to clipboard" : ""}
           </span>
         </p>
         <button
           ref={copyButtonRef}
-          aria-label="Copy my telefon number"
+          aria-label="Copy my telephone number"
           onClick={handleClick}
           className={classes.btnCopy}
         >
